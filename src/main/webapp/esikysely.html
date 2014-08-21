@@ -42,9 +42,8 @@
                     <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Osaan nimetä useampia ohjelmointityylejä ja -paradigmoja.</label>
                 </div>
 
-                <input type="hidden" name="questionnaireStarted" id="questionnaireStarted"/>
-                <input type="hidden" name="questionnaireSubmitted" id="questionnaireSubmitted"/>
-
+                <input type="hidden" name="visitStarted" id="visitStarted"/>
+                <input type="hidden" name="visitEnded" id="visitEnded"/>
 
                 <button type="button" class="btn btn-primary" id="forwardButton">Siirry materiaaliin</button>
             </form>
@@ -56,13 +55,12 @@
 
         <script>
             $(function() {
-                $("#questionnaireStarted").val(new Date());
+                $("#visitStarted").val(new Date());
 
                 $("#forwardButton").click(function() {
-                    $("#questionnaireSubmitted").val(new Date());
+                    $("#visitEnded").val(new Date());
                     $("form").submit();
                 });
-
             });
         </script>
     </body>
