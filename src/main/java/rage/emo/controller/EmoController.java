@@ -21,7 +21,7 @@ public class EmoController {
 
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
-    
+
     @Autowired
     MaterialVisitRepository materialVisitRepository;
 
@@ -52,7 +52,7 @@ public class EmoController {
         return "redirect:/app/material-1";
     }
 
-    @RequestMapping(value = "/material-1", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping("/material-1")
     public String getMaterial(HttpSession session, Model model) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
         return "/WEB-INF/jsp/kommunikaatio-1.jsp";
@@ -61,7 +61,7 @@ public class EmoController {
     @RequestMapping(value = "/submit-material-1-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterialSeen(
             @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session, 
+            HttpSession session,
             @ModelAttribute MaterialVisit materialVisit) {
         materialVisit.setUsername((String) session.getAttribute("username"));
         materialVisit.setSiteUrl(referer);
@@ -70,9 +70,8 @@ public class EmoController {
 
         return "redirect:/app/material-2";
     }
-    
-    
-    @RequestMapping(value = "/material-2", method = {RequestMethod.POST, RequestMethod.GET})
+
+    @RequestMapping("/material-2")
     public String getMaterial2(HttpSession session, Model model) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
         return "/WEB-INF/jsp/olio-ohjelmointi-2.jsp";
@@ -81,7 +80,7 @@ public class EmoController {
     @RequestMapping(value = "/submit-material-2-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterial2Seen(
             @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session, 
+            HttpSession session,
             @ModelAttribute MaterialVisit materialVisit) {
         materialVisit.setUsername((String) session.getAttribute("username"));
         materialVisit.setSiteUrl(referer);
