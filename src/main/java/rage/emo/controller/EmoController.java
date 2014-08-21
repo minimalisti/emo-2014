@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import rage.emo.dto.MaterialVisit;
 import rage.emo.repository.MaterialVisitRepository;
 import rage.emo.repository.PreQuestionnaireRepository;
@@ -28,7 +29,7 @@ public class EmoController {
     MaterialTypeService materialTypeService;
 
     // 1.
-    @RequestMapping("/submit-background")
+    @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session,
@@ -51,13 +52,13 @@ public class EmoController {
         return "redirect:/app/material-1";
     }
 
-    @RequestMapping("/material-1")
+    @RequestMapping(value = "/material-1", method = {RequestMethod.POST, RequestMethod.GET})
     public String getMaterial(HttpSession session, Model model) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
         return "/WEB-INF/jsp/kommunikaatio-1.jsp";
     }
 
-    @RequestMapping("/submit-material-1-seen")
+    @RequestMapping(value = "/submit-material-1-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterialSeen(
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session, 
@@ -71,13 +72,13 @@ public class EmoController {
     }
     
     
-    @RequestMapping("/material-2")
+    @RequestMapping(value = "/material-2", method = {RequestMethod.POST, RequestMethod.GET})
     public String getMaterial2(HttpSession session, Model model) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
         return "/WEB-INF/jsp/olio-ohjelmointi-2.jsp";
     }
 
-    @RequestMapping("/submit-material-2-seen")
+    @RequestMapping(value = "/submit-material-2-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterial2Seen(
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session, 
@@ -90,7 +91,7 @@ public class EmoController {
         return "redirect:/jalkikysely.html";
     }
 
-    @RequestMapping("/submit-postquestionnaire")
+    @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostQuestionnaire(HttpSession session, @ModelAttribute PostQuestionnaire postQuestionnaire) {
         System.out.println("TODO: tallenna jälkikysely");
         postQuestionnaire.setUsername((String) session.getAttribute("username"));
