@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Jälkikysely</h1>
+
+            <form action="/app/submit-postquestionnaire" method="POST">
+                
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Ei oo viel :).</label>
+                </div>
+
+                <input type="hidden" name="questionnaireStarted" id="questionnaireStarted"/>
+                <input type="hidden" name="questionnaireSubmitted" id="questionnaireSubmitted"/>
+
+
+                <button type="button" class="btn btn-primary" id="forwardButton">Lähetä</button>
+            </form>
+        </div>
+
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+
+
+        <script>
+            $(function() {
+                $("#questionnaireStarted").val(new Date());
+
+                $("#forwardButton").click(function() {
+                    $("#questionnaireSubmitted").val(new Date());
+                    $("form").submit();
+                });
+
+            });
+        </script>
+    </body>
+</html>

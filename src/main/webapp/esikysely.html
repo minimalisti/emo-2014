@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Taustatietokysely</h1>
+
+            <form action="/app/submit-background" method="POST">
+                <div class="form-group">
+                    <label for="username">Opiskelijanumero tai nimi (pakollinen)</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Opiskelijanumero tai nimi">
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="courseInHighschoolOrSmtn"> Olen lukiossa tai aiemmissa opinnoissa käynyt ohjelmointikurssilla.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="programDuringFreeTimeNowAndThen"> Ohjelmoin silloin tällöin vapaa-ajallani.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="ictWasOneFavouriteInPastStudies"> Tietotekniikka oli yksi lempiaineistani aiemmissa opinnoissani.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="readingProgrammingRelatedContentInFreetime"> Luen vapaa-ajallani ohjelmointiin liittyviä materiaaleja tai nettisivuja.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingLanguages"> Osaan nimetä useampia ohjelmointikieliä.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Osaan nimetä useampia ohjelmointityylejä ja -paradigmoja.</label>
+                </div>
+
+                <input type="hidden" name="questionnaireStarted" id="questionnaireStarted"/>
+                <input type="hidden" name="questionnaireSubmitted" id="questionnaireSubmitted"/>
+
+
+                <button type="button" class="btn btn-primary" id="forwardButton">Siirry materiaaliin</button>
+            </form>
+        </div>
+
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+
+
+        <script>
+            $(function() {
+                $("#questionnaireStarted").val(new Date());
+
+                $("#forwardButton").click(function() {
+                    $("#questionnaireSubmitted").val(new Date());
+                    $("form").submit();
+                });
+
+            });
+        </script>
+    </body>
+</html>
