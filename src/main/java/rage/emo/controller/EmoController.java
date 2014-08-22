@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,7 +29,6 @@ public class EmoController {
     @Autowired
     MaterialTypeService materialTypeService;
 
-    // 1.
     @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
             @RequestHeader(value = "referer", required = false) final String referer,
@@ -52,42 +52,39 @@ public class EmoController {
         return "redirect:/app/material-1";
     }
 
-    @RequestMapping("/material-1")
-    public String getMaterial(HttpSession session, Model model) {
+    @RequestMapping("/material-{id}")
+    public String getMaterial(HttpSession session, Model model, @PathVariable Integer id) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
-        return "/WEB-INF/jsp/kommunikaatio-1.jsp";
+
+        // tän saa tehdä fiksummin; nyt on vaan helpompi muistaa et mikä mikäkin
+        switch (id) {
+            case 1:
+                return "/WEB-INF/jsp/kommunikaatio-1.jsp";
+            case 2:
+                return "/WEB-INF/jsp/olio-ohjelmointi-2.jsp";
+            default:
+
+        }
+        return "/WEB-INF/jsp/kommunikaatio-" + id + ".jsp";
     }
 
-    @RequestMapping(value = "/submit-material-1-seen", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/submit-material-{id}-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterialSeen(
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session,
-            @ModelAttribute MaterialVisit materialVisit) {
+            @ModelAttribute MaterialVisit materialVisit,
+            @PathVariable Integer id) {
+
         materialVisit.setUsername((String) session.getAttribute("username"));
         materialVisit.setSiteUrl(referer);
 
         materialVisitRepository.save(materialVisit);
 
-        return "redirect:/app/material-2";
-    }
+        if (id >= 2) {
+            return "redirect:/jalkikysely.html";
+        }
 
-    @RequestMapping("/material-2")
-    public String getMaterial2(HttpSession session, Model model) {
-        model.addAttribute("materialType", session.getAttribute("materialType"));
-        return "/WEB-INF/jsp/olio-ohjelmointi-2.jsp";
-    }
-
-    @RequestMapping(value = "/submit-material-2-seen", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitMaterial2Seen(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute MaterialVisit materialVisit) {
-        materialVisit.setUsername((String) session.getAttribute("username"));
-        materialVisit.setSiteUrl(referer);
-
-        materialVisitRepository.save(materialVisit);
-
-        return "redirect:/jalkikysely.html";
+        return "redirect:/app/material-" + (id + 1);
     }
 
     @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})
