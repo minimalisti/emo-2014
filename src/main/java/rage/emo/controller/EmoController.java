@@ -55,17 +55,8 @@ public class EmoController {
     @RequestMapping("/material-{id}")
     public String getMaterial(HttpSession session, Model model, @PathVariable Integer id) {
         model.addAttribute("materialType", session.getAttribute("materialType"));
-
-        // tän saa tehdä fiksummin; nyt on vaan helpompi muistaa et mikä mikäkin
-        switch (id) {
-            case 1:
-                return "/WEB-INF/jsp/kommunikaatio-1.jsp";
-            case 2:
-                return "/WEB-INF/jsp/olio-ohjelmointi-2.jsp";
-            default:
-
-        }
-        return "/WEB-INF/jsp/kommunikaatio-" + id + ".jsp";
+        model.addAttribute("materialId", id);
+        return "/WEB-INF/jsp/" + id + ".jsp";
     }
 
     @RequestMapping(value = "/submit-material-{id}-seen", method = {RequestMethod.POST, RequestMethod.GET})
@@ -80,7 +71,7 @@ public class EmoController {
 
         materialVisitRepository.save(materialVisit);
 
-        if (id >= 2) {
+        if (id >= 21) {
             return "redirect:/jalkikysely.html";
         }
 
