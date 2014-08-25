@@ -10,7 +10,7 @@
     <body>
 
         <div class="container">
-            <h2>Kommunikaatio-ongelma</h2>
+            <h3>Kommunikaatio-ongelma</h3>
 
             <img src="/img/${materialType}/kommunikaatio-ongelma.png"/>
 
@@ -21,7 +21,7 @@
             <p>Vuosien saatossa on kehitetty erilaisia ohjelmointikieliä, ja on myös syntynyt erilaisia tapoja ohjelmoida, niin sanottuja <strong>ohjelmointiparadigmoja</strong> (<em>programming paradigm</em>). Eri paradigmoilla on erilaisia vastauksia yllä esitettyyn "kommunikaatio-ongelmaan".</p>
 
 
-            <form action="/app/submit-material-1-seen" method="POST">
+            <form action="/app/submit-material-${materialId}-seen" method="POST">
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>

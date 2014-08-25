@@ -10,7 +10,7 @@
     <body>
 
         <div class="container">
-            <h2>Olio-ohjelmointi</h2>
+            <h3>Olio-ohjelmointi</h3>
 
             <p>Oppituokiomme keskipisteess‰ on <strong>olio-ohjelmointi</strong> (<em>object-oriented programming, OOP</em>), joka on er‰s suosittu ja mielenkiintoinen ohjelmointiparadigma. </p>
             
@@ -18,13 +18,13 @@
 
             <img src="/img/${materialType}/olio-ohjelmointi.png"/>
             
-            <h3>Er‰s ratkaisu kommunikaatio-ongelmaan; m‰‰ritell‰‰n k‰sitteit‰ ohjelmakoodissa.</h3>
+            <h4>Er‰s ratkaisu kommunikaatio-ongelmaan; m‰‰ritell‰‰n k‰sitteit‰ ohjelmakoodissa.</h4>
             
             <p>Tarkoituksena olio-ohjelmoinnissa on siis laatia ohjelmia, jotka ovat koneen k‰sitelt‰viss‰ mutta joiden ilmaisut muistuttavat ihmisen tapaa j‰sent‰‰ maailmaa. M‰‰ritell‰‰n k‰sitteet ja niit‰ vastaavat termit tietokoneelle!</p>
             
             <p>Olio-ohjelmointi on pitk‰lti juuri k‰sitteiden m‰‰rittelemist‰. Ohjelmoija laatii mallin siit‰, mit‰ erilaiset ohjelman <strong>aihealueeseen</strong> (<em>domain</em>) liittyv‰t k‰sitteet ovat, ja mit‰ tietoa ja toimintoja niihin liittyy.</p>
             
-            <form action="/app/submit-material-2-seen" method="POST">
+            <form action="/app/submit-material-${materialId}-seen" method="POST">
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
