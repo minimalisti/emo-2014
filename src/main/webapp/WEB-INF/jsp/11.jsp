@@ -13,7 +13,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Seuraava "keskustelu" olioiden välillä kuvaa yhden ilmoittautumistapahtuman sovelluksen ollessa käynnissä.</p>
+            <p>Tällä ja seuraavilla sivuilla on esitetty "keskustelu" olioiden välillä kuvaa, joka kuvaa yhden ilmoittautumistapahtuman sovelluksen ollessa käynnissä.</p>
 
             <img src="/img/${materialType}/sarjis_04.png"/>
             
