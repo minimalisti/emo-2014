@@ -31,6 +31,8 @@ public class ProdProfile {
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setGenerateDdl(true);
+        vendorAdapter.getJpaPropertyMap().put("hibernate.hbm2ddl.auto", "update");
+        
 
         factory.setJpaVendorAdapter(vendorAdapter);
         factory.setPersistenceUnitName("production");
