@@ -37,7 +37,7 @@ public class ProdProfile {
         factory.setPackagesToScan("rage.emo.dto");
         factory.setDataSource(dataSource());
 
-        factory.afterPropertiesSet();
+        factory.afterPropertiesSet();        
         return factory;
     }
 
