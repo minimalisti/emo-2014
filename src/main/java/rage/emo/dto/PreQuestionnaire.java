@@ -1,16 +1,23 @@
 package rage.emo.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class PreQuestionnaire extends AbstractSiteVisit {
 
-    private boolean hasProgrammedInThePast;
-    private boolean hasOoProgrammedInThePast;
-    private boolean programDuringFreeTimeNowAndThen;
-    private boolean readingProgrammingRelatedContentInFreetime;
-    private boolean canNameMoreThanOneProgrammingLanguages;
-    private boolean canNameMoreThanOneProgrammingStylesAndParadigms;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean hasProgrammedInThePast;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean hasOoProgrammedInThePast;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean programDuringFreeTimeNowAndThen;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean readingProgrammingRelatedContentInFreetime;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean canNameMoreThanOneProgrammingLanguages;
+    @Column(columnDefinition = "boolean default false", nullable = false)
+    private Boolean canNameMoreThanOneProgrammingStylesAndParadigms;
 
     private String assignedMaterialType;
 
