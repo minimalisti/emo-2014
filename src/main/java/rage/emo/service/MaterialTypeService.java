@@ -23,6 +23,8 @@ public class MaterialTypeService {
         if (preQuestionnaire.isHasProgrammedInThePast() != null && !preQuestionnaire.isHasProgrammedInThePast()) {
             // ei ole ohjelmoinut
             Map<String, Integer> counts = new TreeMap<>();
+            counts.put("emo", 0);
+            counts.put("trad", 0);
 
             for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
 
