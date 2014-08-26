@@ -5,12 +5,12 @@ import javax.persistence.Entity;
 @Entity
 public class PreQuestionnaire extends AbstractSiteVisit {
 
-    private Boolean hasProgrammedInThePast;
-    private Boolean hasOoProgrammedInThePast;
-    private Boolean programDuringFreeTimeNowAndThen;
-    private Boolean readingProgrammingRelatedContentInFreetime;
-    private Boolean canNameMoreThanOneProgrammingLanguages;
-    private Boolean canNameMoreThanOneProgrammingStylesAndParadigms;
+    private boolean hasProgrammedInThePast;
+    private boolean hasOoProgrammedInThePast;
+    private boolean programDuringFreeTimeNowAndThen;
+    private boolean readingProgrammingRelatedContentInFreetime;
+    private boolean canNameMoreThanOneProgrammingLanguages;
+    private boolean canNameMoreThanOneProgrammingStylesAndParadigms;
 
     private String assignedMaterialType;
 
