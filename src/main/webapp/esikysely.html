@@ -14,20 +14,13 @@
 
             <form action="/app/submit-background" method="POST">
                 <div class="form-group">
-                    <label for="username">Opiskelijanumero tai nimi (pakollinen)</label>
+                    <label for="username">Opiskelijanumero (pakollinen)</label>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Opiskelijanumero tai nimi">
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="courseInHighschoolOrSmtn"> Olen lukiossa tai aiemmissa opinnoissa käynyt ohjelmointikurssilla.</label>
-                </div>
 
                 <div class="checkbox">
                     <label><input type="checkbox" name="programDuringFreeTimeNowAndThen"> Ohjelmoin silloin tällöin vapaa-ajallani.</label>
-                </div>
-
-                <div class="checkbox">
-                    <label><input type="checkbox" name="ictWasOneFavouriteInPastStudies"> Tietotekniikka oli yksi lempiaineistani aiemmissa opinnoissani.</label>
                 </div>
 
                 <div class="checkbox">
@@ -41,6 +34,15 @@
                 <div class="checkbox">
                     <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Osaan nimetä useampia ohjelmointityylejä ja -paradigmoja.</label>
                 </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="hasProgrammed"> Olen ohjelmoinut joskus.</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="knowWhatOoProgrammingIs"> Olen olio-ohjelmoinut (object-oriented programming) joskus.</label>
+                </div>
+
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>

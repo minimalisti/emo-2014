@@ -3,6 +3,7 @@ package rage.emo.service;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import rage.emo.dto.PreQuestionnaire;
@@ -14,35 +15,59 @@ public class MaterialTypeService {
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
 
-    public String getMaterialType(Boolean currentDoesProgram) {
-        if (currentDoesProgram == null) {
-            currentDoesProgram = false;
-        }
-
-        Map<Boolean, Map<String, Integer>> programHabitCount = new HashMap<>();
-        programHabitCount.put(Boolean.FALSE, new HashMap<String, Integer>());
-        programHabitCount.put(Boolean.TRUE, new HashMap<String, Integer>());
-
-        for (String str : Arrays.asList("trad", "emo")) {
-            programHabitCount.get(Boolean.FALSE).put(str, 0);
-            programHabitCount.get(Boolean.TRUE).put(str, 0);
-        }
-
-        for (PreQuestionnaire preQuestionnaire : preQuestionnaireRepository.findAll()) {
-            Boolean doesProgram = preQuestionnaire.isProgramDuringFreeTimeNowAndThen();
-            if (doesProgram == null) {
-                doesProgram = false;
-            }
-
-            String type = preQuestionnaire.getAssignedMaterialType();
-            programHabitCount.get(doesProgram).put(type, programHabitCount.get(doesProgram).get(type) + 1);
-        }
-
-        if (programHabitCount.get(currentDoesProgram).get("emo")
-                > programHabitCount.get(currentDoesProgram).get("trad")) {
+    public String getMaterialType(PreQuestionnaire preQuestionnaire) {
+        if (preQuestionnaire == null) {
             return "trad";
         }
 
-        return "emo";
+        if (preQuestionnaire.isHasProgrammed() != null && !preQuestionnaire.isHasProgrammed()) {
+            // ei ole ohjelmoinut
+            Map<String, Integer> counts = new TreeMap<>();
+
+            for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
+
+                String type = pq.getAssignedMaterialType();
+                if (!counts.containsKey(type)) {
+                    counts.put(type, 0);
+                }
+
+                counts.put(type, counts.get(type) + 1);
+            }
+
+            if (counts.get("emo") > counts.get("trad")) {
+                return "trad";
+            }
+
+            return "emo";
+
+        } else {
+            // on ohjelmoinut
+
+            Map<Boolean, Map<String, Integer>> objectOrientedProg = new HashMap<>();
+            objectOrientedProg.put(Boolean.FALSE, new HashMap<String, Integer>());
+            objectOrientedProg.put(Boolean.TRUE, new HashMap<String, Integer>());
+
+            for (String str : Arrays.asList("trad", "emo")) {
+                objectOrientedProg.get(Boolean.FALSE).put(str, 0);
+                objectOrientedProg.get(Boolean.TRUE).put(str, 0);
+            }
+
+            for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
+                Boolean doesOoProgram = pq.isKnowWhatOoProgrammingIs();
+                if (doesOoProgram == null) {
+                    doesOoProgram = false;
+                }
+
+                String type = pq.getAssignedMaterialType();
+                objectOrientedProg.get(doesOoProgram).put(type, objectOrientedProg.get(doesOoProgram).get(type) + 1);
+            }
+
+            if (objectOrientedProg.get(preQuestionnaire.isKnowWhatOoProgrammingIs()).get("emo")
+                    > objectOrientedProg.get(preQuestionnaire.isKnowWhatOoProgrammingIs()).get("trad")) {
+                return "trad";
+            }
+
+            return "emo";
+        }
     }
 }

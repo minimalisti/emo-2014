@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jälkikysely</title>
+        <title>Loppukysely</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,81 @@
     <body>
 
         <div class="container">
-            <h1>Jälkikysely</h1>
+            <h2>Loppukysely</h2>
 
             <form action="/app/submit-postquestionnaire" method="POST">
-                
+
+                <div class="textarea">
+                    <label for="olioOhjelmointi">Lukemasi perusteella, kerro mitä olio-ohjelmoinnilla tarkoitetaan.</label><br/>
+                    <textarea id="olioOhjelmointi" name="olioOhjelmointi" cols="80" rows="6"></textarea>
+                </div>
+
+                <div class="textarea">
+                    <label for="hotellisuunnittelu">Minkälaisia olioita käyttäisit ohjelmassa, jonka tehtävänä olisi pitää kirjaa hotellin huonevarauksista? Anna yksi esimerkki siitä, miten nämä oliot keskustelevat keskenään?</label><br/>
+                    <textarea id="hotellisuunnittelu" name="hotellisuunnittelu" cols="80" rows="6"></textarea>
+                </div>
+
+                <hr/>
+
+                <div class="list-group">
+                    <label for="keskittyneisyys">Kuinka keskittyneesti luit oppimateriaalia? (1 - hyvin keskittyneesti, 5 - ei lainkaan keskittyneesti) </label><br/>
+                    <label><input type="radio" name="keskittyneisyys" value="1"/> 1 - hyvin keskittyneesti</label><br/>
+                    <label><input type="radio" name="keskittyneisyys" value="2"/> 2</label><br/>
+                    <label><input type="radio" name="keskittyneisyys" value="3"/> 3</label><br/>
+                    <label><input type="radio" name="keskittyneisyys" value="4"/> 4</label><br/>
+                    <label><input type="radio" name="keskittyneisyys" value="5"/> 5 - ei lainkaan keskittyneesti</label><br/>
+                </div>
+
+                <div class="list-group">
+                    <label for="ymmarrettavyys">Kuinka ymmärrettävää oppimateriaali oli? (1 - hyvin helposti ymmärrettävää, 5 - hyvin vaikeasti ymmärrettävää) </label><br/>
+                    <label><input type="radio" name="ymmarrettavyys" value="1"/> 1 - hyvin helposti ymmärrettävää</label><br/>
+                    <label><input type="radio" name="ymmarrettavyys" value="2"/> 2</label><br/>
+                    <label><input type="radio" name="ymmarrettavyys" value="3"/> 3</label><br/>
+                    <label><input type="radio" name="ymmarrettavyys" value="4"/> 4</label><br/>
+                    <label><input type="radio" name="ymmarrettavyys" value="5"/> 5 - hyvin vaikeasti ymmärrettävää</label><br/>
+                </div>
+
+                <div class="list-group">
+                    <label for="miellyttavyys">Kuinka miellyttävää oppimateriaali oli? (1 - hyvin miellyttävää, 5 - ei lainkaan miellyttävää) </label><br/>
+                    <label><input type="radio" name="miellyttavyys" value="1"/> 1 - hyvin miellyttävää</label><br/>
+                    <label><input type="radio" name="miellyttavyys" value="2"/> 2</label><br/>
+                    <label><input type="radio" name="miellyttavyys" value="3"/> 3</label><br/>
+                    <label><input type="radio" name="miellyttavyys" value="4"/> 4</label><br/>
+                    <label><input type="radio" name="miellyttavyys" value="5"/> 5 - ei lainkaan miellyttävää</label><br/>
+                </div>
+
+                <hr/>
+
+                <div class="list-group">
+                    <label for="kuvitusAuttoi">Materiaalin kuvitus auttoi ymmärtämään opittavaa asiaa. (1 - täysin samaa mieltä, 5 - täysin eri mieltä) </label><br/>
+                    <label><input type="radio" name="kuvitusAuttoi" value="1"/> 1 - täysin samaa mieltä</label><br/>
+                    <label><input type="radio" name="kuvitusAuttoi" value="2"/> 2</label><br/>
+                    <label><input type="radio" name="kuvitusAuttoi" value="3"/> 3</label><br/>
+                    <label><input type="radio" name="kuvitusAuttoi" value="4"/> 4</label><br/>
+                    <label><input type="radio" name="kuvitusAuttoi" value="5"/> 5 - täysin eri mieltä</label><br/>
+                </div>
+
+                <div class="list-group">
+                    <label for="kuvitusMiellytti">Materiaalin kuvitus oli miellyttävää. (1 - täysin samaa mieltä, 5 - täysin eri mieltä) </label><br/>
+                    <label><input type="radio" name="kuvitusMiellytti" value="1"/> 1 - täysin samaa mieltä</label><br/>
+                    <label><input type="radio" name="kuvitusMiellytti" value="2"/> 2</label><br/>
+                    <label><input type="radio" name="kuvitusMiellytti" value="3"/> 3</label><br/>
+                    <label><input type="radio" name="kuvitusMiellytti" value="4"/> 4</label><br/>
+                    <label><input type="radio" name="kuvitusMiellytti" value="5"/> 5 - täysin eri mieltä</label><br/>
+                </div>
+
+                <hr/>
+
 
                 <div class="checkbox">
-                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Ei oo viel :).</label>
+                    <label for="vapaaPalaute"><strong>Vapaata palautetta materiaalista</strong></label><br/>
+                    <textarea id="vapaaPalaute" name="vapaaPalaute" cols="80" rows="6"></textarea>
                 </div>
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
 
-                <button type="button" class="btn btn-primary" id="forwardButton">Lähetä</button>
+                <button type="button" class="btn btn-primary" id="forwardButton">Lähetä vastaukset</button>
             </form>
         </div>
 
