@@ -5,48 +5,29 @@ import javax.persistence.Entity;
 @Entity
 public class PreQuestionnaire extends AbstractSiteVisit {
 
-    private boolean knowWhatOoProgrammingIs;
-    private boolean courseInHighschoolOrSmtn;
-    private boolean programDuringFreeTimeNowAndThen;
-    private boolean ictWasOneFavouriteInPastStudies;
-    private boolean readingProgrammingRelatedContentInFreetime;
-    private boolean canNameMoreThanOneProgrammingLanguages;
-    private boolean canNameMoreThanOneProgrammingStylesAndParadigms;
-
-    private boolean hasProgrammed;
+    private Boolean hasProgrammedInThePast;
+    private Boolean hasOoProgrammedInThePast;
+    private Boolean programDuringFreeTimeNowAndThen;
+    private Boolean readingProgrammingRelatedContentInFreetime;
+    private Boolean canNameMoreThanOneProgrammingLanguages;
+    private Boolean canNameMoreThanOneProgrammingStylesAndParadigms;
 
     private String assignedMaterialType;
 
-    public Boolean isHasProgrammed() {
-        return hasProgrammed;
+    public Boolean isHasProgrammedInThePast() {
+        return hasProgrammedInThePast;
     }
 
-    public void setHasProgrammed(Boolean hasProgrammed) {
-        this.hasProgrammed = hasProgrammed;
+    public void setHasProgrammedInThePast(Boolean hasProgrammedInThePast) {
+        this.hasProgrammedInThePast = hasProgrammedInThePast;
     }
 
-    public Boolean isKnowWhatOoProgrammingIs() {
-        return knowWhatOoProgrammingIs;
+    public Boolean isHasOoProgrammedInThePast() {
+        return hasOoProgrammedInThePast;
     }
 
-    public void setKnowWhatOoProgrammingIs(Boolean knowWhatOoProgrammingIs) {
-        this.knowWhatOoProgrammingIs = knowWhatOoProgrammingIs;
-    }
-
-    public String getAssignedMaterialType() {
-        return assignedMaterialType;
-    }
-
-    public void setAssignedMaterialType(String assignedMaterialType) {
-        this.assignedMaterialType = assignedMaterialType;
-    }
-
-    public Boolean isCourseInHighschoolOrSmtn() {
-        return courseInHighschoolOrSmtn;
-    }
-
-    public void setCourseInHighschoolOrSmtn(Boolean courseInHighschoolOrSmtn) {
-        this.courseInHighschoolOrSmtn = courseInHighschoolOrSmtn;
+    public void setHasOoProgrammedInThePast(Boolean hasOoProgrammedInThePast) {
+        this.hasOoProgrammedInThePast = hasOoProgrammedInThePast;
     }
 
     public Boolean isProgramDuringFreeTimeNowAndThen() {
@@ -55,14 +36,6 @@ public class PreQuestionnaire extends AbstractSiteVisit {
 
     public void setProgramDuringFreeTimeNowAndThen(Boolean programDuringFreeTimeNowAndThen) {
         this.programDuringFreeTimeNowAndThen = programDuringFreeTimeNowAndThen;
-    }
-
-    public Boolean isIctWasOneFavouriteInPastStudies() {
-        return ictWasOneFavouriteInPastStudies;
-    }
-
-    public void setIctWasOneFavouriteInPastStudies(Boolean ictWasOneFavouriteInPastStudies) {
-        this.ictWasOneFavouriteInPastStudies = ictWasOneFavouriteInPastStudies;
     }
 
     public Boolean isReadingProgrammingRelatedContentInFreetime() {
@@ -87,6 +60,14 @@ public class PreQuestionnaire extends AbstractSiteVisit {
 
     public void setCanNameMoreThanOneProgrammingStylesAndParadigms(Boolean canNameMoreThanOneProgrammingStylesAndParadigms) {
         this.canNameMoreThanOneProgrammingStylesAndParadigms = canNameMoreThanOneProgrammingStylesAndParadigms;
+    }
+
+    public String getAssignedMaterialType() {
+        return assignedMaterialType;
+    }
+
+    public void setAssignedMaterialType(String assignedMaterialType) {
+        this.assignedMaterialType = assignedMaterialType;
     }
 
 }

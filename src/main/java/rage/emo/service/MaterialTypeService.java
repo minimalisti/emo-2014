@@ -20,7 +20,7 @@ public class MaterialTypeService {
             return "trad";
         }
 
-        if (preQuestionnaire.isHasProgrammed() != null && !preQuestionnaire.isHasProgrammed()) {
+        if (preQuestionnaire.isHasProgrammedInThePast() != null && !preQuestionnaire.isHasProgrammedInThePast()) {
             // ei ole ohjelmoinut
             Map<String, Integer> counts = new TreeMap<>();
 
@@ -53,7 +53,7 @@ public class MaterialTypeService {
             }
 
             for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
-                Boolean doesOoProgram = pq.isKnowWhatOoProgrammingIs();
+                Boolean doesOoProgram = pq.isHasOoProgrammedInThePast();
                 if (doesOoProgram == null) {
                     doesOoProgram = false;
                 }
@@ -62,8 +62,12 @@ public class MaterialTypeService {
                 objectOrientedProg.get(doesOoProgram).put(type, objectOrientedProg.get(doesOoProgram).get(type) + 1);
             }
 
-            if (objectOrientedProg.get(preQuestionnaire.isKnowWhatOoProgrammingIs()).get("emo")
-                    > objectOrientedProg.get(preQuestionnaire.isKnowWhatOoProgrammingIs()).get("trad")) {
+            if (preQuestionnaire.isHasOoProgrammedInThePast() == null) {
+                preQuestionnaire.setHasOoProgrammedInThePast(Boolean.FALSE);
+            }
+
+            if (objectOrientedProg.get(preQuestionnaire.isHasOoProgrammedInThePast()).get("emo")
+                    > objectOrientedProg.get(preQuestionnaire.isHasOoProgrammedInThePast()).get("trad")) {
                 return "trad";
             }
 
