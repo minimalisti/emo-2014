@@ -78,6 +78,25 @@ public class EmoController {
         return "redirect:/app/material-" + (id + 1);
     }
 
+    @RequestMapping(value = "/submit-material-{id}-seen-back", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitMaterialSeenBack(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute MaterialVisit materialVisit,
+            @PathVariable Integer id) {
+
+        materialVisit.setUsername((String) session.getAttribute("username"));
+        materialVisit.setSiteUrl(referer);
+
+        materialVisitRepository.save(materialVisit);
+
+        if (id == 1) {
+            return "redirect:/app/material-1";
+        }
+
+        return "redirect:/app/material-" + (id - 1);
+    }
+
     @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostQuestionnaire(HttpSession session, @ModelAttribute PostQuestionnaire postQuestionnaire) {
         System.out.println("TODO: tallenna jälkikysely");

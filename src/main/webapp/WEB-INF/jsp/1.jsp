@@ -6,10 +6,21 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
     </head>
     <body>
 
         <div class="container">
+
+            <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
+                <input type="hidden" name="visitStarted" id="visitStartedF"/>
+                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
+                <button type="button" class="btn btn-primary" id="forwardButton">Eteenpäin</button>
+            </form>
+
+
+            <div class="spacer"></div>
+
             <h3>Kommunikaatio-ongelma</h3>
 
             <img src="/img/${materialType}/kommunikaatio-ongelma.png"/>
@@ -21,26 +32,25 @@
             <p>Vuosien saatossa on kehitetty erilaisia ohjelmointikieliä, ja on myös syntynyt erilaisia tapoja ohjelmoida, niin sanottuja <strong>ohjelmointiparadigmoja</strong> (<em>programming paradigm</em>). Eri paradigmoilla on erilaisia vastauksia yllä esitettyyn "kommunikaatio-ongelmaan".</p>
 
 
-            <form action="/app/submit-material-${materialId}-seen" method="POST">
-
-                <input type="hidden" name="visitStarted" id="visitStarted"/>
-                <input type="hidden" name="visitEnded" id="visitEnded"/>
-
-                <button type="button" class="btn btn-primary" id="forwardButton">Eteenpäin</button>
-            </form>
         </div>
 
         <script src="/js/libs/jquery/jquery.js"></script>
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-
         <script>
             $(function() {
-                $("#visitStarted").val(new Date());
+                var tmpTime = new Date();
+                $("#visitStartedF").val(tmpTime);
+                $("#visitStartedB").val(tmpTime);
 
                 $("#forwardButton").click(function() {
-                    $("#visitEnded").val(new Date());
-                    $("form").submit();
+                    $("#visitEndedF").val(new Date());
+                    $("#forward").submit();
                 });
+
+                $("#backwardButton").click(function() {
+                    $("#visitEndedB").val(new Date());
+                    $("#backward").submit();
+                });                
             });
         </script>
     </body>

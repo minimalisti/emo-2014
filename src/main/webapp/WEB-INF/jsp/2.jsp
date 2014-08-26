@@ -6,10 +6,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
     </head>
     <body>
 
         <div class="container">
+            <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
+                <input type="hidden" name="visitStarted" id="visitStartedF"/>
+                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
+                <button type="button" class="btn btn-primary" id="forwardButton">Eteenp‰in</button>
+            </form>
+
+            <form action="/app/submit-material-${materialId}-seen-back" method="POST" id="backward">
+                <input type="hidden" name="visitStarted" id="visitStartedB"/>
+                <input type="hidden" name="visitEnded" id="visitEndedB"/>
+                <button type="button" class="btn btn-primary" id="backwardButton">Taaksep‰in</button>
+            </form>
+            <div class="spacer"></div>
+            
             <h3>Olio-ohjelmointi</h3>
 
             <p>Oppituokiomme keskipisteess‰ on <strong>olio-ohjelmointi</strong> (<em>object-oriented programming, OOP</em>), joka on er‰s suosittu ja mielenkiintoinen ohjelmointiparadigma. </p>
@@ -22,15 +36,10 @@
             
             <p>Tarkoituksena olio-ohjelmoinnissa on siis laatia ohjelmia, jotka ovat koneen k‰sitelt‰viss‰ mutta joiden ilmaisut muistuttavat ihmisen tapaa j‰sent‰‰ maailmaa. M‰‰ritell‰‰n k‰sitteet ja niit‰ vastaavat termit tietokoneelle!</p>
             
-            <p>Olio-ohjelmointi on pitk‰lti juuri k‰sitteiden m‰‰rittelemist‰. Ohjelmoija laatii mallin siit‰, mit‰ erilaiset ohjelman <strong>aihealueeseen</strong> (<em>domain</em>) liittyv‰t k‰sitteet ovat, ja mit‰ tietoa ja toimintoja niihin liittyy.</p>
+            <p>Olio-ohjelmointi on pitk‰lti juuri k‰sitteiden m‰‰rittelemist‰. Ohjelmoija laatii mallin siit‰, mit‰ erilaiset ohjelman <strong>aihealueeseen</strong> (<em>domain</em>) liittyv‰t k‰sitteet ovat, ja mit‰ tietoa ja toimintoja niihin liittyy.</p>
             
-            <form action="/app/submit-material-${materialId}-seen" method="POST">
 
-                <input type="hidden" name="visitStarted" id="visitStarted"/>
-                <input type="hidden" name="visitEnded" id="visitEnded"/>
-                
-                <button type="button" class="btn btn-primary" id="forwardButton">Eteenp‰in</button>
-            </form>
+
         </div>
 
         <script src="/js/libs/jquery/jquery.js"></script>
@@ -38,12 +47,19 @@
 
         <script>
             $(function() {
-                $("#visitStarted").val(new Date());
+                var tmpTime = new Date();
+                $("#visitStartedF").val(tmpTime);
+                $("#visitStartedB").val(tmpTime);
 
                 $("#forwardButton").click(function() {
-                    $("#visitEnded").val(new Date());
-                    $("form").submit();
+                    $("#visitEndedF").val(new Date());
+                    $("#forward").submit();
                 });
+
+                $("#backwardButton").click(function() {
+                    $("#visitEndedB").val(new Date());
+                    $("#backward").submit();
+                });                
             });
         </script>
     </body>
