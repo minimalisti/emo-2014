@@ -26,15 +26,14 @@
 
             <h3>Viestin lis‰tiedot eli parametrit</h3>
 
-            <p><strong>Metodiparametreilla</strong> voidaan v‰litt‰‰ oliolle lis‰tietoja siit‰, mit‰ olion tulisi tehd‰. T‰ss‰ tankattavan bensan m‰‰r‰ v‰litet‰‰n parametriksi (mik‰ on korostettu keltaisella):</p>
+            <p><strong>Metodiparametreilla</strong> voidaan v‰litt‰‰ oliolle lis‰tietoja siit‰, mit‰ olion tulisi tehd‰. T‰ss‰ tankattavan bensan m‰‰r‰ v‰litet‰‰n parametriksi (mik‰ on korostettu sinisell‰):</p>
 
-            <img src="/img/${materialType}/auto-olio-tankkaa.png"/>
+            <img style="padding-bottom: 20px;" src="/img/${materialType}/auto-olio-tankkaa.png"/>
             
             <p>Parametreiksi voi antaa erilaisia arvoja: lukuja, viittauksia toisiin olioihin ja niin edelleen.</p>
             
             <p>Parametreja voi olla yksi tai useampia. Ja voi niit‰ olla nollakin, kun viesti itsess‰‰n kertoo kaiken oleellisen kuten t‰ss‰:</p>
             
-            <p>Jotkut metodikutsut yksinkertaisesti pyyt‰v‰t oliota kertomaan tietyn tilatiedon, kuten bensan m‰‰r‰n tankissa. Toiset tekev‰t jotakin monimutkaisempaa.</p>
 
             <img src="/img/${materialType}/auto-olio-kerro-bensa.png"/>
 

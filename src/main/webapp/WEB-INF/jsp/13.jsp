@@ -26,7 +26,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Opiskelijaolio delegoi osan teht‰v‰st‰ edelleen kyseiselle kurssioliolle, joka osaa selvitt‰‰, onnistuuko ilmoittautuminen.:</p>
+            <p>Opiskelijaolio delegoi osan teht‰v‰st‰ edelleen kyseiselle kurssioliolle, joka osaa selvitt‰‰, onnistuuko ilmoittautuminen.</p>
 
             <img src="/img/${materialType}/sarjis_06.png"/>
 

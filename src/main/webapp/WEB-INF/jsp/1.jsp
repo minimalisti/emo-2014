@@ -23,7 +23,7 @@
 
             <h3>Kommunikaatio-ongelma</h3>
 
-            <img src="/img/${materialType}/kommunikaatio-ongelma.png"/>
+            <img class="kuvitus" src="/img/${materialType}/kommunikaatio-ongelma.png"/>
 
             <p>Tietokoneohjelmien on usein tarpeen käsitellä monimutkaista dataa. Halutaan, että ohjelma "tallentaa tiedoston", "ilmoittaa opiskelijan kurssille", "reagoi nappulan painallukseen", "nostaa rahaa tililtä", "valitsee pelaajan seuraavan siirron", jne.</p>
 

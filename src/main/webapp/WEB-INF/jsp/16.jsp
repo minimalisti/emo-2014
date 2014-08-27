@@ -26,7 +26,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Opiskelijaolio pit‰‰ kirjaa kursseista, joille kyseinen opiskelija on ilmoittautunut.:</p>
+            <p>Opiskelijaolio pit‰‰ kirjaa kursseista, joille kyseinen opiskelija on ilmoittautunut.</p>
 
             <img src="/img/${materialType}/sarjis_09.png"/>
             

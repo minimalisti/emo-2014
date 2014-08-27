@@ -30,9 +30,9 @@
             
             <p>Olio-ohjelmointia voidaan tarkastella eri n‰kˆkulmista. Yksi n‰ist‰ on se, ett‰ olio-ohjelmoinnissa l‰hdet‰‰n liikkeelle tavasta, jolla ihminen hahmottaa ongelmakokonaisuuksia, ja pyrit‰‰n luomaan jotain ihmisen k‰sitteistˆn kaltaista koneen k‰sitelt‰v‰ksi. Olio-ohjelmointi on t‰ss‰ mieless‰ ihmisl‰htˆist‰.</p>
 
-            <img src="/img/${materialType}/olio-ohjelmointi.png"/>
+            <img class="kuvitus" src="/img/${materialType}/olio-ohjelmointi.png"/>
             
-            <h4>Er‰s ratkaisu kommunikaatio-ongelmaan; m‰‰ritell‰‰n k‰sitteit‰ ohjelmakoodissa.</h4>
+            <p><em>Er‰s ratkaisu kommunikaatio-ongelmaan; m‰‰ritell‰‰n k‰sitteit‰ ohjelmakoodissa.</em></p>
             
             <p>Tarkoituksena olio-ohjelmoinnissa on siis laatia ohjelmia, jotka ovat koneen k‰sitelt‰viss‰ mutta joiden ilmaisut muistuttavat ihmisen tapaa j‰sent‰‰ maailmaa. M‰‰ritell‰‰n k‰sitteet ja niit‰ vastaavat termit tietokoneelle!</p>
             

@@ -26,11 +26,10 @@
             
             <p></p>
             
-            <p>Olioilla voi myös mallintaa ohjelman käyttöliittymää. Ajatellaan vaikkapa tämän näköistä käyttöliittymäikkunaa:</p>
+            <p style="padding-bottom: 10px;">Olioilla voi myös mallintaa ohjelman käyttöliittymää. Ajatellaan vaikkapa tämän näköistä käyttöliittymäikkunaa:</p>
 
-            <img src="/img/palautelomake.png"/>
+                        
             
-            <p>Tätä ikkunaa voidaan kuvata olioista koostuvalla mallilla:</p>
             
             <img src="/img/${materialType}/ikkunaolio.png"/>
             

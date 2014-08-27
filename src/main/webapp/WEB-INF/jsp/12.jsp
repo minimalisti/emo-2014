@@ -26,7 +26,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Ikkunaolio v‰litt‰‰ viestin sis‰‰n kirjautunutta k‰ytt‰j‰‰ vastaavalle opiskelijaoliolle:</p>
+            <p>Ikkunaolio v‰litt‰‰ viestin sis‰‰n kirjautunutta k‰ytt‰j‰‰ vastaavalle opiskelijaoliolle.</p>
 
             <img src="/img/${materialType}/sarjis_05.png"/>
 

@@ -26,7 +26,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Tiedotetaan onnistuminen opiskelijaoliolle, joka kurssioliota käskytti:</p>
+            <p>Tiedotetaan onnistuminen opiskelijaoliolle, joka kurssioliota käskytti.</p>
 
             <img src="/img/${materialType}/sarjis_08.png"/>
             

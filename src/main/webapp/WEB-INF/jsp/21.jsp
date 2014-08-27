@@ -11,11 +11,7 @@
     <body>
 
         <div class="container">
-            <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
-                <input type="hidden" name="visitStarted" id="visitStartedF"/>
-                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
-                <button type="button" class="btn btn-primary" id="forwardButton">Eteenpäin</button>
-            </form>
+
             <form action="/app/submit-material-${materialId}-seen-back" method="POST" id="backward">
                 <input type="hidden" name="visitStarted" id="visitStartedB"/>
                 <input type="hidden" name="visitEnded" id="visitEndedB"/>
@@ -28,12 +24,22 @@
 
             <p>Monesti olio vastaa metodikutsuun jollain tapaa eli lähettää kutsujalle jotakin vastausviestinä. Sanotaan, että metodi <strong>palauttaa arvon</strong>. Metodin palautusarvo voi olla esimerkiksi tieto toiminnon onnistumisesta tai epäonnistumisesta:</p>
             
-            <img src="/img/${materialType}/auto-olio-tankkaa-vastaus.png"/>
+            <img style="padding-bottom: 15px;" src="/img/${materialType}/auto-olio-tankkaa-vastaus.png"/>
             
             <p>Palautusarvo voi myös olla tilannetieto olion tilasta:</p>
             
-            <img src="/img/${materialType}/auto-olio-kerro-bensa-vastaus.png"/>
+            <img style="padding-bottom: 25px;" src="/img/${materialType}/auto-olio-kerro-bensa-vastaus.png"/>
 
+            <p style=" border-top: 1px solid #a7a7a7; padding-top: 10px;"><em>Oppimateriaali päättyy tähän. Ole hyvä ja vastaa vielä loppukyselyyn.</em></p>
+            
+            <p>
+            <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
+                <input type="hidden" name="visitStarted" id="visitStartedF"/>
+                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
+                <button type="button" class="btn btn-primary" id="forwardButton">Jatka loppukyselyyn</button>
+            </form>
+        </p>
+            
         </div>
 
         <script src="/js/libs/jquery/jquery.js"></script>

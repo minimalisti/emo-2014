@@ -28,7 +28,7 @@
 
             <p>Oliolle l‰hetetyt viestit aktivoivat olion metodeita. T‰llaisen viestin l‰hett‰mist‰ sanotaan <strong>metodin kutsumiseksi</strong> (<em>method call</em>, <em>method invocation</em>). T‰ss‰ kutsutaan auto-olion "aja"-nimist‰ metodia:</p>
 
-            <img src="/img/${materialType}/auto-olio-aja.png"/>
+            <img style="padding-bottom: 20px;" src="/img/${materialType}/auto-olio-aja.png"/>
             
             <p>Jotkut metodikutsut yksinkertaisesti pyyt‰v‰t oliota kertomaan tietyn tilatiedon, kuten bensan m‰‰r‰n tankissa. Toiset tekev‰t jotakin monimutkaisempaa.</p>
 

@@ -26,7 +26,7 @@
             
             <p></p>
             
-            <img src="/img/${materialType}/auto-olio.png"/>
+            <img class="" style="padding: 30px; float: left;" src="/img/${materialType}/auto-olio.png"/>
             
             <p>Yksittäistä kurssia, opiskelijaa, pankkitiliä, käyttöliittymän ikkunaa tai nappulaa vastaa olio-ohjelmassa yksi <strong>olio</strong> (<em>object</em>). Yleensä kuhunkin olioon liittyy toimintoja eli <strong>metodeja</strong> (<em>method</em>), joilla oliota voidaan hyödyntää. Esimerkiksi autoa voitaisiin kuvata oliona, jolla on metodeja kuten "aja", "lisää matkustaja", "tankkaa", "kerro bensan määrä" jne.</p>
             

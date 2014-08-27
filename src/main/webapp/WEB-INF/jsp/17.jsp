@@ -26,7 +26,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Opiskelijaolio kuittaa vielä onnistuneen ilmoittautumisen ikkunaoliolle, joka voi sitten ilmoittaa asiasta sovelluksen käyttäjälle tietokoneen ruudulla. Valmista tuli:</p>
+            <p>Opiskelijaolio kuittaa vielä onnistuneen ilmoittautumisen ikkunaoliolle, joka voi sitten ilmoittaa asiasta sovelluksen käyttäjälle tietokoneen ruudulla. Valmista tuli.</p>
 
             <img src="/img/${materialType}/sarjis_10.png"/>
             
