@@ -1553,17 +1553,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35261079"
-     inkscape:cx="1110.7349"
-     inkscape:cy="2605.4279"
+     inkscape:zoom="0.70522158"
+     inkscape:cx="-1752.8334"
+     inkscape:cy="132.52648"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1907"
-     inkscape:window-height="1077"
-     inkscape:window-x="26"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="0"
      inkscape:window-y="31"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -1729,14 +1729,14 @@
        id="rect29507"
        width="120.25916"
        height="75.016968"
-       x="-327.99222"
-       y="907.99414"
+       x="948.20239"
+       y="825.75049"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632" />
     <rect
-       y="926.1684"
-       x="23.504808"
+       y="843.92474"
+       x="1299.6995"
        height="75.016968"
        width="120.25916"
        id="rect29505"
@@ -1745,8 +1745,8 @@
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632" />
     <rect
-       y="1183.701"
-       x="-323.73868"
+       y="1101.4574"
+       x="952.45593"
        height="75.016968"
        width="120.25916"
        id="rect29499"
@@ -1759,8 +1759,8 @@
        id="rect29497"
        width="120.25916"
        height="75.016968"
-       x="-426.59698"
-       y="1040.2408"
+       x="849.59766"
+       y="957.99719"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632" />
@@ -11995,9 +11995,9 @@
     <g
        transform="translate(-415.5333,55.747089)"
        id="g13361"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
          d="m -1112.8181,332.06466 -21.6166,-0.004 c -11.6969,-0.002 -14.6557,3.87995 -15.3736,8.58192 l -5.7686,37.78012 c -0.718,4.70198 9.4113,8.58736 21.1082,8.58944 l 21.6166,0.004 c 11.6969,0.002 21.614,-3.85129 21.1189,-8.58192 l -3.9541,-37.78012 c 0,-4.75647 -5.4339,-8.58736 -17.1308,-8.58944 z"
@@ -12223,87 +12223,87 @@
        id="path13459"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssssccc"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1690.0258,536.17213 0.3006,-11.59751"
        id="path13461"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1628.4808,482.85186 c 0.4137,-3.17761 -1.6855,-6.82328 -4.6886,-8.14291 -3.0032,-1.31957 -5.7731,0.18663 -6.1869,3.36424 -0.4137,3.1776 1.6854,6.82335 4.6886,8.14291 3.0032,1.31957 5.7731,-0.18663 6.1869,-3.36424 z"
        id="path13463"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1678.5193,487.21217 4.7004,13.48409 c 1.2428,3.56535 10.5805,3.70005 20.9365,0.30212 l 4.5593,-1.49598 c 10.3559,-3.39793 17.6924,-9.0037 16.4496,-12.56905 l -4.7005,-13.48409 c -1.2428,-3.56528 -10.5805,-3.70006 -20.9364,-0.30212 l -4.5593,1.49598 c -10.3559,3.39794 -17.6925,9.00377 -16.4496,12.56905 z"
        id="path13465"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1749.4338,508.30365 c -2.909,-1.34395 -4.8744,-5.06347 -4.3898,-8.30776 0.4846,-3.24431 3.2356,-4.78485 6.1446,-3.44089 2.9089,1.34394 4.8743,5.06346 4.3897,8.30776 -0.4845,3.24431 -3.2355,4.78485 -6.1445,3.44089 z"
        id="path13467"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1717.4509,469.38037 8.8732,11.03478 c 2.3461,2.9177 -2.5349,10.82276 -10.9439,17.72434 l -3.7022,3.03848 c -8.409,6.90159 -17.0675,10.10884 -19.4137,7.19113 l -8.8731,-11.03478 c -2.3461,-2.9177 2.5349,-10.82275 10.9439,-17.72435 l 3.7022,-3.03847 c 8.409,-6.90158 17.0675,-10.10883 19.4136,-7.19113 z"
        id="path13469"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.3992238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m -1689.1066,462.13227 c 0.1138,0 0.2278,0.009 0.3413,0.009 0.065,0 0.1291,0 0.1935,0 0.1,0 0.2009,0 0.3005,0 l 0,0.0217 c 7.6143,0.3662 14.668,4.38186 19.395,9.45157 10.1322,10.7945 13.9964,25.01127 14.3375,38.65346 -0.2662,3.49913 0.5116,7.69938 -1.1664,10.73349 -6.097,3.28673 -16.8484,3.8369 -24.1775,4.60503 -1.945,0.0756 -5.0344,0.0978 -8.3886,0.11343 l 0,0.0131 c -0.3519,0 -0.6868,0 -1.0339,-0.0131 -0.034,0 -0.068,2.6e-4 -0.102,0 -3.3541,-0.0156 -6.4435,-0.0379 -8.3885,-0.11343 -7.3291,-0.76813 -18.0805,-1.3183 -24.1776,-4.60503 -1.6779,-3.03411 -0.9001,-7.23436 -1.1663,-10.73349 0.3411,-13.64219 4.2053,-27.85896 14.3374,-38.65346 4.7271,-5.06971 11.7808,-9.08537 19.395,-9.45157 l 0,-0.0307 c 0.1,0 0.2011,0 0.3005,0 z"
        id="path13471"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39324117;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1686.8492,424.37058 -3.1117,0 c -19.2501,0 -34.7475,13.0648 -34.7475,29.29327 l 0,2.02023 c 0,16.22847 15.4974,29.29326 34.7475,29.29326 l 3.1117,0 c 19.2501,0 34.7475,-13.06479 34.7475,-29.29326 l 0,-2.02023 c 0,-16.22847 -15.4974,-29.29327 -34.7475,-29.29327 z"
        id="path13473"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1672.9468,526.56574 c 7.2895,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2185,0.56214 l -17.1481,0 c -1.8623,0 -3.6268,-0.30946 -5.1931,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        id="path13475"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1706.8739,526.56574 c 7.2896,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2184,0.56214 l -17.1481,0 c -1.8624,0 -3.6269,-0.30946 -5.1932,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        id="path13477"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <g
        id="g13479"
        transform="matrix(-1,0,0,1,-1078.452,174.11718)"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <g
          transform="matrix(0.56017179,0,0,-0.56017179,599.5,280.91637)"
          id="g13481">
@@ -12329,13 +12329,13 @@
        id="path13489"
        d="m -1681.1615,466.70168 c 0,0 -1.9838,1.24772 -7.2879,1.24772 -4.9719,-1e-5 -7.1264,-1.22421 -7.1264,-1.22421"
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <text
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
        x="-1716.8953"
@@ -12353,9 +12353,9 @@
        id="path13495"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccscscsc"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <text
        xml:space="preserve"
        style="font-size:14.85511494px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
@@ -12363,18 +12363,18 @@
        y="499.03894"
        id="text13497"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632"><tspan
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775"><tspan
          style="font-size:6.47167921px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
          x="-1793.202"
          y="499.03894"
          id="tspan13499">sisältö: &quot;Lähetä&quot;</tspan></text>
     <g
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        id="g13501"
        transform="matrix(0.8700848,0,0,0.8700848,-1254.8057,634.42295)">
       <rect
@@ -12400,9 +12400,9 @@
     <g
        transform="matrix(0.36317249,0,0,0.36317249,-1714.1118,512.33218)"
        id="g13702"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          id="path4330"
          style="fill:url(#linearGradient13700);fill-rule:evenodd;stroke:#1b8012;stroke-width:1.81760001"
@@ -12420,87 +12420,87 @@
        id="path13797"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssssccc"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1642.3822,255.38195 0.3006,-11.59751"
        id="path13799"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1580.8372,202.06168 c 0.4137,-3.17761 -1.6855,-6.82328 -4.6886,-8.14291 -3.0032,-1.31957 -5.7731,0.18663 -6.1869,3.36424 -0.4137,3.1776 1.6854,6.82335 4.6886,8.14291 3.0032,1.31957 5.7731,-0.18663 6.1869,-3.36424 z"
        id="path13801"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1630.8757,206.42199 4.7004,13.48409 c 1.2428,3.56535 10.5805,3.70005 20.9365,0.30212 l 4.5593,-1.49598 c 10.3559,-3.39793 17.6924,-9.0037 16.4496,-12.56905 l -4.7005,-13.48409 c -1.2428,-3.56528 -10.5805,-3.70006 -20.9364,-0.30212 l -4.5593,1.49598 c -10.3559,3.39794 -17.6925,9.00377 -16.4496,12.56905 z"
        id="path13803"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1701.7902,227.51347 c -2.909,-1.34395 -4.8744,-5.06347 -4.3898,-8.30776 0.4846,-3.24431 3.2356,-4.78485 6.1446,-3.44089 2.9089,1.34394 4.8743,5.06346 4.3897,8.30776 -0.4845,3.24431 -3.2355,4.78485 -6.1445,3.44089 z"
        id="path13805"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1669.8073,188.59019 8.8732,11.03478 c 2.3461,2.9177 -2.5349,10.82276 -10.9439,17.72434 l -3.7022,3.03848 c -8.409,6.90159 -17.0675,10.10884 -19.4137,7.19113 l -8.8731,-11.03478 c -2.3461,-2.9177 2.5349,-10.82275 10.9439,-17.72435 l 3.7022,-3.03847 c 8.409,-6.90158 17.0675,-10.10883 19.4136,-7.19113 z"
        id="path13807"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.3992238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m -1641.463,181.34209 c 0.1138,0 0.2278,0.009 0.3413,0.009 0.065,0 0.1291,0 0.1935,0 0.1,0 0.2009,0 0.3005,0 l 0,0.0217 c 7.6143,0.3662 14.668,4.38186 19.395,9.45157 10.1322,10.7945 13.9964,25.01127 14.3375,38.65346 -0.2662,3.49913 0.5116,7.69938 -1.1664,10.73349 -6.097,3.28673 -16.8484,3.8369 -24.1775,4.60503 -1.945,0.0756 -5.0344,0.0978 -8.3886,0.11343 l 0,0.0131 c -0.3519,0 -0.6868,0 -1.0339,-0.0131 -0.034,0 -0.068,2.6e-4 -0.102,0 -3.3541,-0.0156 -6.4435,-0.0379 -8.3885,-0.11343 -7.3291,-0.76813 -18.0805,-1.3183 -24.1776,-4.60503 -1.6779,-3.03411 -0.9001,-7.23436 -1.1663,-10.73349 0.3411,-13.64219 4.2053,-27.85896 14.3374,-38.65346 4.7271,-5.06971 11.7808,-9.08537 19.395,-9.45157 l 0,-0.0307 c 0.1,0 0.2011,0 0.3005,0 z"
        id="path13809"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39324117;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        d="m -1639.2056,143.5804 -3.1117,0 c -19.2501,0 -34.7475,13.0648 -34.7475,29.29327 l 0,2.02023 c 0,16.22847 15.4974,29.29326 34.7475,29.29326 l 3.1117,0 c 19.2501,0 34.7475,-13.06479 34.7475,-29.29326 l 0,-2.02023 c 0,-16.22847 -15.4974,-29.29327 -34.7475,-29.29327 z"
        id="path13811"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1625.3032,245.77556 c 7.2895,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2185,0.56214 l -17.1481,0 c -1.8623,0 -3.6268,-0.30946 -5.1931,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        id="path13813"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m -1659.2303,245.77556 c 7.2896,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2184,0.56214 l -17.1481,0 c -1.8624,0 -3.6269,-0.30946 -5.1932,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        id="path13815"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <g
        id="g13817"
        transform="matrix(-1,0,0,1,-1030.8084,-106.673)"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <g
          transform="matrix(0.56017179,0,0,-0.56017179,599.5,280.91637)"
          id="g13819">
@@ -12526,13 +12526,13 @@
        id="path13827"
        d="m -1633.5179,185.9115 c 0,0 -1.9838,1.24772 -7.2879,1.24772 -4.9719,-1e-5 -7.1264,-1.22421 -7.1264,-1.22421"
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <text
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
        x="-1668.2469"
@@ -12550,9 +12550,9 @@
        id="path13833"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccscscsc"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <text
        xml:space="preserve"
        style="font-size:14.85511494px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
@@ -12560,9 +12560,9 @@
        y="223.40561"
        id="text13835"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632"><tspan
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775"><tspan
          style="font-size:6.47167921px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
          x="-1746.5972"
@@ -12581,9 +12581,9 @@
     <g
        transform="matrix(0.8700848,0,0,0.8700848,-1205.4438,363.64301)"
        id="g13901"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <rect
          ry="2.558249"
          y="-196.97476"
@@ -12607,9 +12607,9 @@
     <g
        id="g14170"
        transform="matrix(0.23221585,0,0,0.23221585,-1260.7797,200.32833)"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          d="m -1703.8654,26.586636 v 36.73999 36.739004 36.74201 36.74 h 33.528 33.528 33.525 33.53 v -36.74 -36.74201 -36.739004 l -33.53,-36.73999 -33.525,3e-4 h -33.528 -33.528 z"
          style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.42649001;stroke-opacity:0.36478002"
@@ -12707,9 +12707,9 @@
     <g
        id="g14932"
        transform="translate(18.046239,18.046239)"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
          d="m -1911.4539,206.15124 21.6166,-0.004 c 11.6969,-0.002 14.6557,3.87995 15.3736,8.58192 l 5.7686,37.78012 c 0.718,4.70198 -9.4113,8.58736 -21.1082,8.58944 l -21.6166,0.004 c -11.6969,0.002 -21.614,-3.85129 -21.1189,-8.58192 l 3.9541,-37.78012 c 0,-4.75647 5.4339,-8.58736 17.1308,-8.58944 z"
@@ -12913,87 +12913,87 @@
        id="path14602"
        d="m -1808.0785,364.54623 -21.6166,-0.004 c -11.6969,-0.002 -14.6557,3.87995 -15.3736,8.58192 l -5.7686,37.78012 c -0.718,4.70198 9.4113,8.58736 21.1082,8.58944 l 21.6166,0.004 c 11.6969,0.002 21.614,-3.85129 21.1189,-8.58192 l -3.9541,-37.78012 c 0,-4.75647 -5.4339,-8.58736 -17.1308,-8.58944 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14604"
        d="m -1820.2575,419.33656 0.3006,-11.59751"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14606"
        d="m -1758.7125,366.01629 c 0.4137,-3.17761 -1.6855,-6.82328 -4.6886,-8.14291 -3.0032,-1.31957 -5.7731,0.18663 -6.1869,3.36424 -0.4137,3.1776 1.6854,6.82335 4.6886,8.14291 3.0032,1.31957 5.7731,-0.18663 6.1869,-3.36424 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14608"
        d="m -1808.751,370.3766 4.7004,13.48409 c 1.2428,3.56535 10.5805,3.70005 20.9365,0.30212 l 4.5593,-1.49598 c 10.3559,-3.39793 17.6924,-9.0037 16.4496,-12.56905 l -4.7005,-13.48409 c -1.2428,-3.56528 -10.5805,-3.70006 -20.9364,-0.30212 l -4.5593,1.49598 c -10.3559,3.39794 -17.6925,9.00377 -16.4496,12.56905 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14610"
        d="m -1879.6655,391.46808 c -2.909,-1.34395 -4.8744,-5.06347 -4.3898,-8.30776 0.4846,-3.24431 3.2356,-4.78485 6.1446,-3.44089 2.9089,1.34394 4.8743,5.06346 4.3897,8.30776 -0.4845,3.24431 -3.2355,4.78485 -6.1445,3.44089 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14612"
        d="m -1847.6826,352.5448 8.8732,11.03478 c 2.3461,2.9177 -2.5349,10.82276 -10.9439,17.72434 l -3.7022,3.03848 c -8.409,6.90159 -17.0675,10.10884 -19.4137,7.19113 l -8.8731,-11.03478 c -2.3461,-2.9177 2.5349,-10.82275 10.9439,-17.72435 l 3.7022,-3.03847 c 8.409,-6.90158 17.0675,-10.10883 19.4136,-7.19113 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14614"
        d="m -1819.3383,345.2967 c 0.1138,0 0.2278,0.009 0.3413,0.009 0.065,0 0.1291,0 0.1935,0 0.1,0 0.2009,0 0.3005,0 l 0,0.0217 c 7.6143,0.3662 14.668,4.38186 19.395,9.45157 10.1322,10.7945 13.9964,25.01127 14.3375,38.65346 -0.2662,3.49913 0.5116,7.69938 -1.1664,10.73349 -6.097,3.28673 -16.8484,3.8369 -24.1775,4.60503 -1.945,0.0756 -5.0344,0.0978 -8.3886,0.11343 l 0,0.0131 c -0.3519,0 -0.6868,0 -1.0339,-0.0131 -0.034,0 -0.068,2.6e-4 -0.102,0 -3.3541,-0.0156 -6.4435,-0.0379 -8.3885,-0.11343 -7.3291,-0.76813 -18.0805,-1.3183 -24.1776,-4.60503 -1.6779,-3.03411 -0.9001,-7.23436 -1.1663,-10.73349 0.3411,-13.64219 4.2053,-27.85896 14.3374,-38.65346 4.7271,-5.06971 11.7808,-9.08537 19.395,-9.45157 l 0,-0.0307 c 0.1,0 0.2011,0 0.3005,0 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.3992238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        inkscape:connector-curvature="0"
        id="path14616"
        d="m -1817.0809,307.53501 -3.1117,0 c -19.2501,0 -34.7475,13.0648 -34.7475,29.29327 l 0,2.02023 c 0,16.22847 15.4974,29.29326 34.7475,29.29326 l 3.1117,0 c 19.2501,0 34.7475,-13.06479 34.7475,-29.29326 l 0,-2.02023 c 0,-16.22847 -15.4974,-29.29327 -34.7475,-29.29327 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39324117;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        id="path14618"
        d="m -1803.1785,409.73017 c 7.2895,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2185,0.56214 l -17.1481,0 c -1.8623,0 -3.6268,-0.30946 -5.1931,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        id="path14620"
        d="m -1837.1056,409.73017 c 7.2896,0 13.158,3.53549 13.158,7.92715 l 0,2.25809 c -1.3099,0.36409 -2.7314,0.56214 -4.2184,0.56214 l -17.1481,0 c -1.8624,0 -3.6269,-0.30946 -5.1932,-0.86703 l 0,-1.9532 c 0,-4.39166 5.8685,-7.92715 13.158,-7.92715 l 0.2437,0 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.44028687;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <g
        transform="matrix(-1,0,0,1,-1208.6837,57.281609)"
        id="g14622"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <g
          id="g14624"
          transform="matrix(0.56017179,0,0,-0.56017179,599.5,280.91637)">
@@ -13019,9 +13019,9 @@
        id="path14632"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <text
        sodipodi:linespacing="125%"
        id="text14634"
@@ -13029,9 +13029,9 @@
        x="-1852.1538"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
        xml:space="preserve"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632"><tspan
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775"><tspan
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          y="437.61002"
          x="-1852.1538"
@@ -13040,9 +13040,9 @@
     <g
        transform="matrix(0.21034761,0,0,0.21034761,-1474.4825,365.53917)"
        id="g14712"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          inkscape:connector-curvature="0"
          id="path14714"
@@ -13084,18 +13084,18 @@
          d="m -1702.8248,38.093376 -0.6052,134.694304 h 131.6769 l 0.074,-33.29456 c -2.9432,1.13336 -32.6923,-40.999594 -70.1405,-39.18681 -37.4838,1.81277 -27.785,-56.777574 -61.0054,-62.212934 z" />
     </g>
     <path
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        sodipodi:nodetypes="ccscscsc"
        inkscape:connector-curvature="0"
        id="path14638"
        d="m -1698.6157,351.34097 c -60.675,6.53019 -112.8139,-0.21066 -112.8139,-0.21066 0,0 4.6976,16.90474 4.8448,25.9102 0.2307,14.11366 -4.3834,27.17409 -4.3834,27.17409 0,0 44.5257,-4.63436 66.2119,-4.21305 21.6861,0.4213 44.5256,3.37043 44.5256,3.37043 0,0 -0.6919,-15.16693 -0.6919,-29.49126 0,-7.59517 2.3069,-22.53975 2.3069,-22.53975 z"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80624437px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        sodipodi:linespacing="125%"
        id="text14640"
        y="364.23956"
@@ -13128,9 +13128,9 @@
          style="font-size:6.47167921px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          id="tspan14710" /></text>
     <g
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        id="g14652"
        transform="matrix(0.8700848,0,0,0.8700848,-1518.4314,543.14082)">
       <rect
@@ -13154,9 +13154,9 @@
            y="-179.70657">lisää sisältöä</tspan></text>
     </g>
     <path
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        style="fill:#878787;fill-opacity:1;stroke:none"
        d="m -1713.1465,249.10394 c -0.022,0.16393 0.019,0.33728 0.1275,0.47986 l 3.3625,0.45236 c -0.087,0.0943 -0.1463,0.21524 -0.1671,0.35257 l -16.4919,108.63306 c -0.054,0.35471 0.2007,0.68135 0.5562,0.72922 l 1.4578,0.19614 c 0.3555,0.0478 0.6754,-0.20167 0.7292,-0.55623 l 16.4919,-108.63307 c 0.021,-0.13711 -0.01,-0.27029 -0.068,-0.38426 l 3.3703,0.4534 c 0.2852,-0.21756 0.3399,-0.62399 0.1223,-0.90921 l -3.6088,-4.73073 c -0.2175,-0.28514 -0.624,-0.33993 -0.9092,-0.12237 l -4.7229,3.60987 c -0.1426,0.10878 -0.089,0.38919 -0.2494,0.42929 z"
        id="path14756"
@@ -13168,13 +13168,13 @@
        id="path14758"
        d="m -1747.3578,473.72608 c -0.02,-0.16403 -0.1028,-0.3218 -0.244,-0.43243 l -3.3682,0.40706 c 0.061,-0.11327 0.08,-0.24443 0.073,-0.38327 l -3.7777,-79.36978 c -0.017,-0.35832 -0.3655,-0.60904 -0.7216,-0.56605 l -1.4603,0.17647 c -0.3561,0.043 -0.5831,0.3634 -0.5661,0.7216 l 3.7777,79.3698 c 0.01,0.13865 0.077,0.25923 0.1619,0.35494 l -3.3761,0.40804 c -0.2214,0.28224 -0.1721,0.68943 0.1101,0.91078 l 4.6817,3.67214 c 0.2822,0.22136 0.6894,0.17221 0.9108,-0.11003 l 3.6643,-4.6808 c 0.1106,-0.14114 -0.017,-0.40924 0.1338,-0.47815 z"
        style="fill:#878787;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
-       inkscape:export-ydpi="120.03632"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
        style="fill:#878787;fill-opacity:1;stroke:none"
        d="m -1659.4269,391.41892 c -0.1653,-0.002 -0.3325,0.0595 -0.4609,0.18485 l -0.04,3.39249 c -0.1042,-0.0752 -0.2314,-0.11769 -0.3703,-0.1226 l -46.2533,-1.63454 c -0.3585,-0.0127 -0.6518,0.28211 -0.6562,0.64078 l -0.018,1.4708 c 0,0.35861 0.2824,0.64353 0.6408,0.6562 l 46.2533,1.63455 c 0.1385,0.005 0.2671,-0.0423 0.3732,-0.11379 l -0.04,3.40047 c 0.2506,0.2566 0.6607,0.26147 0.9173,0.0109 l 4.2568,-4.15727 c 0.2566,-0.2506 0.2616,-0.66072 0.011,-0.91734 l -4.1574,-4.24891 c -0.1254,-0.12816 -0.4736,-0.031 -0.4564,-0.19563 z"
        id="path14760"
@@ -13183,9 +13183,9 @@
     <g
        id="g14868"
        transform="translate(-17.499383,8.202836)"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632">
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775">
       <path
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
          d="m -1444.5942,246.2205 -21.6166,-0.004 c -11.6969,-0.002 -14.6557,3.87995 -15.3736,8.58192 l -5.7686,37.78012 c -0.718,4.70198 9.4113,8.58736 21.1082,8.58944 l 21.6166,0.004 c 11.6969,0.002 21.614,-3.85129 21.1189,-8.58192 l -3.9541,-37.78012 c 0,-4.75647 -5.4339,-8.58736 -17.1308,-8.58944 z"
@@ -13460,18 +13460,18 @@
        id="path14928"
        d="m -1597.7443,296.58341 c -0.1507,0.068 -0.2764,0.19424 -0.3398,0.36205 l 1.3952,3.09255 c -0.1262,-0.0241 -0.2637,-0.018 -0.3875,0.0451 l -108.4485,55.23705 c -0.3197,0.16284 -0.472,0.53088 -0.3246,0.85783 l 0.6048,1.34087 c 0.147,0.32714 0.5382,0.48731 0.8578,0.32452 l 108.4486,-55.23705 c 0.1235,-0.0629 0.2243,-0.1511 0.2903,-0.26067 l 1.3986,3.09982 c 0.3354,0.12692 0.7092,-0.0418 0.8361,-0.37724 l 2.105,-5.56527 c 0.1269,-0.33548 -0.042,-0.70942 -0.3774,-0.83627 l -5.5621,-2.09766 c -0.1677,-0.0633 -0.44,0.17073 -0.4962,0.0152 z"
        style="fill:#878787;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <path
        sodipodi:nodetypes="cccssssssccssccsc"
        inkscape:connector-curvature="0"
        id="path14930"
        d="m -1761.6492,345.87297 c -0.033,-0.16203 -0.129,-0.3122 -0.2784,-0.41109 l -3.3239,0.68029 c 0.051,-0.11769 0.064,-0.25097 0.042,-0.38793 l -13.0958,-80.39233 c -0.058,-0.35409 -0.4139,-0.5773 -0.7654,-0.50536 l -1.441,0.29492 c -0.3515,0.0719 -0.5631,0.4114 -0.5054,0.76535 l 13.0959,80.39234 c 0.022,0.13677 0.098,0.25192 0.1908,0.34043 l -3.3316,0.68188 c -0.1976,0.29935 -0.1154,0.70111 0.184,0.89877 l 4.9655,3.27826 c 0.2993,0.19755 0.7011,0.11546 0.8987,-0.18389 l 3.2706,-4.96393 c 0.099,-0.14968 0.094,-0.32232 0.094,-0.48748 z"
        style="fill:#878787;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkuna_olio.png"
-       inkscape:export-xdpi="120.03632"
-       inkscape:export-ydpi="120.03632" />
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775" />
     <g
        id="g16305"
        transform="translate(-1997.7761,-2864.4166)">
@@ -16592,7 +16592,7 @@
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
-       transform="matrix(0.8700848,0,0,0.8700848,101.77955,1127.0914)"
+       transform="matrix(0.8700848,0,0,0.8700848,1377.9742,1044.8477)"
        id="g29177">
       <rect
          ry="2.558249"
@@ -16620,53 +16620,53 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        sodipodi:linespacing="125%"
        id="text29185"
-       y="923.39203"
-       x="-314.8049"
+       y="841.14838"
+       x="961.38971"
        style="font-size:15.56605721px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
        xml:space="preserve"><tspan
-         y="923.39203"
-         x="-314.8049"
+         y="841.14838"
+         x="961.38971"
          id="tspan29187"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">nimi: T. Teekkari</tspan><tspan
          id="tspan29189"
-         y="931.86877"
-         x="-314.8049"
+         y="849.62512"
+         x="961.38971"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">op.nro: 123456</tspan><tspan
          id="tspan29191"
-         y="940.34552"
-         x="-314.8049"
+         y="858.10187"
+         x="961.38971"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">koul. ohj.: T</tspan><tspan
          id="tspan29193"
-         y="948.82227"
-         x="-314.8049"
+         y="866.57861"
+         x="961.38971"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">kurssit: kurssiolio@621</tspan><tspan
          id="tspan29195"
-         y="957.29907"
-         x="-314.8049"
+         y="875.05542"
+         x="961.38971"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /><tspan
          id="tspan29197"
-         y="965.77582"
-         x="-314.8049"
+         y="883.53217"
+         x="961.38971"
          sodipodi:role="line"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /></text>
     <text
        sodipodi:linespacing="125%"
        id="text29199"
-       y="995.64655"
-       x="-306.62241"
+       y="913.40289"
+       x="969.5722"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632"><tspan
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-         y="995.64655"
-         x="-306.62241"
+         y="913.40289"
+         x="969.5722"
          id="tspan29201"
          sodipodi:role="line">opiskelijaolio</tspan></text>
     <g
@@ -16674,7 +16674,7 @@
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        id="g29233"
-       transform="matrix(0.8700848,0,0,0.8700848,0.28321668,1257.3094)">
+       transform="matrix(0.8700848,0,0,0.8700848,1276.4779,1175.0657)">
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.57385087;stroke-opacity:1"
          id="rect29235"
@@ -16701,55 +16701,55 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:15.56605721px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
-       x="-406.48923"
-       y="1056.3169"
+       x="869.70538"
+       y="974.07324"
        id="text29241"
        sodipodi:linespacing="125%"><tspan
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-406.48923"
-         y="1056.3169"
+         x="869.70538"
+         y="974.07324"
          id="tspan29243">nimi: O. Opiskelija</tspan><tspan
          id="tspan29245"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-406.48923"
-         y="1064.7936">op.nro: 654321</tspan><tspan
+         x="869.70538"
+         y="982.55005">op.nro: 654321</tspan><tspan
          id="tspan29247"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-406.48923"
-         y="1073.2704">koul. ohj.: Tf</tspan><tspan
+         x="869.70538"
+         y="991.02673">koul. ohj.: Tf</tspan><tspan
          id="tspan29249"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-406.48923"
-         y="1081.7471">kurssit: kurssiolio@621</tspan><tspan
+         x="869.70538"
+         y="999.50354">kurssit: kurssiolio@621</tspan><tspan
          id="tspan29251"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-406.48923"
-         y="1090.2239" /></text>
+         x="869.70538"
+         y="1007.9802" /></text>
     <text
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-       x="-403.45367"
-       y="1131.6648"
+       x="872.74097"
+       y="1049.4211"
        id="text29253"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan29255"
-         x="-403.45367"
-         y="1131.6648"
+         x="872.74097"
+         y="1049.4211"
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">opiskelijaolio</tspan></text>
     <g
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
-       transform="matrix(0.8700848,0,0,0.8700848,106.8357,1402.7759)"
+       transform="matrix(0.8700848,0,0,0.8700848,1383.0303,1320.5322)"
        id="g29285">
       <rect
          ry="2.558249"
@@ -16777,33 +16777,33 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        sodipodi:linespacing="125%"
        id="text29293"
-       y="1201.8068"
-       x="-307.58237"
+       y="1119.5631"
+       x="968.61224"
        style="font-size:14.66948414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
        xml:space="preserve"><tspan
          id="tspan29295"
-         y="1201.8068"
-         x="-307.58237"
+         y="1119.5631"
+         x="968.61224"
          sodipodi:role="line"
          style="font-size:6.39080858px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">nimi:  I. Innokas</tspan><tspan
          id="tspan29297"
-         y="1209.7953"
-         x="-307.58237"
+         y="1127.5516"
+         x="968.61224"
          sodipodi:role="line"
          style="font-size:6.39080858px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">op.nro: 833832</tspan><tspan
          id="tspan29299"
-         y="1217.7838"
-         x="-307.58237"
+         y="1135.5402"
+         x="968.61224"
          sodipodi:role="line"
          style="font-size:6.39080858px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">koul. ohj.: Tu</tspan><tspan
          id="tspan29301"
-         y="1225.7722"
-         x="-307.58237"
+         y="1143.5287"
+         x="968.61224"
          sodipodi:role="line"
          style="font-size:6.39080858px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">kurssit: kurssioliot@621 ja @43</tspan><tspan
          id="tspan29303"
-         y="1233.7607"
-         x="-307.58237"
+         y="1151.5172"
+         x="968.61224"
          sodipodi:role="line"
          style="font-size:6.39080858px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /></text>
     <text
@@ -16812,51 +16812,51 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:15.56605721px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
-       x="55.46077"
-       y="956.88391"
+       x="1331.6554"
+       y="874.64026"
        id="text29351"
        sodipodi:linespacing="125%"><tspan
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="55.46077"
-         y="956.88391"
+         x="1331.6554"
+         y="874.64026"
          id="tspan29353">nimi: J. Sorva</tspan><tspan
          id="tspan29355"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="55.46077"
-         y="965.36066">ammatti: opettaja, </tspan><tspan
+         x="1331.6554"
+         y="883.117">ammatti: opettaja, </tspan><tspan
          id="tspan29357"
          style="font-size:6.78140354px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="55.46077"
-         y="973.8374">tutkija</tspan></text>
+         x="1331.6554"
+         y="891.59375">tutkija</tspan></text>
     <text
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-       x="55.560875"
-       y="1016.1616"
+       x="1331.7555"
+       y="933.91797"
        id="text29359"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan29361"
-         x="55.560875"
-         y="1016.1616"
+         x="1331.7555"
+         y="933.91797"
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">ihmisolio</tspan></text>
     <path
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        id="path29367"
-       d="m -160.98287,1044.5603 c 1.97074,2.5267 6.03995,3.594 9.08882,2.3838 3.04888,-1.2103 3.92288,-4.2397 1.95213,-6.7664 -1.97074,-2.5268 -6.03995,-3.5941 -9.08882,-2.3838 -3.04888,1.2102 -3.92288,4.2396 -1.95213,6.7664 z"
+       d="m 1115.2118,962.31665 c 1.9707,2.5267 6.0399,3.594 9.0888,2.3838 3.0489,-1.2103 3.9229,-4.2397 1.9521,-6.7664 -1.9707,-2.5268 -6.0399,-3.5941 -9.0888,-2.3838 -3.0489,1.2102 -3.9229,4.2396 -1.9521,6.7664 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
        inkscape:connector-curvature="0" />
     <rect
-       y="982.62445"
-       x="-167.13109"
+       y="900.3808"
+       x="1109.0636"
        height="75.016968"
        width="120.25916"
        id="rect29503"
@@ -16870,38 +16870,38 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        sodipodi:linespacing="125%"
        id="text29397"
-       y="995.26208"
-       x="-142.88762"
+       y="913.01843"
+       x="1133.307"
        style="font-size:14.59480095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
        xml:space="preserve"><tspan
-         y="995.26208"
-         x="-142.88762"
+         y="913.01843"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          id="tspan29399">koodi:  CSE-A1110        op: 5</tspan><tspan
          id="tspan29401"
-         y="1003.21"
-         x="-142.88762"
+         y="920.96625"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">nimi: “Ohjelmointi 1”</tspan><tspan
          id="tspan29403"
-         y="1011.1577"
-         x="-142.88762"
+         y="928.91412"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">opettaja: ihmisolio@2937</tspan><tspan
          id="tspan29405"
-         y="1019.1056"
-         x="-142.88762"
+         y="936.86194"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">ilmoittautuneet: ...</tspan><tspan
          id="tspan29407"
-         y="1027.0535"
-         x="-142.88762"
+         y="944.80981"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">esitieto: kurssiolio@43</tspan><tspan
          id="tspan29409"
-         y="1035.0013"
-         x="-142.88762"
+         y="952.75769"
+         x="1133.307"
          sodipodi:role="line"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /></text>
     <g
@@ -16909,7 +16909,7 @@
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        id="g29411"
-       transform="matrix(0.8700848,0,0,0.8700848,253.42164,1201.1363)">
+       transform="matrix(0.8700848,0,0,0.8700848,1529.6163,1118.8926)">
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.57385087;stroke-opacity:1"
          id="rect29413"
@@ -16936,15 +16936,15 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m -99.886581,1215.4752 c 1.97074,2.5268 6.03995,3.594 9.08882,2.3838 3.04888,-1.2102 3.92288,-4.2396 1.95213,-6.7664 -1.97074,-2.5268 -6.03995,-3.594 -9.08882,-2.3838 -3.048879,1.2102 -3.922879,4.2397 -1.95213,6.7664 z"
+       d="m 1176.3081,1133.2315 c 1.9707,2.5268 6.0399,3.594 9.0888,2.3838 3.0489,-1.2102 3.9229,-4.2396 1.9521,-6.7664 -1.9707,-2.5268 -6.0399,-3.594 -9.0888,-2.3838 -3.0489,1.2102 -3.9229,4.2397 -1.9521,6.7664 z"
        id="path29423" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect29501"
        width="120.25916"
        height="75.016968"
-       x="-117.63536"
-       y="1180.6074"
+       x="1158.5593"
+       y="1098.3638"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632" />
@@ -16954,50 +16954,50 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:14.59480095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
-       x="-101.1256"
-       y="1190.1516"
+       x="1175.0691"
+       y="1107.908"
        id="text29453"
        sodipodi:linespacing="125%"><tspan
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1190.1516"
+         x="1175.0691"
+         y="1107.908"
          id="tspan29455">koodi:  SCI-A0000             op: 2</tspan><tspan
          id="tspan29457"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1198.0994">nimi: “Johdatus opiskeluun”</tspan><tspan
+         x="1175.0691"
+         y="1115.8558">nimi: “Johdatus opiskeluun”</tspan><tspan
          id="tspan29459"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1206.0472">opettaja: ihmisolio@4238</tspan><tspan
+         x="1175.0691"
+         y="1123.8036">opettaja: ihmisolio@4238</tspan><tspan
          id="tspan29461"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1213.9951">ilmoittautuneet: ...</tspan><tspan
+         x="1175.0691"
+         y="1131.7515">ilmoittautuneet: ...</tspan><tspan
          id="tspan29463"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1221.943">esitieto: ei ole</tspan><tspan
+         x="1175.0691"
+         y="1139.6993">esitieto: ei ole</tspan><tspan
          id="tspan29465"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1229.8907" /><tspan
+         x="1175.0691"
+         y="1147.6472" /><tspan
          id="tspan29467"
          style="font-size:6.35827255px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
          sodipodi:role="line"
-         x="-101.1256"
-         y="1237.8386" /></text>
+         x="1175.0691"
+         y="1155.595" /></text>
     <g
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
-       transform="matrix(0.8700848,0,0,0.8700848,308.33096,1400.2126)"
+       transform="matrix(0.8700848,0,0,0.8700848,1584.5256,1317.9689)"
        id="g29469">
       <rect
          ry="2.558249"
@@ -17025,14 +17025,14 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-       x="-144.55499"
-       y="1071.1743"
+       x="1131.6396"
+       y="988.93066"
        id="text29477"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan29479"
-         x="-144.55499"
-         y="1071.1743"
+         x="1131.6396"
+         y="988.93066"
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">kurssiolio</tspan></text>
     <path
        inkscape:export-ydpi="120.03632"
@@ -17041,14 +17041,14 @@
        sodipodi:nodetypes="sccssssssccssccs"
        inkscape:connector-curvature="0"
        id="path29487"
-       d="m -172.85527,1062.0307 c -0.0693,0.1503 -0.0817,0.3278 -0.0197,0.496 l 3.0811,1.4205 c -0.11083,0.065 -0.20633,0.1616 -0.26336,0.2879 l -56.7027,125.5435 c -0.14764,0.3268 -0.008,0.7104 0.31741,0.8604 l 1.33588,0.6159 c 0.32571,0.1501 0.71298,0.01 0.86043,-0.3174 l 56.7027,-125.5435 c 0.057,-0.1263 0.0707,-0.261 0.0479,-0.3872 l 3.08828,1.4237 c 0.33648,-0.1242 0.50823,-0.4966 0.38409,-0.8331 l -2.05932,-5.5824 c -0.12414,-0.3365 -0.49662,-0.5082 -0.83313,-0.384 l -5.57518,2.0626 c -0.16824,0.062 -0.29513,0.1868 -0.3644,0.3371 z"
+       d="m 1103.3394,979.78705 c -0.069,0.1503 -0.082,0.3278 -0.02,0.496 l 3.0811,1.4205 c -0.1109,0.065 -0.2064,0.1616 -0.2634,0.2879 l -56.7027,125.54345 c -0.1476,0.3268 -0.01,0.7104 0.3174,0.8604 l 1.3359,0.6159 c 0.3257,0.1501 0.713,0.01 0.8604,-0.3174 l 56.7027,-125.54345 c 0.057,-0.1263 0.071,-0.261 0.048,-0.3872 l 3.0883,1.4237 c 0.3365,-0.1242 0.5082,-0.4966 0.3841,-0.8331 l -2.0593,-5.5824 c -0.1242,-0.3365 -0.4966,-0.5082 -0.8332,-0.384 l -5.5751,2.0626 c -0.1683,0.062 -0.2952,0.1868 -0.3644,0.3371 z"
        style="fill:#878787;fill-opacity:1;stroke:none" />
     <path
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        style="fill:#878787;fill-opacity:1;stroke:none"
-       d="m -172.35829,1000.1516 c -0.12614,-0.1071 -0.29373,-0.16688 -0.47247,-0.15234 l -2.19653,2.58574 c -0.0324,-0.1241 -0.10118,-0.241 -0.20648,-0.331 l -37.4332,-31.98765 c -0.27267,-0.23301 -0.68189,-0.19896 -0.9141,0.0744 l -0.95234,1.1211 c -0.23221,0.27336 -0.19827,0.68108 0.0744,0.91409 l 37.4332,31.98766 c 0.1055,0.09 0.23241,0.1382 0.36009,0.1502 l -2.20165,2.5918 c 0.0291,0.3575 0.34169,0.623 0.69918,0.5939 l 5.93049,-0.4827 c 0.35748,-0.029 0.62302,-0.3417 0.59393,-0.6992 l -0.48781,-5.9244 c -0.0146,-0.1788 -0.10059,-0.3345 -0.22671,-0.4416 z"
+       d="m 1103.8363,917.90795 c -0.1261,-0.1071 -0.2937,-0.16688 -0.4724,-0.15234 l -2.1966,2.58574 c -0.032,-0.1241 -0.1011,-0.241 -0.2064,-0.331 l -37.4332,-31.98765 c -0.2727,-0.23301 -0.6819,-0.19896 -0.9141,0.0744 l -0.9524,1.1211 c -0.2322,0.27336 -0.1982,0.68108 0.074,0.91409 l 37.4332,31.98766 c 0.1055,0.09 0.2324,0.1382 0.3601,0.1502 l -2.2016,2.5918 c 0.029,0.3575 0.3417,0.623 0.6991,0.5939 l 5.9305,-0.4827 c 0.3575,-0.029 0.6231,-0.3417 0.594,-0.6992 l -0.4878,-5.9244 c -0.015,-0.1788 -0.1006,-0.3345 -0.2268,-0.4416 z"
        id="path29489"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sccssssssccssccs" />
@@ -17059,14 +17059,14 @@
        sodipodi:nodetypes="cccssssssccssccsc"
        inkscape:connector-curvature="0"
        id="path29491"
-       d="m -175.0041,1023.722 c -0.16509,0.012 -0.32663,0.086 -0.4442,0.2216 l 0.23878,3.3844 c -0.10999,-0.066 -0.24186,-0.111 -0.37913,-0.092 l -137.00666,18.9217 c -0.35531,0.049 -0.62649,0.3348 -0.60125,0.6926 l 0.10353,1.4673 c 0.0252,0.3578 0.33725,0.6504 0.69253,0.6013 l 137.00666,-18.9218 c 0.13728,-0.019 0.26279,-0.064 0.36243,-0.1445 l 0.23933,3.3923 c 0.27084,0.2351 0.67995,0.2062 0.91511,-0.065 l 3.90083,-4.4931 c 0.23514,-0.2708 0.20626,-0.6799 -0.0646,-0.9151 l -4.49248,-3.8929 c -0.13542,-0.1176 -0.54492,-0.3051 -0.47091,-0.157 z"
+       d="m 1101.1905,941.47835 c -0.1651,0.012 -0.3266,0.086 -0.4442,0.2216 l 0.2388,3.3844 c -0.11,-0.066 -0.2418,-0.111 -0.3791,-0.092 l -137.00667,18.9217 c -0.35531,0.049 -0.62649,0.3348 -0.60125,0.6926 l 0.10353,1.4673 c 0.0252,0.3578 0.33725,0.6504 0.69253,0.6013 l 137.00666,-18.9218 c 0.1373,-0.019 0.2628,-0.064 0.3624,-0.1445 l 0.2394,3.3923 c 0.2708,0.2351 0.6799,0.2062 0.9151,-0.065 l 3.9008,-4.4931 c 0.2351,-0.2708 0.2063,-0.6799 -0.065,-0.9151 l -4.4925,-3.8929 c -0.1354,-0.1176 -0.5449,-0.3051 -0.4709,-0.157 z"
        style="fill:#878787;fill-opacity:1;stroke:none" />
     <path
        inkscape:export-ydpi="120.03632"
        inkscape:export-xdpi="120.03632"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        style="fill:#878787;fill-opacity:1;stroke:none"
-       d="m 12.873254,970.15329 c -0.148539,0.073 -0.270094,0.2029 -0.32799,0.37263 l 1.496165,3.04505 c -0.126758,-0.0197 -0.261823,-0.005 -0.38592,0.0575 l -68.102602,34.09573 c -0.320739,0.1606 -0.454218,0.5461 -0.296058,0.868 l 0.648691,1.3203 c 0.158158,0.3219 0.547284,0.4566 0.868018,0.296 l 68.102601,-34.09572 c 0.123903,-0.062 0.219416,-0.15805 0.281292,-0.27038 l 1.499653,3.05215 c 0.339471,0.11579 0.707591,-0.0651 0.82337,-0.40455 l 1.92078,-5.63154 c 0.115784,-0.33947 -0.06509,-0.70759 -0.404561,-0.82338 l -5.628059,-1.91367 c -0.169735,-0.0579 -0.49538,0.1974 -0.49538,0.0319 z"
+       d="m 1289.0679,887.90964 c -0.1485,0.073 -0.2701,0.2029 -0.328,0.37263 l 1.4962,3.04505 c -0.1268,-0.0197 -0.2619,-0.005 -0.386,0.0575 l -68.1026,34.09573 c -0.3207,0.1606 -0.4542,0.5461 -0.296,0.868 l 0.6487,1.3203 c 0.1581,0.3219 0.5473,0.4566 0.868,0.296 l 68.1026,-34.09572 c 0.1239,-0.062 0.2194,-0.15805 0.2813,-0.27038 l 1.4996,3.05215 c 0.3395,0.11579 0.7076,-0.0651 0.8234,-0.40455 l 1.9208,-5.63154 c 0.1158,-0.33947 -0.065,-0.70759 -0.4046,-0.82338 l -5.628,-1.91367 c -0.1698,-0.0579 -0.4954,0.1974 -0.4954,0.0319 z"
        id="path29493"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccssssssccssccsc" />
@@ -17077,21 +17077,21 @@
        sodipodi:nodetypes="cccssssssccssccsc"
        inkscape:connector-curvature="0"
        id="path29495"
-       d="m -50.303895,1171.3608 c -0.01435,-0.1649 -0.09183,-0.3251 -0.228955,-0.4404 l -3.379917,0.2949 c 0.06414,-0.111 0.09025,-0.2421 0.08589,-0.3805 l -3.809189,-120.3107 c -0.01134,-0.3585 -0.345106,-0.6208 -0.702432,-0.5897 l -1.465423,0.1279 c -0.357342,0.031 -0.601025,0.3439 -0.58966,0.7025 l 3.8092,120.3106 c 0.0044,0.1384 0.06771,0.2618 0.150468,0.36 l -3.387802,0.2956 c -0.230624,0.2747 -0.19494,0.6834 0.07976,0.9139 l 4.557199,3.8257 c 0.274701,0.2306 0.68331,0.1949 0.913925,-0.08 l 3.817741,-4.5565 c 0.115301,-0.1374 0.257733,-0.3486 0.149201,-0.4735 z"
+       d="m 1225.8907,1089.1171 c -0.014,-0.1649 -0.092,-0.3251 -0.2289,-0.4404 l -3.3799,0.2949 c 0.064,-0.111 0.09,-0.2421 0.086,-0.3805 l -3.8092,-120.31065 c -0.011,-0.3585 -0.3451,-0.6208 -0.7025,-0.5897 l -1.4654,0.1279 c -0.3573,0.031 -0.601,0.3439 -0.5896,0.7025 l 3.8092,120.31055 c 0,0.1384 0.068,0.2618 0.1504,0.36 l -3.3878,0.2956 c -0.2306,0.2747 -0.1949,0.6834 0.08,0.9139 l 4.5572,3.8257 c 0.2747,0.2306 0.6833,0.1949 0.9139,-0.08 l 3.8177,-4.5565 c 0.1154,-0.1374 0.2578,-0.3486 0.1493,-0.4735 z"
        style="fill:#878787;fill-opacity:1;stroke:none" />
     <text
        sodipodi:linespacing="125%"
        id="text29509"
-       y="1273.3004"
-       x="-302.36887"
+       y="1191.0568"
+       x="973.82574"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        inkscape:export-xdpi="120.03632"
        inkscape:export-ydpi="120.03632"><tspan
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-         y="1273.3004"
-         x="-302.36887"
+         y="1191.0568"
+         x="973.82574"
          id="tspan29511"
          sodipodi:role="line">opiskelijaolio</tspan></text>
     <text
@@ -17100,14 +17100,14 @@
        inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/opiskelijaoliot-kurssit.png"
        xml:space="preserve"
        style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
-       x="-96.265549"
-       y="1273.3004"
+       x="1179.9291"
+       y="1191.0568"
        id="text29513"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan29515"
-         x="-96.265549"
-         y="1273.3004"
+         x="1179.9291"
+         y="1191.0568"
          style="font-size:12px;font-weight:bold;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">opiskelijaolio</tspan></text>
     <text
        xml:space="preserve"
@@ -44380,6 +44380,456 @@
          x="3261.9561"
          id="tspan11145"
          sodipodi:role="line">10</tspan></text>
+    <image
+       y="1079.7466"
+       x="-2204.1865"
+       id="image11746"
+       xlink:href="data:image/png;base64,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
+SUVORK5CYII=
+"
+       height="221.09055"
+       width="183.86224"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/trad/ikkunaolio.png"
+       inkscape:export-xdpi="120.03632"
+       inkscape:export-ydpi="120.03632" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text11749"
+       y="313.8331"
+       x="-2087.574"
+       style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-ydpi="100.10775"><tspan
+         style="font-size:14px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         y="313.8331"
+         x="-2087.574"
+         id="tspan11751"
+         sodipodi:role="line">Tätä ikkunaa voidaan kuvata </tspan><tspan
+         style="font-size:14px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         y="331.3331"
+         x="-2087.574"
+         sodipodi:role="line"
+         id="tspan11757">olioista koostuvalla mallilla</tspan><tspan
+         style="font-size:14px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         y="348.8331"
+         x="-2087.574"
+         sodipodi:role="line"
+         id="tspan11753" /><tspan
+         style="font-size:14px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         y="366.3331"
+         x="-2087.574"
+         sodipodi:role="line"
+         id="tspan11755" /></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect11759"
+       width="23.061483"
+       height="23.061483"
+       x="-1895.0524"
+       y="1135.663"
+       transform="translate(61.399994,-196.32274)" />
+    <image
+       inkscape:export-ydpi="100.10775"
+       inkscape:export-xdpi="100.10775"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       width="183.86224"
+       height="221.09055"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAAEjCAYAAAAIfVyaAAAABHNCSVQICAgIfAhkiAAAIABJREFU
+eJztnXuYFNWd97+nuufCRWbCKCK3IAtEDURBJCsT3cTVESJu8A0IZGNk340MokkGvLxCyGo2Bn00
+4rjqAJqsxDcXUXxDno0vBFA3PuIaVIzKoi/CaILIZVRmxgnMTHfXef+oS5+qruqq7umhe4rvh6eY
+qnM/p+pbv3NOnaoWUkoJQkifRit2AQghPYdCJiQCxLN5Llu2DE//buuJKgshJAuXf/lCPPjgg55+
+wm+MPH7iFMSFxJKlN+Gb3/xG4UrDEblNqTRFuSZRv2gRHlnTdMLyXLP2ESyqX3hC8np06fW4btXq
+E5JXobn2isux7v9uxWOP/xr3r7oPSSmw561XM8J5WuShI0bjxyvvwqzZ89DaCez7pOeXnJSAcDuK
+rIcFo2CCkVkPe5KUp6dfGGn5ucsTEE9FKDujq4HWTqC9S+JYlx4iNrKerKDzWFmm4XgCOJ4UaD+e
+DJdfnvQr06Ankmjduw8de94GAMQEIMxCxuzySlsMGqwxpw7N9A9zbUqPcBKAFIBupmydO938mwIA
+COiwwhjnMSWB/qNGQ9dT6OgGLvmH+fgfV8/Hxg1PYOiI0Tj0wfuOfDKEPH7iFPz4xysxfdY8HOwI
+UfowWCI2a6lWVrh2Cilm64LucZquhHqSbmBc82rwvShkZpsBaRFbzqqY/dICAJHv3cgrUXfaeSZd
+aGRKAroOJBMADPFoADQBpKDbYtZNNx1p8epm2LDN5BVOBxyNYYnYOmeWiKXUbJEDgJ5MIWUeHE8C
+xzuA6bPmAVJi/MQpDsvsEPKNN96IuJCYNWd+QUQsrMIKD/Eqbn4iLwlcF2yvWWELoYSTmYKUwuku
+AUjzZAsrriJ2XQnn1bZelj00AYrNonWk9JCWvwDoyQR0XUeyuxuAYYV1ANCM8qUsN/OuplluwhKz
+DDUrrN4AVDdA+FhiQEqRFrbu8k8mIXVnj+VoJzBrznzcd999mD17NjZs2ADAJeSXX34ZS5behKOd
+IUqdBUvAUunCZIjXQ8gOsfdA0QXtShfozpJXV1oRtXSL19yx7vZCcYPVlZNO6xxkKXVdIukhsJ42
+gTu+HjPySqVSSKW8Bb3hiSex/YXtodKv/btazJ53tadfSgeQ7IaeTCLZ3ZkWpEh3qzWlgHEYbRcD
+kDIFbFlmAPjFW+/h+fda7PBfOfM0fHPimb7uAJRus9mFFk4x6wB0qYQz95PJJPRUCm6OdgJLlt6E
+tQ+tcpTbpr0LmDNvPg60e7ZJKOwLx0+0In3XskVeIOtc0MkjRcS9PiklvPNQx7yqJZbCuHtLAWjm
+DdMSsRVOqOlapgLp9IDM9k3pOhKJVM430VzPU0VcIKXrkBJIJDMvVADY/sJ2bFi/NlR6s+fWY9bs
+r3v66XEB2Z2ATCagd3U6uq5WwS0LHQOQhDU+lnaXWihn5/n3Whzlmj23HnoyhT/s/yTDfd64oXZG
+dvcZQMoUh+WW7lorlhowypzMnEPoSho6vfc+HyEDRiNLn0u3peUIWj5qwbG//tXT348BAwZgyGmn
+YeiQIZ4C9hJ60SmAiAPjBgTQrTKoglbFjPSmmzceTRGzrirWjCc8BG2RTCbR2dVlR8nlRORyzspj
+EolkEgklv57il05ZTCLRdRzJRDc6P+0wLKx5jaWEIVJjckvaXWnLUqcnwnTbkl98xkDMnltvi3bD
++rWOY8AQ8cVnDETyr+3m+dEyLTDS5y1lCl1KkQ4jgcquTqS6ujPqJGHoVCXrc2Q3hw4fwrkjB2H0
+8DHQNO9RQyqVQiwWs491Xcf7Bw7jzf2HcMbpQxzCDRJyWMtQ0K6067BXbiqKwDwtsfk3puxbQxWH
+eN3ltHYU0RqTYxJSCAipTJZ5CDqlSySVrlyudRe+B050XULqElI68/Nj9tx6T3dVPEkfy66nJGQy
+CZlKQe/utievNBj/adChwxSCMN3Nv+7xLgDMGVkFqesZYlbLetHp/TFnZBX0RNJxjqz9pOlgCToJ
+a4ysOSx0KpWCroeb1c9JyK1Hj2LoeSNRUVEB4VKZlBKdnZ1IHvgTys+caotZSomhNVX4w5t/dohW
+U0QMOEVtEeZCKpjYPBSVb7qBNxbh0LJvvlKm28NrJGmFs6ywLjPTlWb/SkJCmK6OCTGl56HruueY
+tdDWOaXr0KU0x8n+k15tbW32/vd//K+O9O/8/r84/P0mz3SpQyaT0PUUUgnDutk3Qw2Q9uhVKbgy
+tPOqy+xhA2wx/+yRe2z3f154K750WiVmDxsA3czLS8jqONgaGxvt7xSy9Bkje5GTkLsTCUgp7c1C
+Somuri50v7wW8q0NSNQ/6xC6lBLdiUSmWAUgcAj/+T+H4drfpPOZ+dSHWFM3NMsF8SYerT4P8kUd
+103IpQZZ8MnsyNa5mPzLBdi5bgaGBCQRNJmkTmplhnkDP62eBLyo49tKnaxmFkKJaP4VakK6eTO0
+CyHt7nZ60kuaf9OCVh8/fdTageYDH/vW7z//YyMOH/jA119l6IgRuOTKWZ6NMfy0KnzU+inaOo7h
+/QNHfNPo7EzPunqFU/3f++CId16nVqF9zy58un8//vLSC/ZjJw1Gj0eDRFwDYpCIQ0dcGO0Yh7Gl
+nyk76SobCsRqHGUAgK5DB/DJ/kMON6tbrVrgpLS61RpSEEjq6S62NV4Wp1Sh7cNw7Z2TkLu6E6a5
+d979jh8/ju6X10K89jPEF/8Rx/ZuB8bWIh43kk+lUujqTnh3p83Gt8SLXY0YWTsMP92u47qJ2cvj
+tuC5sPvhGC6TO3HghnNtt5520cMIOFs41SDY41mp6NclZqs7LR1u0uiCW+KV6TQgrDG2JWVlGkca
+Ftk9a62W9fCBD3KagErqumddU7oOXZfQpUQyi0VOJBL2/i+bHsrqb1t2V4a6rkM3u9Yp8/GTFGpQ
+CV0zWkKHDt0UsrpAw82mfiPwaqwGjff9wFGGxvt+gIabfgSp65hxPC1Ayxo7NmlZYw06BHRLyCIt
+ZD2VguwNi9zV3W12v9KJp1IpdL72C4iXHkDq+teQ2v4gtD/9Avr3XrPD6bqOru7MQbsbCUBMmIfH
+r1qK9QcPYeHEoZ5heots3Vy/bhYQrivtlb5nPCWsKnzXxLMdX9qBjdDqrLWdvnVDkGkr7pyNTddS
++NbS4OjRo1n93ZXx6n0ICOUGLJT/nVgiuffu2zxTV0VklzsjQ/PMCUAThm0VmuJl3xF1w8NjiKey
+qWI4Xo2finvvvs3O/5bb7rbLeO/dt+GW2+4GhMCMrgOuekOZ9IBy8qx8jXkMu1g5WKqc3n7q6uoy
+n/05N/Hs7ahYuhvagxMgXnoA5TfuyAjTpcwqWqJQH0Wp7nal8SYerdIwbJC1NeLtjHCH8Py1GoYP
+sra5eP4wIPAmflql4dG3rPDp47cfjuGyZRJYPgnDq+biuSMAjmzCoioNw82tfush5wUhAIhDeG5B
+OowVVwigZetcjFjQiJ8u0DCiSsOIKqOsu5vM4wWbYHQO38CjVYbbyCoNI6vSdQJgntxDeH6BhlHV
+jXhbANjViDM/o+HMz2gYM1jDv7+liNx1nq0JLT/rb818Q6o3EqvLYLSU1z/NTOnYsWOhNigpWWfA
+ELB5+xAahNAghOEGc7OPYcyih9mshrDiWvkIIYzeSTwOES+DVlkO0b/c+Ftp/I31q4BWWQFR2Q+i
+oj9EubHJiv5ART+gsh9QWWlvr8ZPxV133mznfcttd2OKPIpbbrvbdrvrzpvxavxUJZ6RjqzoD1T2
+B8r7Q6voD1HZH6KyH1BZAa1fBWJKudC/HFp5HNDSE8fZyM0id3XbwrRIJpNA9Wi0tbWhItGF+P96
+H8lkEsePH0csFkNlZaUp5G7z5CLz6lI5/Dqe/M0czL1nKASGYmGbjusAGKI+Dw9smYe1dWqEobjk
+5zo+/DkAHMJz1w7DNzcsx4c3+Gdyzg0pbEMMl2InPrzhXDPtK3D+dh1rJwI4vAn1476H599dD2u4
+KgC8/fAwXINn8Kf2GTgNwJEtczFpXCO2tjfgVAD4zVK8tuFDHPj5YTw6aBIuq1oK3PU6PmgDHq2a
+hN/erOO6CefiOrtOb+DRqkn4t63zsPoyK6NDeP6fhuFbX3wd+9edC3l4E66/6L+w7h0dXz4dkG81
+4syLG/G3Hzfgcx51k65997FQ92W6mwlIaJoGTYv5LgM9Y9QofG9petIpG2eMGgXN5yLUNM24MUhA
+eIQRAMZNmIhlK34SKq9xEyba6bjPuiY0IBaHKIsjNmAghEiPe43HS8bjp1hMAiI98RXzMXFTkp86
+yjUl/ilmxDuAZDzDHZX9nWWBsVLUfj4tAU1qiOlps2QtSBEARLwSmhZOoqGFLCXQ2Z22yMlkEh0d
+xjpOMfsplP/879FZezP09naUlZXhwadfQM2gfph/6RQkEgl0dmd/Xvi7OcMwwty/Y7uOS0439v/7
+4RguXZa+HK/0iHtk61yc9/Wn0g5Tw9bKZNdzuEMCslbDHYrz+S1pIQNv4MVlwB0vGSIGgCF1y3EH
+JmH7rgZ8DQCwCt+9bCikHIppdwHA6/hg8bkADuFvrgKePHgI100Yit1NGuqWpfOZqeT5w9phwF2v
+Y//icyElcOTNdXgGT+GZs5T6YQ4OH27A54a4Hk8pIRz7lqKFRxjToaKyH/RUN8riZdD1dCj1xvuV
+K+dAOczEw8MrrCZigNCgaRriPhfqhV+uw4VfrvP0ywVNxBCPl0MrL0f8lIFWRxYagLj5jCkOQBPS
+FncsZgg8Dt3okiPddb0SSVwJ9/BiIK5EEjNx1FXfgfZEVxxAUmrmX2MgLGBMfAkp7NFR0hQ64nFo
+A/ojppWFqmegkNXF+J1dXfYYOZVKYcXPNiEei2FAv3J82rUE+g6Jqt3P4/zxI9Fw9Vdw00P/BxKv
+Yda0s+0H9vZMqesM25NditfhrXNx6bL7sK29AeeY1na9u4C7GjHp68Av3jXEv/vhGC7NqERmnayL
+2L7IsQpb2xpwjivqkQ9d7eA2c2r6V30ONe683eltnYu6ZauwpdWs04JheNKd5rLnsfv6c3G2le+s
+Z7Dj32fgNGuySnl0YR17jrcVd+uRh/VHOINh4KAqpBJd6F9Zge6kz4SX8HDzChdAPFaGWCyOmBZH
+eXm5b7g85zEz8kJZBeLllagYVO0Y/8aFtEWqacbstSFmHUJLr7WGMAQehNd8gO2mnGNNecyk6YCu
+p2cmhNlFivUbCL3fIFRXDUzPb2RpkKxCdr+prHatU6kU7rn+a9j13kFYK8G6EykAAmeNGoL29naU
+x2MQgKNrbdVJraV0HtrHLXs2AHctNy7ow69j/W8A+Y9OLR0++F+QVy3A508HJN7Ei8slsBKQGIIx
+s4Br/vAGrptwLnY3TcLtEg6LazPhEtwuzsNlD3/FMYvtaAuci2l3AXW1jZhmCv7I1pW4A6uwZQIg
+D/q0oeu4Zc9TwMp0nZ7cCOAf0/7/8qKOaS9ouHzB5/DqYzNw2hcW4Iqrr8APv/EhHrx0aPoZqFTP
+jznRJRU/OPftUOpw2GzvrqTA2Z//ArY9uw1XzpqHTzq6kEgZizZU3MOiQKG5x+/m37KyOMriccTi
+MZSVlxdEsH6Ul8cRryiDVl6O8oGDTAur24+gNM3sYgsgLozHUZpmPqIyn83F4D37HhZjFK9Bk4AO
+AZlKv76omecxrhvh4rE4YhX9MXDkmdj9cSumXHChnU42MfsK2etzA+pklxACyWQSG194A21/7bQF
+WDWgEuf9zWX4l8d/j7NHD8XcSyaho6PDMdnlh5WG1c0454YD+N/XDsNwn24oAAy5bD227olh0iC3
+2R2KS25eBVE7CcOXA1i5CreLpfYFfvbXf4crx0/C8OVz8Pie9fj2i6vwQyssAGAVtrSZY1+TcxZ/
+iMd3DENd1VLTZQ4e/38NOFsCR6wJJEVMRjmUv9JI4+cLhmHk8nS6M9Pedj7rdgzDlM/Mwbp31uP2
+J+dg6tXD8IwV4WvP4MWfzTDKJtMLCgBXbwOZYraKos5ef9IpMePSi3H77XcgkUziq9Mvx+kjRyld
+7OyXcVZfHzFXVpajemAFxo4YnDXtQtCvohyDRnwWIy68yFyxJW1B2Cu4zL5zXNMd7mqZe4J1Lpzv
+HGuADrv7bRSgHB91duON9/6C9Y88hPue+QM+Oa6k4yNmxxdCxk+cgjd2voq9Ph8S+MGdP8JPvvcN
+DBw4EJ2dnRkTX24GDhwITdPQ0dGBmx/4FX7ywx84Z6tFekmce6a9N+/SueDdEqZfNk+fhMJEcY9v
+1bXTljDtFUESkFLazyW9ut2WHu3n0AqWlS0XCXymPIlNW1/AW2+8hkMH/uIKFzwAzuWcadLnKW0v
+nPhTXtmMo8plaj3W0WDNlMOYKdc02I/GhGZen0K5MAUymlBxsLvRilt6ZZe0z5Wx6ca5NJeq6qYb
+AAw9ZQAmfmEyrrr3EXQk40ggc5w8drDAuZPT7yTnvCAkHo9DCIFX9x7C3gMf4+DH/q9KrbjmUmNC
+Ix5HV3fCuXDB/KsucrDuNh7XW3jyjphbMjll4zeGdQfLCGQs3ZCKKB0W1i1iOEVsC98qr3VVKd1q
+K51ulOGvsgyzZl6Oq2dd7iiFyHLkJpeJsAIELRl6o8yfdAKJ4GAAchTygAED8Mobu3Hx356PL00Y
+jS9NGJ01vGWtX3ljNwYMHJAeownjIhOKqO0H4ekgubWOu2edQ9ScCClKV5Ssx14JGuITjme+Eoql
+Ne/wDhG7rLDlZqVn3zOVbrXd5hLo6AI6lHU77uYX5qyNcPl6nauMuD4efqc46Pz3RDgZcQukwmLe
+gHIS8iUXX4TfvrwDD254NqdMPjtyBC77u4scFke9iISyQf2bpxp7IuKscbN4+okz5660sqOOdXV7
+Py1gqYhVB4x3lOHsgkP5az2ftMUMOCa9rPysnqRVFlXswo7jfAnD/STCdZg+DgjnaAelLF7++Qon
+I25PEit8MnmRk5AvunAaLrpwWtYw6p3UFqTZXbassHURWeJ1iNo8CN0g0nO34GRL20vEgWXxCCNd
+O9L8X1fCq4+f7IkuxU31c+xDFWEaP+usnkeHnyOOa822Rzy44qp5qtX1O9/ZZmp7Kma1bH1dzDkJ
+OQzuu72AMvYT6X23oB1/w7RGAVUbZIX9/AtnhZ0RHX6KZXYIGma3WRVzlvBWuqpw1cJYIneIThGm
+p5jRA+vsUlKGsFxt4NfVzhYvDI6y9TSxwiaTEwUXMuDsRkkgfbKk62Iw9z2tsMzSEDLrYc5lLYif
+j+DdgnH7qlZYegS1xAnlr2pxpRLGLWA7rImj+2w6SMVdXbKZIWhF/OpkpJ919hKqW8xqfNWdXe3c
+6RUhA667knVxqXd26byIoIYPk7D3YV5l9PLIKV2P8MFCd35QyXNfKiJW3DNEa/krgexdtZ29LG4W
+6wx4d7ezWWfrfScvoXpZqjAW3FG8AOt8soq514Rs4XhaKBXhuk+udB57Ij13cyYoDz9/T4vr4dhT
+K6z6qQJ2i1QqBw4L7pG+r8XNYp0BZEyGubvmbuuc7mobvqGts8vaeole9fMbfmWLF0RG3AKK2ZFu
+LxBayEMGGGtPc6EnYgN6p+JhbxQ5xcsSyW2FA9PLJu6AuG7Bq4cZbekStI+3L35W0enszDlbnMC8
+8vAsxqRTELmWKSWBIyG+dRlKyEMGAJue+Q889+IfcywGIaQnXPKlL2LGFVcGijmUkGMCeO7FP+LB
+O28tRNkIISH5zop7MHOm18u7Tvj7yIREAAqZkAhAIRMSAShkQiIAhUxIBKCQCYkAFHKUaW5CXV0T
+motdDtLrUMgFoRlNddWojpJowt4E3OF48ygKoYTc06WWkad5MzZiARZgIzbzCiYFJoz+AoVMEQfT
+vHkjMOu7mHnODmy0lGxapqaGalRXG1vDtizuAJqb6my36uo6NLlvCs1NqKtrQENd7nE9/X2taTOa
+Fi3Hjh3LMbm6GnVNzYZfRvrOcO7juqZm/3I1N6HOq47EkyAd+grZ8RYNyUIzNm8EZk0fg0tnLsCO
+jZvTwtixHHtmtqK1tRWtGxZg3T2maHzcxyzeYri1tqJ1wzlY/m/bMrPbsRvj1yhxZzdgW4i4odJO
+h8biNSsxdepK7GxtxZbFzWiYvAe3WvF3zsLGRU1odoXLjDcmx3xJNrJp0lPIFHAONG/GRszC9DEA
+Lp2JBTuU7vXUlfiu9bMXY8anf8nGz121erPXAbv3ZI41p5p5wcwPu7GnOUTcMGn71nEPdmMdZlvx
+Jy/Hjh0h4/vlO2YxtrRuweIxAfFJBl765GRXD2nevNHuSlZXz8Y6KN3rnBJqQt3kjZi107J6K8P/
+hNX+gLg9SdvCtLK2dW1tzPxpnkLWieSEp5CFx0a82bxxBxZsUC7wDa7udS4o1rZ580bsCAq/7XdY
+N3UWpo8MEdfPX7GsGfEsvzHjcc6O5fDtFbuts3rsly/HyKEJo0da5B6yEUo3GUh3r/fnmNCYxbj1
+HMuyV2PRnnO8rdeOdJjq2cCGLYsxJiiun/+YxVizcrfdZXbEG7MYty4wutN1TWPQuHMlds9OT7LZ
+j9oc4Zqdx5unh6sT6TGhfjLmjIHA0ttW8H3kYtPchLpFwJoti8Gh5cnBd1bcg1V334mDHU734J+M
+8bLd7FsTUjxCaLLXP75HCsiYxdiypdiFIKWIp5BpgAkpLYI0yckuQiIAhUxIBPDuWrNvTUhJEaRJ
+WmRCIkCGRc6Y6ZbhJ7+qqqoKUSZCTgra2tpChRPI/Ikctyb9Hz/xzQlCSossPyLl//iJ42SSJ0II
+SK9ftyN5wzEyIRFAvS2GfmmCxpiQ0iJIk95jZOGMSGETUjwEgrvWXKJJSB8gL4vMl58IKR3CfNzD
+e7Krp58I2VwPIYSy1WOzb1CB2sa9OWYAAJtRLwTqNwPY24haUQtnMkH+PSV7+nsba+36e9UvyD90
+KfJuv8KwuV5A1PudXVIQQugxeEFIPkxfCynXYnN9Ld65ZTsaxmYLKjE9v0yw1n7E0YDtsiFH/2Aa
+a+tx1va1PuXLnv7Yhu2QDYZgr/WIHeQflvzbL6h+4Rh79jTg7R4kQEIR1Ev2nrUWzq03CGORGmsV
+q15bi9raxrSny+pnpBHkn71wqBUCS156BDOUNByGpyfphyEg/R61X4HrN+3sLHdqUhCCNFm0j++N
+bdgOKSXevX+ap//exlo8NeddSCkhpcSmCS/hJUeIq7DJ9JNSYs5T45wXYqB/1sJhu5S4f9pCRxpr
+HaarB+mHInv6PWq/kqgfCUsYPXp+6kcIFH2J5tiGH2CCGAexxHJZiE1q93XsO/iRmIEZSpyFjgQC
+/HtcwNJOP7D9ejl/UkBCaNLfIvdC93pvY20Od3VjDGpZBLkJmGF3rTejftxTmPNu2t9pmYL8e0pf
+SD9b+xUu/7EN27E92yQI6TG2JVb16NJkhpBL5ZvWjbUes8wTzjL+7n0Hu6bNSU+i7W3EtUuUjneQ
+f2h24R2rDJvr07PvBUvfhwKkn7X9bIpUP5IzgbqUCuMmnC+7klK+f1SX7x/V5Xvm1npcl9fcuFy2
+trZm3Ww2LbR+piZjW7jJCLLQ03+hNL3l/dP8/aSU8t37pyl+0+TChdMc6Qf5h8JRj9zyD6pfkH9P
+0w9qv57Wz+L+aZCYdr/DzXVZER+C9NTa2mro7nhai5Y2u5KGXi0yvmu960+v4uCnzs74ZyqBG28J
+/q4130cmAN9+CkuY95G/s+IePHTvnTja6XQ/4xSBCedl+641PMbEXNpFSPEIMU/FtdaE9AHyW2vt
+ikVhE1I88nr7SQDQKGTSAzg+LixhNOm/IIQQUjIEzVv5j5Gtr/bl8BVNQkjhsb+iaR14kP3je+wh
+EVIS5DzZ5Vg1Ikwt0yQTUjxMUWb7/FbgrHUxl2kSQrwnu9zwOTIhfYDCPEemsgkpGmHeQKRFJqQP
+kN9kFxeEEFIyhNEkLTIhfQCOkQnp44QZI/NH3AiJAOxaE9IHyL1r7TLjXKVJSAngWtkV/NKEBHSq
+l5CSQkqXUXVpNEPISR346JgzXE2/XikbISQExxLAx8fTxwJApUu5GUJOSaCtU4kB4JTy3ikgISSY
+7hTQ7tLkGUEWGVCsMbvYhJQEQZoMfPxELRNSfIJ0mFXIFDEhpUM2PfoKOdsMGSHkBCI9dx14Ctkt
+YuqYkOIh7f+UYxfZx8gUMSElgVvMbjhGJqSPkPsYWRorScIlQQjpXdL6kxKecgwcI0uKmJCio+ow
+1BiZIiakNMkm5iyPn7LfAQghJ4YwxtVHyK4+OSGkqATNWWUdI1PEhJQOlh5zeo5MERNSevjp0tsi
+h1gSRgg5cTjGyaEeP3mJmGompHh4daldmgx+aYLLNAkpKuryzLxfmqCICSk+QZrMvtaaKiakZMim
+R85aE9KH4Kw1IX2Y3GetlYhB70ASQk4QUtGkB/ywACF9gLw+LBDm0yKEkBNDmE9vBbzGSBETUgq4
+tRjuNcaA/jgh5MSTbd7K95cmKGJCSo/8J7uoaEKKjt+3uiyyTnZJ9ZgQUhQcOgw72eWOTAgpHXJ7
+acL96ImqJqR4uKxwTiu7zPgUMSGlQMDirOxda67sIqQkCNIjJ7sIKXHyn+yiJSakJPEb7mZ/juwd
+hxByggnSYfbvWodJgRDS+wQMdX1fmuD4mJDSIUiX2T++RxUTUjrk80sTnPAipLTINtQNnLWmmAkp
+PkHzVp6/NJEhYqqZkOLh6lJ7iZm/NEFIiZP3L004UyCElAR5vY8cHJcQcoII0iRnrQnpI/Ro1poQ
+UjrktNaaXWtCSov8u9Y+EQghxSGvDwuEik0IOTEE6DDwCyGEkBIhry+EZDkmhJw4wugx6+Mnv0iE
+kBNL0HJp7/eRqV5CShePLjZnrQnpI+T/OVxCSEnRo8kuQkjpkPOCEL9IhJATS15f0QwbmRBy4ujZ
+yi5CSMnDyS5C+hA9m+yiqgkpHjLrIQC+NEFI3yDflyYIIX0HfnyPkL4ZE2KIAAAHx0lEQVRCrh/f
+C4pECCkSuX6zK0RcQsgJIMzkM1d2EdIH6NHKLkJI34BLNAnpI/A1RkIiAl9jJCQi5LeyixBS8lDI
+hEQACpmQCEAhExIBKGRCIgCFTEgEoJAJiQAUMiERgEImJAJQyIREAAqZkAhAIRMSAShkQiIAhUxI
+BKCQCYkAFDIhEYBCJiQCUMiERAAKmZAIQCETEgEoZEIiAIVMSASgkAmJABQyIRGAQiYkAlDIhEQA
+CpmQCEAhExIBKGRCIgCFTEgEoJAJiQAUMiERgEImJAJQyIREAAqZkAhAIRMSAShkQiIAhUxIBKCQ
+CYkAFDIhEYBCJiQCUMiERAAKmZAIQCETEgEoZEIiAIVMSASgkAmJABQyIRGAQiYkAlDIhEQACpmQ
+CEAhExIBKGRCIgCFTEgEoJAJiQAUMiERgEImJAJQyIREAAqZkAhAIRMSAShkQiIAhUxIBKCQCYkA
+FDIhEYBCJiQCUMiERAAKmZAIQCETEgEoZEIiAIVMSASgkAmJABQyIRGAQiYkAlDIhESAeCETa2tr
+K2RyhJCQ0CITEgEoZEIiAIVMSASgkAmJABQyIRGAQiYkAlDIhEQACpmQCEAhExIBKGRCIkBBl2iW
+CuvWrcPBgwfR1dVV7KIUjYqKCpxxxhlYsGBBYNiTqb1yaZe+ROSEvHrNGvTv1w9LlizBqaeeWuzi
+FI2PPvoI69evx+o1a3D9okW+4U629grbLn2NyAn5k48/xj/fcguqq6tx7NixYhenaAwePBjz58/H
+vffemzXcydZeYdulrxG5MXIikcDgwYPR2dlZ7KIUlc7OTgwePBiJRCJruJOtvcK2S18jchYZAKSU
+kFIWuxhFJ2wbnGztFcW6RlLIQDRPVm/Sq+3V3IS6RcCaLYsxpvdyOamJXNfawrIyobd9Tairrka1
+vTVga65p5JNnXRP29VL6vd5eXmW33fehqa4OTfskrKL0KH3PdHu/XfoKkbTIUkroup5bJF0Hpt6J
+VzZdb1iNZ5ei5vKH08e9gVlGXdeRY2lDkUvXOq/2gkfZR9dj0yYAOlBv7ujNedTTnb5Xunk2WhTF
+TItsb654l3wV39qxB81SQu5bjRk1NaipqUFNzQys3me6zViN1UtqUFOzxD5OWxDz2Mddyn1YfcMK
+7NixAhfU1GDG6n3Yt3qGmYeST6laZB8r610HI+zvl9TYfku2Ke2REb532yaKUMg+277VP8HjF4zD
+aLkNS6fuwdKWFrS0tKDlj1fitzeYwtyxAnu+2oKWlvtyT1+eifoHf4QLLvgR/tjSgmfqz8SZ9c8Y
+ebS0oOWJs7DioW0lLGTvzbcOdlu1oOWJb+Hxn6zGPt+27d22iSKR7Fonk0m0t7fnFqmjC6lX7sQX
+T/uBcTx5BZ596hs49c3HsAuP4/HTHlcCz8N/d4xFavIKXHtBO9rbzfgpoKO9He1Qjjvg7d7ejnZ3
+nPcfw5y/vxM7rWwmj8Kb7RdgdJ7tMGDAgFDh8m4vtewWXnXogLOtThuFyakudLy5y7tt29txai+2
+Tdh26UtEUsgAch/zSR2YvBzb1v8TPptOBLqXOwD8+TE8BEBaYzipm8m4jq0uqFc4df/Pj2HupZsx
+fdu7WP9ZI/25t+rpeL1MXu0FOMvnVwe/NpDwbtsSa5u+ALvWypjP2Fzuo8Zg3M6VePQPQeEBuXMf
+3jeP339uE3ZaYTzd3XEAOWk6vjLKK1wpdq292suvDh5tJZGlbXu3baJIJC2ylPnMwhonOHNm9Uv4
+4e+XYf7l4zHecpq0DL+/G87wI7+Fu5fNx+XjjVCTrr4akyChj7zW213XoY/8FhZffRa+PX49Ji37
+PRaPuxyXjV+ZGS6PNgB6e9ZaAq/fZZcXuBqPvvOvWDzuLI86mFGsutht7dO2v74Wn+3FtomimCMp
+ZCCPruLIa/DLX8Lo1nn57b4mI4o7/MhrfomMYLoO+LjrAGrv2I3dd1iO6r4zXG+TV3u5K6XrwB0e
+dYCrrdS29kmnlNqmLxBJIedlYSJIr1rkPgwtch/iZLowCwHbq28TSSFHeVIjF3KxyCdTe0WxrpET
+cllZGY4ePYrhw4dj//79xS5O0Rg5ciSOHj2KsrKyrOFOtvYK2y59jcgJuaamBk8//TTmzJmDsWPH
+Frs4RaOtrQ1PP/00ampqsoY72dorbLv0NSIn5EWLFuHhhx/GAw88ELmXx3OhrKwM1dXVuOGGG7KG
+O9naK2y79DUiJ2QAkTtJvQ3bq+8T2ZVdhJxMUMiERAAKmZAIQCETEgEoZEIiQKhZ64Qu8MWpU/Gd
+Fff0dnkIIQpfnDoVCV0AyL4aLZSQWzuBuq/+A66YeWUhykYICUlCF2gN8dsBDiEPqgDWP/ErfP6S
+efhU+T2vT45LfHK80EUkhASTaYlPMXU6qCLtJqRrBfk5Xzgfm194BW9/1OslJITkwdmnAtMvvgC7
+33zNdsuY7EpKga2/fQLDB4kTWjhCSDDDBxn6TEqnPjPGyHveehVDR4zGjwFc9rV5OPAp0B79n80l
+pKQ5pQIYcQqw9be/xve/vxyHPnjf4Z/RtbYYP3EK4kJiydKbMHf+N05EWQkhPqz/9a9w/6r7kJQC
+e956NcPfV8gW4ydO6bXCEULC4yVgi0AhE0JKH67sIiQCUMiERAAKmZAI8P8Bx4I1ozeB0fkAAAAA
+SUVORK5CYII=
+"
+       id="image12269"
+       x="-2290.6843"
+       y="217.44763" />
+    <text
+       inkscape:export-ydpi="120.03632"
+       inkscape:export-xdpi="120.03632"
+       inkscape:export-filename="/home/haaranl1/emo/emo-2014/src/main/webapp/img/emo/ikkunaolio.png"
+       xml:space="preserve"
+       style="font-size:22.95403481px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="-1998.2404"
+       y="1143.3596"
+       id="text12271"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan12273"
+         x="-1998.2404"
+         y="1143.3596"
+         style="font-size:12px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">Tätä ikkunaa voidaan kuvata </tspan><tspan
+         id="tspan12275"
+         sodipodi:role="line"
+         x="-1998.2404"
+         y="1158.3596"
+         style="font-size:12px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans">olioista koostuvalla mallilla</tspan><tspan
+         id="tspan12277"
+         sodipodi:role="line"
+         x="-1998.2404"
+         y="1173.3596"
+         style="font-size:12px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /><tspan
+         id="tspan12279"
+         sodipodi:role="line"
+         x="-1998.2404"
+         y="1188.3596"
+         style="font-size:12px;font-weight:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" /></text>
   </g>
   <metadata
      id="metadata3953">
