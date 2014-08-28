@@ -71,6 +71,7 @@ public class EmoController {
             @PathVariable Integer id) {
         
         materialVisit.setUsername((String) session.getAttribute("username"));
+        materialVisit.setAssignedMaterialType((String) session.getAttribute("materialType"));
         materialVisit.setSiteUrl(referer);
         
         materialVisitRepository.save(materialVisit);

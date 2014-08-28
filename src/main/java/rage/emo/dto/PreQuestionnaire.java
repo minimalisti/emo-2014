@@ -12,8 +12,6 @@ public class PreQuestionnaire extends AbstractSiteVisit {
     private Boolean canNameMoreThanOneProgrammingLanguages = false;
     private Boolean canNameMoreThanOneProgrammingStylesAndParadigms = false;
 
-    private String assignedMaterialType;
-
     public Boolean isHasProgrammedInThePast() {
         return hasProgrammedInThePast;
     }
@@ -61,13 +59,4 @@ public class PreQuestionnaire extends AbstractSiteVisit {
     public void setCanNameMoreThanOneProgrammingStylesAndParadigms(Boolean canNameMoreThanOneProgrammingStylesAndParadigms) {
         this.canNameMoreThanOneProgrammingStylesAndParadigms = canNameMoreThanOneProgrammingStylesAndParadigms;
     }
-
-    public String getAssignedMaterialType() {
-        return assignedMaterialType;
-    }
-
-    public void setAssignedMaterialType(String assignedMaterialType) {
-        this.assignedMaterialType = assignedMaterialType;
-    }
-
 }
