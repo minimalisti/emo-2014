@@ -22,16 +22,6 @@ public class PostQuestionnaire extends AbstractSiteVisit {
     @Column(length = 100000)
     private String vapaaPalaute;
 
-    private String assignedMaterialType;
-
-    public String getAssignedMaterialType() {
-        return assignedMaterialType;
-    }
-
-    public void setAssignedMaterialType(String assignedMaterialType) {
-        this.assignedMaterialType = assignedMaterialType;
-    }
-
     public String getOlioOhjelmointi() {
         return olioOhjelmointi;
     }

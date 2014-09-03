@@ -17,6 +17,16 @@ public abstract class AbstractSiteVisit extends AbstractPersistable<Long> {
     @Temporal(TemporalType.TIMESTAMP)
     private Date visitEnded;
 
+    private String assignedMaterialType;
+
+    public String getAssignedMaterialType() {
+        return assignedMaterialType;
+    }
+
+    public void setAssignedMaterialType(String assignedMaterialType) {
+        this.assignedMaterialType = assignedMaterialType;
+    }
+
     public String getUsername() {
         return username;
     }
