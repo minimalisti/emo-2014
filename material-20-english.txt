@@ -1,0 +1,9 @@
+Addition Information in Messages – Parameters
+
+Method parameters can have additional information to the object about what it should do. Here the amount of fuel to fill up is given with a parameter (highlighted in blue):
+
+
+
+Parameters can have different values: numbers, references to other objects and so forth.
+
+There can be one parameter or more. And there can also be none when the message itself has all the necessary information, like in this picture:
