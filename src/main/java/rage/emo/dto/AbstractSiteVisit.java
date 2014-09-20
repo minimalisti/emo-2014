@@ -1,5 +1,6 @@
 package rage.emo.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Date;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
@@ -57,5 +58,16 @@ public abstract class AbstractSiteVisit extends AbstractPersistable<Long> {
 
     public void setSiteUrl(String siteUrl) {
         this.siteUrl = siteUrl;
+    }
+
+    @Override
+    @JsonIgnore
+    public boolean isNew() {
+        return super.isNew(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return getUsername() + ";" + getAssignedMaterialType() + ";" + (getVisitEnded().getTime() - getVisitStarted().getTime()) + ";" + getVisitStarted() + ";" + getVisitEnded() + ";" + getSiteUrl();
     }
 }

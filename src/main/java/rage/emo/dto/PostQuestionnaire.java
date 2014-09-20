@@ -6,7 +6,7 @@ import javax.persistence.Lob;
 
 @Entity
 public class PostQuestionnaire extends AbstractSiteVisit {
-
+    
     @Lob
     @Column(length = 100000)
     private String olioOhjelmointi;
@@ -86,4 +86,12 @@ public class PostQuestionnaire extends AbstractSiteVisit {
         this.vapaaPalaute = vapaaPalaute;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ";" + keskittyneisyys + ";" + ymmarrettavyys + ";" + miellyttavyys + ";" + kuvitusAuttoi + ";" + kuvitusMiellytti + ";" + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim();
+    }
+
+    public String dataString() {
+        return keskittyneisyys + ";" + ymmarrettavyys + ";" + miellyttavyys + ";" + kuvitusAuttoi + ";" + kuvitusMiellytti + ";" + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim();
+    }
 }

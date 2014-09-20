@@ -59,4 +59,14 @@ public class PreQuestionnaire extends AbstractSiteVisit {
     public void setCanNameMoreThanOneProgrammingStylesAndParadigms(Boolean canNameMoreThanOneProgrammingStylesAndParadigms) {
         this.canNameMoreThanOneProgrammingStylesAndParadigms = canNameMoreThanOneProgrammingStylesAndParadigms;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ";" + hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";" + programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";" + canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms + ";";
+    }
+    
+    public String dataString() {
+        return hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";" + programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";" + canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms;
+    }
+
 }
