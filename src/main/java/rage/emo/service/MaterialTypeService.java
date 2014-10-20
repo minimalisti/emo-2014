@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import rage.emo.dto.PreQuestionnaire;
 import rage.emo.repository.PreQuestionnaireRepository;
 
+
 @Service
 public class MaterialTypeService {
 
@@ -20,6 +21,14 @@ public class MaterialTypeService {
             return "trad";
         }
 
+        //TODO: no more fancy balancing of the buckets
+        if ((preQuestionnaire.getUsername().trim().hashCode() % 2) == 0) {
+        	return "trad";
+        } else {
+        	return "emo";
+        }
+        
+        /**
         if (preQuestionnaire.isHasProgrammedInThePast() != null && !preQuestionnaire.isHasProgrammedInThePast()) {
             // ei ole ohjelmoinut
             Map<String, Integer> counts = new TreeMap<>();
@@ -74,6 +83,8 @@ public class MaterialTypeService {
             }
 
             return "emo";
-        }
+            
+            
+        } */
     }
 }

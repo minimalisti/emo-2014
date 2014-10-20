@@ -1,8 +1,13 @@
 package rage.emo.controller;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import rage.emo.dto.PreQuestionnaire;
 import rage.emo.dto.PostQuestionnaire;
+
 import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import rage.emo.dto.MaterialVisit;
 import rage.emo.repository.MaterialVisitRepository;
 import rage.emo.repository.PostQuestionnaireRepository;
@@ -21,6 +27,8 @@ import rage.emo.service.MaterialTypeService;
 @RequestMapping("/app")
 public class EmoController {
     
+	private static HashSet<String> users = new HashSet<String>();
+	
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
     
@@ -38,7 +46,7 @@ public class EmoController {
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session,
             @ModelAttribute PreQuestionnaire preQuestionnaire) {
-        if (preQuestionnaire.getUsername().trim().isEmpty()) {
+        if (preQuestionnaire.getUsername().trim().isEmpty() ) {
             return "redirect:/esikysely.html";
         }
         
