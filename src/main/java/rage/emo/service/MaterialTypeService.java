@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import rage.emo.dto.Login;
 import rage.emo.dto.PreQuestionnaire;
 import rage.emo.repository.PreQuestionnaireRepository;
 
@@ -15,20 +18,25 @@ public class MaterialTypeService {
 
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
+  
+    public String getMaterialType(Login login) {
+        if (login == null) {
+            return "trad";
+        }
 
+        //TODO: no more fancy balancing of the buckets
+        if ((login.getUsername().trim().hashCode() % 2) == 0) {
+        	return "trad";
+        } else {
+        	return "emo";
+        }
+    }
+    
     public String getMaterialType(PreQuestionnaire preQuestionnaire) {
         if (preQuestionnaire == null) {
             return "trad";
         }
 
-        //TODO: no more fancy balancing of the buckets
-        if ((preQuestionnaire.getUsername().trim().hashCode() % 2) == 0) {
-        	return "trad";
-        } else {
-        	return "emo";
-        }
-        
-        /**
         if (preQuestionnaire.isHasProgrammedInThePast() != null && !preQuestionnaire.isHasProgrammedInThePast()) {
             // ei ole ohjelmoinut
             Map<String, Integer> counts = new TreeMap<>();
@@ -85,6 +93,6 @@ public class MaterialTypeService {
             return "emo";
             
             
-        } */
+        } 
     }
 }
