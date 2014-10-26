@@ -390,7 +390,7 @@ public class EmoController {
             session.setAttribute("username", login.getUsername());
             session.setAttribute(MATERIAL_TYPE, materialType);
             login = loginRepository.save(login);
-
+            
             if (preQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
                 return "redirect:/esikysely.html";
             } else {
