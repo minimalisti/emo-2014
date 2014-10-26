@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Oppituokio</title>
+        <title>TIE-02100, viikkoharjoitustehtävät, kierros 10</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,17 @@
     <body>
 
         <div class="container">
-            <h1>Oppituokio; tutkimus</h1>
+            <h1>TIE-02100 Johdatus ohjelmointiin - viikkoharjoitustehtävät</h1>
 
             <p>Tässä oppituokiossa tutustut hieman olio-ohjelmointiin. Ensin sinulta kysytään taustatietoja, jonka jälkeen pääset lukemaan oppimateriaalia. Oppimateriaalin lukemisen jälkeen vastaat oppimateriaaliin liittyvään kyselyyn. Oppimateriaalissa on noin 20 lyhyttä sivua.</p>
 
-            <p>Tutkimuksessa selvitetään erilaisten oppimateriaalien opettavuutta.</p>  
+            <p>Olio ohjelmointia selittävä oppimateriaali liittyy tutkimukseen, jossa selvitetään erilaisten oppimateriaalien opettavuutta. Taustatietokysely on osa tätä tutkimusta jaastauksesi näihin kysymyksiin ei vaikuta kurssin suorittamiseen tai arvosteluun millään tavoin.</p>  
 
-            <form action="esikysely.html">
+            <form action="/app/submit-login" method="POST">
+                <div class="form-group">
+                    <label for="username">Opiskelijanumero (Antamalla opiskelijanumerosi saat merkinnän suoritetuista viikkoharjoituksesta Moodleen.)</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Kurssille rekisteröity opiskelijanumero">
+                </div>
                 <button type="submit" class="btn btn-primary">Siirry taustatietokyselyyn.</button>
             </form>
         </div>

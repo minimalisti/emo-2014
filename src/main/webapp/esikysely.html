@@ -12,18 +12,23 @@
         <div class="container">
             <h1>Taustatietokysely</h1>
 
+
             <form action="/app/submit-background" method="POST">
+                <!--
                 <div class="form-group">
-                    <label for="username">Opiskelijanumero (pakollinen)</label>
+                    <label for="username">Opiskelijanumero (Antamalla opiskelijanumerosi saat merkinnän suoritetuista viikkoharjoituksesta Moodleen.)</label>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Opiskelijanumero">
                 </div>
+                -->
+
+                <p>Teemme oppimateriaalin laadun parantamiseen liittyvää tutkimusta. Alla olevat kysymykset liittyvät tähän tutkimukseen. Vastauksesi näihin kysymyksiin ei vaikuta kurssin suorittamiseen tai arvosteluun millään tavoin.</p>
 
                 <div class="checkbox">
-                    <label><input type="checkbox" name="hasProgrammedInThePast"> Olen ohjelmoinut joskus.</label>
+                    <label><input type="checkbox" name="hasProgrammedInThePast"> Olen ohjelmoinut ennen tätä kurssia.</label>
                 </div>
 
                 <div class="checkbox">
-                    <label><input type="checkbox" name="hasOoProgrammedInThePast"> Olen olio-ohjelmoinut (object-oriented programming) joskus.</label>
+                    <label><input type="checkbox" name="hasOoProgrammedInThePast"> Olen olio-ohjelmoinut (object-oriented programming) ennen tätä kurssia.</label>
                 </div>
 
                 <div class="checkbox">
