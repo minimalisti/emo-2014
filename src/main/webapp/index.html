@@ -11,7 +11,11 @@
 
         <div class="container">
             <h1>TIE-02100 Johdatus ohjelmointiin - viikkoharjoitustehtävät</h1>
-
+            <script>
+                if (location.search.indexOf('virhe=') >= 0) {
+                    document.write("<h2><b>Virhe! Varmista että syöttämäsi opiskelijanumero on oikea.</b></h2>");
+                }
+            </script>
             <p>Tässä oppituokiossa tutustut hieman olio-ohjelmointiin. Ensin sinulta kysytään taustatietoja, jonka jälkeen pääset lukemaan oppimateriaalia. Oppimateriaalin lukemisen jälkeen vastaat oppimateriaaliin liittyvään kyselyyn. Oppimateriaalissa on noin 20 lyhyttä sivua.</p>
 
             <p>Olio ohjelmointia selittävä oppimateriaali liittyy tutkimukseen, jossa selvitetään erilaisten oppimateriaalien opettavuutta. Taustatietokysely on osa tätä tutkimusta jaastauksesi näihin kysymyksiin ei vaikuta kurssin suorittamiseen tai arvosteluun millään tavoin.</p>  
