@@ -25,6 +25,7 @@ public class MaterialTypeService {
         }
 
         //TODO: no more fancy balancing of the buckets
+        // TODO: seems to be done. :P
         if ((login.getUsername().trim().hashCode() % 2) == 0) {
         	return "trad";
         } else {
