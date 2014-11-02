@@ -25,7 +25,7 @@
 
             <img class="kuvitus" src="/img/${materialType}/kommunikaatio-ongelma.png"/>
 
-            <p>Tietokoneohjelmien on usein tarpeen k‰sitell‰ monimutkaista dataa. Halutaan, ett‰ ohjelma "tallentaa tiedoston", "ilmoittaa opiskelijan kurssille", "reagoi nappulan painallukseen", "nostaa rahaa tililt‰", "valitsee pelaajan seuraavan siirron", jne.</p>
+            <p>Tietokoneohjelmien on usein tarpeen k‰sitell‰ monimutkaista dataa. Halutaan, ett‰ ohjelma "tallentaa tiedoston", "ilmoittaa opiskelijan kurssille", "reagoi nappulan painallukseen", "nostaa rahaa tililt‰", "valitsee pelaajan seuraavan siirron", "kirjata asiakas hotelliin", jne.</p>
 
             <p>Ihmisajattelu ja -kieli on k‰sitteellist‰, mutta tietokone ei ymm‰rr‰ reaalimaailman k‰sitteit‰. Mik‰ on "kurssi", "opiskelija", "hotelli" tai "pankkitili"? Ohjelmointikieli ei voi sis‰lt‰‰ yksiselitteisi‰ m‰‰rittelyj‰ kaikille maailman k‰sitteille. Kone kuitenkin tarvitsee yksiselitteiset m‰‰ritelm‰t voidakseen suorittaa aihepiiriin liittyvi‰ ohjelmia.</p>
 
