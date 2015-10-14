@@ -7,6 +7,10 @@ import rage.emo.dto.PreQuestionnaire;
 import rage.emo.dto.GoalOrientationQuestionnaire;
 import rage.emo.dto.SamQuestionnaire;
 import rage.emo.dto.PanasQuestionnaire;
+import rage.emo.dto.PrePanasQuestionnaire;
+import rage.emo.dto.PostPanasQuestionnaire;
+import rage.emo.dto.PostSamQuestionnaire;
+import rage.emo.dto.PreSamQuestionnaire;
 
 public class Data {
 
@@ -16,11 +20,11 @@ public class Data {
     private List<PostQuestionnaire> postQuestionnaireAnswers;
     private List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers;
     
-    private List<SamQuestionnaire> preSamQuestionnaireAnswers;
-    private List<PanasQuestionnaire> prePanasQuestionnaireAnswers;
+    private List<PreSamQuestionnaire> preSamQuestionnaireAnswers;
+    private List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers;
     
-    private List<SamQuestionnaire> postSamQuestionnaireAnswers;
-    private List<PanasQuestionnaire> postPanasQuestionnaireAnswers;
+    private List<PostSamQuestionnaire> postSamQuestionnaireAnswers;
+    private List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers;
 
     /**
      * @return the materialVisits
@@ -81,58 +85,57 @@ public class Data {
     /**
      * @return the preSamQuestionnaireAnswers
      */
-    public List<SamQuestionnaire> getPreSamQuestionnaireAnswers() {
+    public List<PreSamQuestionnaire> getPreSamQuestionnaireAnswers() {
         return preSamQuestionnaireAnswers;
     }
 
     /**
      * @param preSamQuestionnaireAnswers the preSamQuestionnaireAnswers to set
      */
-    public void setPreSamQuestionnaireAnswers(List<SamQuestionnaire> preSamQuestionnaireAnswers) {
+    public void setPreSamQuestionnaireAnswers(List<PreSamQuestionnaire> preSamQuestionnaireAnswers) {
         this.preSamQuestionnaireAnswers = preSamQuestionnaireAnswers;
     }
 
     /**
      * @return the prePanasQuestionnaireAnswers
      */
-    public List<PanasQuestionnaire> getPrePanasQuestionnaireAnswers() {
+    public List<PrePanasQuestionnaire> getPrePanasQuestionnaireAnswers() {
         return prePanasQuestionnaireAnswers;
     }
 
     /**
      * @param prePanasQuestionnaireAnswers the prePanasQuestionnaireAnswers to set
      */
-    public void setPrePanasQuestionnaireAnswers(List<PanasQuestionnaire> prePanasQuestionnaireAnswers) {
+    public void setPrePanasQuestionnaireAnswers(List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers) {
         this.prePanasQuestionnaireAnswers = prePanasQuestionnaireAnswers;
     }
 
     /**
      * @return the postSamQuestionnaireAnswers
      */
-    public List<SamQuestionnaire> getPostSamQuestionnaireAnswers() {
+    public List<PostSamQuestionnaire> getPostSamQuestionnaireAnswers() {
         return postSamQuestionnaireAnswers;
     }
 
     /**
      * @param postSamQuestionnaireAnswers the postSamQuestionnaireAnswers to set
      */
-    public void setPostSamQuestionnaireAnswers(List<SamQuestionnaire> postSamQuestionnaireAnswers) {
+    public void setPostSamQuestionnaireAnswers(List<PostSamQuestionnaire> postSamQuestionnaireAnswers) {
         this.postSamQuestionnaireAnswers = postSamQuestionnaireAnswers;
     }
 
     /**
      * @return the postPanasQuestionnaireAnswers
      */
-    public List<PanasQuestionnaire> getPostPanasQuestionnaireAnswers() {
+    public List<PostPanasQuestionnaire> getPostPanasQuestionnaireAnswers() {
         return postPanasQuestionnaireAnswers;
     }
 
     /**
      * @param postPanasQuestionnaireAnswers the postPanasQuestionnaireAnswers to set
      */
-    public void setPostPanasQuestionnaireAnswers(List<PanasQuestionnaire> postPanasQuestionnaireAnswers) {
+    public void setPostPanasQuestionnaireAnswers(List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers) {
         this.postPanasQuestionnaireAnswers = postPanasQuestionnaireAnswers;
     }
 
-    
 }

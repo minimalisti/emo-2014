@@ -36,7 +36,7 @@
             <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
                 <input type="hidden" name="visitStarted" id="visitStartedF"/>
                 <input type="hidden" name="visitEnded" id="visitEndedF"/>                
-                <button type="button" class="btn btn-primary" id="forwardButton">Jatka tehtäviin</button>
+                <button type="button" class="btn btn-primary" id="forwardButton">Jatka SAM-kyselyyn 2</button>
             </form>
         </p>
             

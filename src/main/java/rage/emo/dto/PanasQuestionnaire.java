@@ -32,6 +32,8 @@ public class PanasQuestionnaire extends AbstractSiteVisit {
     private String hostile;
     private String ashamed;
     
+    private String PreOrPost;
+    
          /**
      * @return the active
      */
@@ -183,6 +185,20 @@ public class PanasQuestionnaire extends AbstractSiteVisit {
         
          return getActive() + ";" + getAfraid() + ";" + getAlert() + ";" + getAshamed() + ";" + 
                 getAttentive() + ";" + getDetermined() + ";" + getHostile() + ";" + getInspired() + ";" + getNervous() + "," + getUpset() + ";" ;
+    }
+
+    /**
+     * @return the PreOrPost
+     */
+    public String getPreOrPost() {
+        return PreOrPost;
+    }
+
+    /**
+     * @param PreOrPost the PreOrPost to set
+     */
+    public void setPreOrPost(String PreOrPost) {
+        this.PreOrPost = PreOrPost;
     }
 
 }

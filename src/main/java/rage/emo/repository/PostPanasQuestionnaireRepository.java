@@ -6,12 +6,12 @@
 package rage.emo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import rage.emo.dto.PanasQuestionnaire;
+import rage.emo.dto.PostPanasQuestionnaire;
 
 /**
  *
  * @author minimalisti
  */
-public interface PostPanasQuestionnaireRepository extends JpaRepository<PanasQuestionnaire, Long> {
+public interface PostPanasQuestionnaireRepository extends JpaRepository<PostPanasQuestionnaire, Long> {
 
 }

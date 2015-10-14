@@ -21,6 +21,8 @@ public class SamQuestionnaire extends AbstractSiteVisit {
     private String arousal;
     private String dominance;
 
+    private String preOrPost;
+    
     @Override
     public String toString() {
         return super.toString() + ";" + getValence() + ";" + getArousal() + ";" + getDominance() + ";";
@@ -71,6 +73,20 @@ public class SamQuestionnaire extends AbstractSiteVisit {
      */
     public void setDominance(String dominance) {
         this.dominance = dominance;
+    }
+
+    /**
+     * @return the preOrPost
+     */
+    public String getPreOrPost() {
+        return preOrPost;
+    }
+
+    /**
+     * @param preOrPost the preOrPost to set
+     */
+    public void setPreOrPost(String preOrPost) {
+        this.preOrPost = preOrPost;
     }
 
 }

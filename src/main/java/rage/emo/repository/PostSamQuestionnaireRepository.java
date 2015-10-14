@@ -6,13 +6,14 @@
 package rage.emo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import rage.emo.dto.PostSamQuestionnaire;
 import rage.emo.dto.SamQuestionnaire;
 
 /**
  *
  * @author minimalisti
  */
-public interface PostSamQuestionnaireRepository extends JpaRepository<SamQuestionnaire, Long> {
+public interface PostSamQuestionnaireRepository extends JpaRepository<PostSamQuestionnaire, Long> {
 
 }
 
