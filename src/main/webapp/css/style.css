@@ -5,3 +5,60 @@ div.spacer {clear: both; border-bottom: 1px solid #a7a7a7; padding-bottom: 10px;
 img { padding: 5px;}
 img.kuvitus {float: right;}
 body { font-size: 1.8em; }
+
+.go-label {
+     display: block;
+     font-weight: normal;
+
+}
+
+.select_group {
+   display: inline-block;
+  text-align: center;
+}
+
+.select_group-first{
+    display: inline-block;
+  text-align: right;
+}
+
+.select_group-last{
+    display: inline-block;
+  text-align: left;
+}
+
+.dropdown{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dropdown-text{
+    font-weight: bold;
+    
+}
+
+.sam-dropdown{
+    text-align: center;
+}
+
+.sam_group {
+ display: inline-block; 
+ *display: inline; 
+ zoom: 1; 
+ vertical-align: top; 
+ font-size: 12px;   
+ width: 12%;
+
+    
+}
+
+.sam-label{
+     font-weight: normal;
+    
+    
+}
+
+.sam-image {
+        width: 90%;
+
+}

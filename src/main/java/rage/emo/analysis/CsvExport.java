@@ -29,7 +29,7 @@ public class CsvExport {
 
         Set<String> usersToIgnore = new TreeSet<>();
 
-        for (PreQuestionnaire preQuestionnaire : data.preQuestionnaireAnswers) {
+        for (PreQuestionnaire preQuestionnaire : data.getPreQuestionnaireAnswers()) {
             if (preQuestionnaire.getUsername() == null || preQuestionnaire.getUsername().trim().isEmpty()) {
                 continue;
             }
@@ -45,7 +45,7 @@ public class CsvExport {
         }
 
         Set<String> usersToRetain = new TreeSet<>();
-        for (PostQuestionnaire postQuestionnaire : data.postQuestionnaireAnswers) {
+        for (PostQuestionnaire postQuestionnaire : data.getPostQuestionnaireAnswers()) {
             if (postQuestionnaire.getUsername() == null || postQuestionnaire.getUsername().trim().isEmpty()) {
                 continue;
             }
@@ -58,7 +58,7 @@ public class CsvExport {
 //        System.out.println(usersToRetain);
         userData.keySet().removeAll(usersToIgnore);
 
-        for (MaterialVisit materialVisit : data.materialVisits) {
+        for (MaterialVisit materialVisit : data.getMaterialVisits()) {
             if (materialVisit.getUsername() == null || materialVisit.getUsername().trim().isEmpty()) {
                 continue;
             }

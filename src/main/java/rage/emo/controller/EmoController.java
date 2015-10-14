@@ -5,7 +5,10 @@ import java.util.Set;
 
 import rage.emo.dto.Login;
 import rage.emo.dto.PreQuestionnaire;
+import rage.emo.dto.GoalOrientationQuestionnaire;
 import rage.emo.dto.PostQuestionnaire;
+import rage.emo.dto.PanasQuestionnaire;
+import rage.emo.dto.SamQuestionnaire;
 
 import javax.servlet.http.HttpSession;
 
@@ -22,7 +25,15 @@ import rage.emo.dto.MaterialVisit;
 import rage.emo.repository.LoginRepository;
 import rage.emo.repository.MaterialVisitRepository;
 import rage.emo.repository.PostQuestionnaireRepository;
+import rage.emo.repository.GoalOrientationRepository;
 import rage.emo.repository.PreQuestionnaireRepository;
+
+import rage.emo.repository.PreSamQuestionnaireRepository;
+import rage.emo.repository.PrePanasQuestionnaireRepository;
+
+import rage.emo.repository.PostPanasQuestionnaireRepository;
+import rage.emo.repository.PostSamQuestionnaireRepository;
+
 import rage.emo.service.MaterialTypeService;
 
 @Controller
@@ -340,15 +351,31 @@ public class EmoController {
             };
 
     private final String MATERIAL_TYPE = "materialType";
-    
+
     @Autowired
     LoginRepository loginRepository;
 
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
 
+    // GoalOrientationRepository added for TTY survey.
+    @Autowired
+    GoalOrientationRepository goalOrientationRepository;
+
+    // PreSamQuestionnaireRepository added for TTY survey.
+    @Autowired
+    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
+    @Autowired
+    PrePanasQuestionnaireRepository prePanasQuestionnaireRepository;
+
     @Autowired
     PostQuestionnaireRepository postQuestionnaireRepository;
+    
+    @Autowired
+    PostPanasQuestionnaireRepository postPanasQuestionnaireRepository;
+    @Autowired
+    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
+
 
     @Autowired
     MaterialVisitRepository materialVisitRepository;
@@ -361,12 +388,12 @@ public class EmoController {
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session,
             @PathVariable String opnro) {
-        
+
         session.setAttribute("username", opnro);
 
         return "redirect:/esikysely.html?o=" + opnro;
     }
-    
+
     @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
             @RequestHeader(value = "referer", required = false) final String referer,
@@ -381,6 +408,36 @@ public class EmoController {
         //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
         //preQuestionnaire.setAssignedMaterialType(materialType);
         preQuestionnaireRepository.save(preQuestionnaire);
+
+        return "redirect:/pre-sam-kysely.html";
+    }
+
+    @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute SamQuestionnaire samQuestionnaire) {
+        samQuestionnaire.setUsername((String) session.getAttribute("username"));
+        samQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        preSamQuestionnaireRepository.save(samQuestionnaire);
+
+        return "redirect:/pre-panas-kysely.html";
+    }
+
+    @RequestMapping(value = "/submit-pre-panas", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPrePanasQuestionnaire(HttpSession session, @ModelAttribute PanasQuestionnaire panasQuestionnaire) {
+        panasQuestionnaire.setUsername((String) session.getAttribute("username"));
+        panasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        prePanasQuestionnaireRepository.save(panasQuestionnaire);
+
+        return "redirect:/tavoitehakuisuuskysely.html";
+    }
+
+    @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitGoalOrientationQuestionnaire(HttpSession session, @ModelAttribute GoalOrientationQuestionnaire goalOrientationQuestionnaire) {
+        goalOrientationQuestionnaire.setUsername((String) session.getAttribute("username"));
+        goalOrientationQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        goalOrientationRepository.save(goalOrientationQuestionnaire);
 
         return "redirect:/app/material-1";
     }
@@ -400,7 +457,7 @@ public class EmoController {
             session.setAttribute("username", login.getUsername());
             session.setAttribute(MATERIAL_TYPE, materialType);
             login = loginRepository.save(login);
-            
+
             if (preQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
                 return "redirect:/esikysely.html";
             } else {
@@ -433,7 +490,7 @@ public class EmoController {
         materialVisitRepository.save(materialVisit);
 
         if (id >= 21) {
-            return "redirect:/jalkikysely.html";
+            return "redirect:/post-sam-kysely.html";
         }
 
         return "redirect:/app/material-" + (id + 1);
@@ -456,6 +513,28 @@ public class EmoController {
         }
 
         return "redirect:/app/material-" + (id - 1);
+    }
+    
+        @RequestMapping(value = "/submit-post-sam", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPostSamQuestionnaire(HttpSession session, @ModelAttribute SamQuestionnaire samQuestionnaire) {
+        samQuestionnaire.setUsername((String) session.getAttribute("username"));
+        samQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        postSamQuestionnaireRepository.save(samQuestionnaire);
+
+        return "redirect:/post-panas-kysely.html";
+
+    }
+
+    @RequestMapping(value = "/submit-post-panas", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPostPanasQuestionnaire(HttpSession session, @ModelAttribute PanasQuestionnaire panasQuestionnaire) {
+        panasQuestionnaire.setUsername((String) session.getAttribute("username"));
+        panasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        postPanasQuestionnaireRepository.save(panasQuestionnaire);
+
+        return "redirect:/jalkikysely.html";
+
     }
 
     @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})

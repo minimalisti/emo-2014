@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PANAS-kysely</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>PANAS-kysely</h1>
+
+
+            <form action="/app/submit-pre-panas" method="POST">
+
+
+                <p>Tällä kyselyllä kartoitetaan tämänhetkistä tunnetilaasi. 
+                    Kysely muodostuu kymmenestä eri tunteesta, joiden kokemisen voimakkuutta sinun tulee arvioida asteikolla 1 (ei ollenkaan) - 6 (erittäin voimakkaasti).</p>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">1. Valpas</p>
+                    <div class="select_group-first">
+                        <label for="alert_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="alert_1" name="alert" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="alert_2" class="go-label">2<br/></label><input id="alert_2" type="radio" name="alert" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="alert_3" class="go-label">3<br/></label><input  id="alert_3" type="radio" name="alert" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="alert_4" class="go-label">4<br/></label><input  id="alert_4" type="radio" name="alert" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="alert_5" class="go-label">5<br/></label><input  id="alert_5" type="radio" name="alert" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="alert_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="alert_6" type="radio" name="alert" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">2. Hermostunut</p>
+                    <div class="select_group-first">
+                        <label for="nervous_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="nervous_1" name="nervous" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="nervous_2" class="go-label">2<br/></label><input id="nervous_2" type="radio" name="nervous" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="nervous_3" class="go-label">3<br/></label><input  id="nervous_3" type="radio" name="nervous" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="nervous_4" class="go-label">4<br/></label><input  id="nervous_4" type="radio" name="nervous" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="nervous_5" class="go-label">5<br/></label><input  id="nervous_5" type="radio" name="nervous" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="nervous_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="nervous_6" type="radio" name="nervous" value="6"/>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <p class="dropdown-text">3. Päättäväinen</p>
+                    <div class="select_group-first">
+                        <label for="determined_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="determined_1" name="determined" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="determined_2" class="go-label">2<br/></label><input id="determined_2" type="radio" name="determined" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="determined_3" class="go-label">3<br/></label><input  id="determined_3" type="radio" name="determined" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="determined_4" class="go-label">4<br/></label><input  id="determined_4" type="radio" name="determined" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="determined_5" class="go-label">5<br/></label><input  id="determined_5" type="radio" name="determined" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="determined_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="determined_6" type="radio" name="determined" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">4. Aktiivinen</p>
+                    <div class="select_group-first">
+                        <label for="active_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="active_1" name="active" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="active_2" class="go-label">2<br/></label><input id="active_2" type="radio" name="active" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="active_3" class="go-label">3<br/></label><input  id="active_3" type="radio" name="active" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="active_4" class="go-label">4<br/></label><input  id="active_4" type="radio" name="active" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="active_5" class="go-label">5<br/></label><input  id="active_5" type="radio" name="active" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="active_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="active_6" type="radio" name="active" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">5. Nolo</p>
+                    <div class="select_group-first">
+                        <label for="ashamed_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="ashamed_1" name="ashamed" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="ashamed_2" class="go-label">2<br/></label><input id="ashamed_2" type="radio" name="ashamed" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="ashamed_3" class="go-label">3<br/></label><input  id="ashamed_3" type="radio" name="ashamed" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="ashamed_4" class="go-label">4<br/></label><input  id="ashamed_4" type="radio" name="ashamed" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="ashamed_5" class="go-label">5<br/></label><input  id="ashamed_5" type="radio" name="ashamed" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="ashamed_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="ashamed_6" type="radio" name="ashamed" value="6"/>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <p class="dropdown-text">6. Tarkkaavainen</p>
+                    <div class="select_group-first">
+                        <label for="attentive_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="attentive_1" name="attentive" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="attentive_2" class="go-label">2<br/></label><input id="attentive_2" type="radio" name="attentive" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="attentive_3" class="go-label">3<br/></label><input  id="attentive_3" type="radio" name="attentive" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="attentive_4" class="go-label">4<br/></label><input  id="attentive_4" type="radio" name="attentive" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="attentive_5" class="go-label">5<br/></label><input  id="attentive_5" type="radio" name="attentive" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="attentive_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="attentive_6" type="radio" name="attentive" value="6"/>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <p class="dropdown-text">7. Vihamielinen</p>
+                    <div class="select_group-first">
+                        <label for="hostile_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="hostile_1" name="hostile" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="hostile_2" class="go-label">2<br/></label><input id="hostile_2" type="radio" name="hostile" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hostile_3" class="go-label">3<br/></label><input  id="hostile_3" type="radio" name="hostile" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hostile_4" class="go-label">4<br/></label><input  id="hostile_4" type="radio" name="hostile" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hostile_5" class="go-label">5<br/></label><input  id="hostile_5" type="radio" name="hostile" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="hostile_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="hostile_6" type="radio" name="hostile" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">8. Pelokas</p>
+                    <div class="select_group-first">
+                        <label for="afraid_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="afraid_1" name="afraid" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="afraid_2" class="go-label">2<br/></label><input id="afraid_2" type="radio" name="afraid" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="afraid_3" class="go-label">3<br/></label><input  id="afraid_3" type="radio" name="afraid" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="afraid_4" class="go-label">4<br/></label><input  id="afraid_4" type="radio" name="afraid" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="afraid_5" class="go-label">5<br/></label><input  id="afraid_5" type="radio" name="afraid" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="afraid_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="afraid_6" type="radio" name="afraid" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">9. Järkyttynyt</p>
+                    <div class="select_group-first">
+                        <label for="upset_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="upset_1" name="upset" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="upset_2" class="go-label">2<br/></label><input id="upset_2" type="radio" name="upset" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="upset_3" class="go-label">3<br/></label><input  id="upset_3" type="radio" name="upset" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="upset_4" class="go-label">4<br/></label><input  id="upset_4" type="radio" name="upset" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="upset_5" class="go-label">5<br/></label><input  id="upset_5" type="radio" name="upset" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="upset_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="upset_6" type="radio" name="upset" value="6"/>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <p class="dropdown-text">10. Inspiroitunut</p>
+                    <div class="select_group-first">
+                        <label for="inspired_1" class="go-label ">Ei ollenkaaan 1<br/></label><input type="radio" id="inspired_1" name="inspired" value="1"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="inspired_2" class="go-label">2<br/></label><input id="inspired_2" type="radio" name="inspired" value="2"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="inspired_3" class="go-label">3<br/></label><input  id="inspired_3" type="radio" name="inspired" value="3"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="inspired_4" class="go-label">4<br/></label><input  id="inspired_4" type="radio" name="inspired" value="4"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="inspired_5" class="go-label">5<br/></label><input  id="inspired_5" type="radio" name="inspired" value="5"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="inspired_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="inspired_6" type="radio" name="inspired" value="6"/>
+                    </div>
+                </div>
+
+
+                <input type="hidden" name="visitStarted" id="visitStarted"/>
+                <input type="hidden" name="visitEnded" id="visitEnded"/>
+
+                <button type="button" class="btn btn-primary" id="forwardButton">Siirry materiaaliin</button>
+            </form>
+        </div>
+
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+
+
+        <script>
+            $(function () {
+                $("#visitStarted").val(new Date());
+                $("#forwardButton").click(function () {
+                    $("#visitEnded").val(new Date());
+                    $("form").submit();
+                });
+            });
+        </script>
+    </body>
+</html>

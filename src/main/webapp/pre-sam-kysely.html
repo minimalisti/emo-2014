@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAM-kysely</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>SAM-kysely</h1>
+
+
+            <form action="/app/submit-pre-sam" method="POST">
+
+
+                <p>Tällä kyselyllä kartoitetaan tämänhetkistä tunnetilaasi. 
+                    Kysely muodostuu tunnetilan kolmesta ulottuvuudesta: tunnetilan miellyttävyydestä, virkeydestä ja hallinantunteesta. 
+                    Jokaiseen ulottuvuuteen liittyy 5 kuvaa, jotka auttavat sinua hahmottamaan kyseisen ulottovuuden kokemustasi. </p>
+
+                <p>Valitse jokaisesta kategoriasta yksi kuva, joka kuvaa tämän hetkistä kokemusta tunnetilastasi.</p>
+
+                <div class="sam-dropdown">
+                    <p class="dropdown-text">Tunnetilan miellyttävyys</p>
+                    <div class="sam_group">   
+                        <label for="valence_1" class="sam-label "><img src="img/SAM/SAM Valence 1.png" class="sam-image"/></label><input type="radio" id="valence_1" name="valence" value="1" required /> 
+                    </div>
+                    <div class="sam_group">   
+                        <label for="valence_2" class="sam-label"><img src="img/SAM/SAM Valence 2.png" class="sam-image"/></label><input id="valence_2" type="radio" name="valence" value="2" required />
+                    </div>
+                    <div class="sam_group">   
+                        <label for="valence_3" class="sam-label"><img src="img/SAM/SAM Valence 3.png"  class="sam-image"/></label><input  id="valence_3" type="radio" name="valence" value="3" required />
+                    </div>
+                    <div class="sam_group">   
+                        <label for="valence_4" class="sam-label"><img src="img/SAM/SAM Valence 4.png"  class="sam-image"/></label><input  id="valence_4" type="radio" name="valence" value="4" required />
+                    </div>
+                    <div class="sam_group">   
+                        <label for="valence_5" class="sam-label"><img src="img/SAM/SAM Valence 5.png"  class="sam-image"/></label><input  id="valence_5" type="radio" name="valence" value="5" required />
+                    </div>
+                </div>
+
+
+                <div class="sam-dropdown">
+                    <p class="dropdown-text">Virkeys</p>
+                    <div class="sam_group">   
+                        <label for="arousal_1" class="sam-label "><img src="img/SAM/SAM Arousal 1.png"  class="sam-image"/><br/></label><input type="radio" id="arousal_1" name="arousal" value="1"/> 
+                    </div>
+                    <div class="sam_group">   
+                        <label for="arousal_2" class="sam-label"><img src="img/SAM/SAM Arousal 2.png"  class="sam-image"/><br/></label><input id="arousal_2" type="radio" name="arousal" value="2"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="arousal_3" class="sam-label"><img src="img/SAM/SAM Arousal 3.png"  class="sam-image"/><br/></label><input  id="arousal_3" type="radio" name="arousal" value="3"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="arousal_4" class="sam-label"><img src="img/SAM/SAM Arousal 4.png"  class="sam-image"/><br/></label><input  id="arousal_4" type="radio" name="arousal" value="4"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="arousal_5" class="sam-label"><img src="img/SAM/SAM Arousal 5.png"  class="sam-image"/><br/></label><input  id="arousal_5" type="radio" name="arousal" value="5"/>
+                    </div>
+                </div>
+
+                <div class="sam-dropdown">
+                    <p class="dropdown-text">Hallinnan tunne</p>
+                    <div class="sam_group">   
+                        <label for="dominance_1" class="sam-label "><img src="img/SAM/SAM Dominance 1.png"  class="sam-image"/><br/></label><input type="radio" id="dominance_1" name="dominance" value="1"/> 
+                    </div>
+                    <div class="sam_group">   
+                        <label for="dominance_2" class="sam-label"><img src="img/SAM/SAM Dominance 2.png"  class="sam-image"/><br/></label><input id="dominance_2" type="radio" name="dominance" value="2"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="dominance_3" class="sam-label"><img src="img/SAM/SAM Dominance 3.png"  class="sam-image"/><br/></label><input  id="dominance_3" type="radio" name="dominance" value="3"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="dominance_4" class="sam-label"><img src="img/SAM/SAM Dominance 4.png"  class="sam-image"/><br/></label><input  id="dominance_4" type="radio" name="dominance" value="4"/>
+                    </div>
+                    <div class="sam_group">   
+                        <label for="dominance_5" class="sam-label"><img src="img/SAM/SAM Dominance 5.png"  class="sam-image"/><br/></label><input  id="dominance_5" type="radio" name="dominance" value="5"/>
+                    </div>                    
+                </div>
+
+                <input type="hidden" name="visitStarted" id="visitStarted"/>
+                <input type="hidden" name="visitEnded" id="visitEnded"/>
+
+                <button type="button" class="btn btn-primary" id="forwardButton">Siirry PANAS-kyselyyn</button>
+            </form>
+        </div>
+
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+
+
+        <script>
+            $(function () {
+                $("#visitStarted").val(new Date());
+                $("#forwardButton").click(function () {
+                    $("#visitEnded").val(new Date());
+                    $("form").submit();
+                });
+            });
+        </script>
+    </body>
+</html>
