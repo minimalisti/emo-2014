@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tavoitehakuisuuskysely</title>
+        <title>Tavoiteorientaatiokysely</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="css/style.css"/>
-
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="js/count_the_checked.js"></script>
     </head>
 
     <body>
 
         <div class="container">
-            <h1>Tavoitehakuisuuskysely</h1>
+            <h1>Tavoiteorientaatiokysely</h1>
 
 
             <form action="/app/submit-goal_orientation" method="POST">
@@ -54,7 +56,7 @@
 
 
                 <div class="dropdown">
-                    <p class="dropdown-text">2. Olen onnellisin opinnoissani, kun teen tehtäviä, joissa tiedän etten tee virheitä.</p>
+                    <p class="dropdown-text">2. Olen onnellisin opinnoissani kun teen tehtäviä, joissa tiedän etten tee virheitä.</p>
                     <div class="select_group-first">   
                         <label for="so2_1" class="go-label ">Voimakkaasti eri mieltä 1<br/></label><input type="radio" id="so2_1" name="suoritusOrientaatio_kysymys_2" value="1"/> 
                     </div>
@@ -144,7 +146,7 @@
 
 
                 <div class="dropdown">
-                    <p class="dropdown-text">6. Haluan olla kohtalisen varma, että kykenen suoritumaan tehtävästä ennen kuin yritän sitä.</p>
+                    <p class="dropdown-text">6. Haluan olla kohtalaisen varma, että kykenen suoriutumaan tehtävästä ennen kuin yritän sitä.</p>
                     <div class="select_group-first">
                         <label for="so6_1" class="go-label">Voimakkaasti eri mieltä 1<br/></label><input type="radio" id="so6_1" name="suoritusOrientaatio_kysymys_6" value="1"/> 
                     </div>
@@ -167,7 +169,7 @@
 
 
                 <div class="dropdown">
-                    <p class="dropdown-text">7. Minulle on mieluista tehdä tehtäviä jonka kaltaisissa olen onnistunut hyvin aiemmin.</p>
+                    <p class="dropdown-text">7. Minulle on mieluista tehdä tehtäviä joiden kaltaisissa olen onnistunut hyvin aiemmin.</p>
                     <div class="select_group-first">
                         <label for="so7_1" class="go-label ">Voimakkaasti eri mieltä 1<br/></label><input type="radio" id="so7_1" name="suoritusOrientaatio_kysymys_7" value="1"/> 
                     </div>
@@ -190,7 +192,7 @@
 
 
                 <div class="dropdown">
-                    <p class="dropdown-text">8. Tunnen itseni älykkääksi, kun osaan suorittaa jonkin tehtävän paremmin kuin muuut.</p>
+                    <p class="dropdown-text">8. Tunnen itseni älykkääksi, kun osaan suorittaa jonkin tehtävän paremmin kuin muut.</p>
                     <div class="select_group-first">
                         <label for="so8_1" class="go-label ">Voimakkaasti eri mieltä 1<br/></label><input type="radio" id="so8_1" name="suoritusOrientaatio_kysymys_8" value="1"/> 
                     </div>
@@ -213,7 +215,7 @@
 
                 <!-- Oppimisorientaatiota mittaavat 8 väittämää -->               
                 <div class="dropdown">
-                    <p class="dropdown-text">9. Mahdollisuus tehdä haastavia tehtäviä on minulle tärkeä.</p>
+                    <p class="dropdown-text">9. Mahdollisuus suorittaa haastavia tehtäviä on minulle tärkeä.</p>
                     <div class="select_group-first">
                         <label for="oo1_1" class="go-label ">Voimakkaasti eri mieltä 1<br/></label><input type="radio" id="oo1_1" name="oppimisOrientaatio_kysymys_1" value="1"/> 
                     </div>
@@ -393,13 +395,12 @@
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
 
-                <button type="button" class="btn btn-primary" id="forwardButton">Siirry materiaaliin</button>
+                <div class="button-center">
+                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry oppimateriaaliin</button>
+                </div>
+                
             </form>
         </div>
-
-        <script src="js/libs/jquery/jquery.js"></script>
-        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-
 
         <script>
             $(function () {

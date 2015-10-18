@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="css/style.css"/>
-
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="js/count_the_checked.js"></script>
     </head>
 
     <body>
@@ -16,14 +18,12 @@
             <h1>PANAS-kysely 2</h1>
 
 
-            <form action="/app/submit-pre-panas" method="POST">
-
+            <form action="/app/submit-post-panas" method="POST">
 
                 <p>Tällä kyselyllä kartoitetaan tämänhetkistä tunnetilaasi. 
                     Kysely muodostuu kymmenestä eri tunteesta, joiden kokemisen voimakkuutta sinun tulee arvioida asteikolla 1 (ei ollenkaan) - 6 (erittäin voimakkaasti).</p>
-
-
                 
+                <p>Kysymys: Kun ajattelet itseäsi ja sitä mitä tunnet tällä hetkellä, missä määrin tunnet että olet:</p>
                 
                 <div class="dropdown">
                     <p class="dropdown-text">1. Järkyttynyt</p>
@@ -250,14 +250,12 @@
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
-
-                <button type="button" class="btn btn-primary" id="forwardButton">Siirry tavoitehakuisuuskyselyyn</button>
+                
+                <div class="button-center">
+                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry jälkikyselyyn</button>
+                </div>
             </form>
         </div>
-
-        <script src="js/libs/jquery/jquery.js"></script>
-        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-
 
         <script>
             $(function () {

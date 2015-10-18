@@ -417,6 +417,7 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
+        
         preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
         preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
 
@@ -436,7 +437,7 @@ public class EmoController {
 
         prePanasQuestionnaireRepository.save(prePanasQuestionnaire);
 
-        return "redirect:/tavoitehakuisuuskysely.html";
+        return "redirect:/tavoiteorientaatiokysely.html";
     }
 
     @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
