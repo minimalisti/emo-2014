@@ -29,27 +29,27 @@
             <p>Kurssiolio varmistaa ensin, ett‰ ilmoittautuminen on OK (kuten esimerkiss‰mme) ja lis‰‰ opiskelijan ilmoittautuneiden luetteloon, josta kurssiolio itse pit‰‰ kirjaa.</p>
 
             <img src="/img/${materialType}/sarjis_07.png"/>
-            
+
 
         </div>
 
         <script src="/js/libs/jquery/jquery.js"></script>
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

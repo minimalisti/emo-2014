@@ -6,7 +6,7 @@ import javax.persistence.Lob;
 
 @Entity
 public class PostQuestionnaire extends AbstractSiteVisit {
-    
+
     @Lob
     @Column(length = 100000)
     private String olioOhjelmointi;

@@ -11,14 +11,14 @@
 
         <div class="container">
             <h1>TIE-02100 Johdatus ohjelmointiin - viikkoharjoitus 10</h1>
-            
+
             <p>Tässä oppituokiossa tutustut hieman olio-ohjelmointiin. Ennen oppimateriaaliin tutustumista sinulta kysytään 
                 taustatietoja sekä pääset täyttämän kolme kyselyä. 
                 Kyselyihin vastaamisen jälkeen pääset lukemaan oppimateriaalia. 
                 Itse oppimateriaalissa on 21 lyhyttä sivua.
                 Oppimateriaalin lukemisen jälkeen tehtävänäsi on vastata kahteen 
                 kyselyyn sekä muutamiin oppimateriaaliin liittyviin kysymyksiin. 
-               </p>
+            </p>
 
             <p>Olio-ohjelmointia selittävä oppimateriaali liittyy tutkimukseen, 
                 jossa selvitetään erilaisten oppimateriaalien opettavuutta. 
@@ -27,26 +27,26 @@
                 mutta ne ovat erittäin tärkeitä tutkimuksellemme. Jos kohtaat kyselyissä 
                 teknisiä tai ymmärrettävyyteen vaikuttavia ongelmia, 
                 ole hyvä ja ilmoita niistä <a href="mailto:mikko.nurminen@tut.fi?Subject=TIE-02100+Ongelmia+viikkoteht%C3%A4v%C3%A4ss%C3%A4+10">mikko.nurminen@tut.fi</a></p>  
-            
-            
+
+
             <form action="/app/submit-login" method="POST">
                 <div class="form-group">
                     <label for="username">Opiskelijanumero (Antamalla opiskelijanumerosi ja vastaamalla lopussa oleviin kysymyksiin saat viikkoharjoitusmerkinnän.)</label>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Kurssille rekisteröity opiskelijanumero">
                 </div>
-                <button type="submit" class="btn btn-primary">Jatka</button>
-                
-        <script>
-                if (location.search.indexOf('virhe=') >= 0) {
-                    document.write('<p class="error_message">Virhe! Varmista että syöttämäsi opiskelijanumero on oikea. \n\
-            Jos et pysty kirjautumaan opiskelijanumerosi avulla, <a href="mailto:mikko.nurminen@tut.fi?Subject=TIE-02100+Kirjautumisongelma">ilmoita siitä.</a></p>');
-                }
-        </script>
-                
+                <button type="submit" class="btn btn-primary">Jatka 1. esikyselyyn</button>
+
+                <script>
+                    if (location.search.indexOf('virhe=') >= 0) {
+                        document.write('<p class="error_message">Virhe! Varmista että syöttämäsi opiskelijanumero on oikea. \n\
+                    Jos et pysty kirjautumaan opiskelijanumerosi avulla, <a href="mailto:mikko.nurminen@tut.fi?Subject=TIE-02100+Kirjautumisongelma">ilmoita siitä.</a></p>');
+                    }
+                </script>
+
             </form>
-            
+
         </div>
-        
+
 
 
         <script src="js/libs/jquery/jquery.js"></script>

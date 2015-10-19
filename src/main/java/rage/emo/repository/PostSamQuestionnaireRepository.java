@@ -16,4 +16,3 @@ import rage.emo.dto.SamQuestionnaire;
 public interface PostSamQuestionnaireRepository extends JpaRepository<PostSamQuestionnaire, Long> {
 
 }
-

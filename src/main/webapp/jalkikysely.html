@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Viikkoharjoitustehtävät</title>
+        <title>Jälkikysely 3/3</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <body>
 
         <div class="container">
-            <h2>Viikkoharjoitustehtävät</h2>
+            <h2>Viikkoharjoitustehtävät, jälkikysely 3/3</h2>
 
             <form action="/app/submit-postquestionnaire" method="POST">
 
@@ -93,10 +93,10 @@
 
 
         <script>
-            $(function() {
+            $(function () {
                 $("#visitStarted").val(new Date());
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEnded").val(new Date());
                     $("form").submit();
                 });

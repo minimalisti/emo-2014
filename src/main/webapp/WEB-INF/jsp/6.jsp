@@ -23,16 +23,16 @@
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksepäin</button>
             </form>          
             <div class="spacer"></div>
-            
+
             <p></p>
-            
+
             <p style="padding-bottom: 10px;">Olioilla voi myös mallintaa ohjelman käyttöliittymää. Ajatellaan vaikkapa tämän näköistä käyttöliittymäikkunaa:</p>
 
-                        
-            
-            
+
+
+
             <img src="/img/${materialType}/ikkunaolio.png"/>
-            
+
 
         </div>
 
@@ -40,20 +40,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

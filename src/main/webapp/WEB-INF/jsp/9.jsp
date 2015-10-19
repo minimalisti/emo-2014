@@ -29,7 +29,7 @@
             <p>Ikkunaolio kuvaa sovelluksen käyttöliittymäikkunaa. Ikkuna muun muassa tarjoaa nappulan, jonka kautta sovellukseen sisään kirjautunut opiskelija voi ilmoittautua kurssille.</p>
 
             <img src="/img/${materialType}/sarjis_02.png"/>
-            
+
 
         </div>
 
@@ -37,20 +37,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

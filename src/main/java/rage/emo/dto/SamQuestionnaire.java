@@ -22,7 +22,7 @@ public class SamQuestionnaire extends AbstractSiteVisit {
     private String dominance;
 
     private String preOrPost;
-    
+
     @Override
     public String toString() {
         return super.toString() + ";" + getValence() + ";" + getArousal() + ";" + getDominance() + ";";

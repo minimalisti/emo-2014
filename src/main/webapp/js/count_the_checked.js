@@ -6,25 +6,25 @@
 
 
 $(function () {
-    $('<p id="checked_info" class="center_it_all">Olet vastannut <span id="checked_number"> X </span> / <span id="radio_total_number">Y</span></p>').insertBefore( "#forwardButton" );
+    $('<p id="checked_info" class="center_it_all">Olet vastannut <span id="checked_number"> X </span> / <span id="radio_total_number">Y</span></p>').insertBefore("#forwardButton");
 
 
     $('#forwardButton').attr("disabled", true);
-    
+
     var total = 0;
-            
+
     $('#radio_total_number').text(function () {
-        if( $('.dropdown').length > 0){
+        if ($('.dropdown').length > 0) {
             total = $('.dropdown').length;
             return $('.dropdown').length;
         }
-        else if ($('.sam-dropdown').length > 0){
+        else if ($('.sam-dropdown').length > 0) {
             total = $('.sam-dropdown').length;
             return $('.sam-dropdown').length;
         }
     });
-    
-    
+
+
     var countChecked = function () {
         var n = $("input:checked").length;
         $("#checked_number").text(n);

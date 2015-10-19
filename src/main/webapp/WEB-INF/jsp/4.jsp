@@ -23,16 +23,16 @@
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksepäin</button>
             </form>          
             <div class="spacer"></div>
-            
+
             <p></p>
-            
+
             <p>Ohessa on esimerkkejä erilaisista olioista graafisesti esitettynä.</p>
-            
+
             <img src="/img/${materialType}/olioita.png"/>
-            
+
             <p>Huomaa tästä kuvastakin, että olioilla on sekä tietoja, jotka niihin liittyvät (esim. opiskelijaolion opiskelijanumero, nappulaolion teksti), että toimintoja, joita niihin voidaan kohdistaa (esim. opiskelijan lisääminen kurssille, tiedoston poistaminen). Huomaa myös, että oliot voivat muistuttaa toisiaan - olla keskenään saman tyyppisiä - kuten kaksi eläinoliota yllä. </p>
-            
-            
+
+
 
         </div>
 
@@ -40,20 +40,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

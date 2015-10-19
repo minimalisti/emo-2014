@@ -29,7 +29,7 @@
             <p>Oliolle l‰hetetyt viestit aktivoivat olion metodeita. T‰llaisen viestin l‰hett‰mist‰ sanotaan <strong>metodin kutsumiseksi</strong> (<em>method call</em>, <em>method invocation</em>). T‰ss‰ kutsutaan auto-olion "aja"-nimist‰ metodia:</p>
 
             <img style="padding-bottom: 20px;" src="/img/${materialType}/auto-olio-aja.png"/>
-            
+
             <p>Jotkut metodikutsut yksinkertaisesti pyyt‰v‰t oliota kertomaan tietyn tilatiedon, kuten bensan m‰‰r‰n tankissa. Toiset tekev‰t jotakin monimutkaisempaa.</p>
 
 
@@ -39,20 +39,20 @@
         <script src="/js/libs/jquery/jquery.js"></script>
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

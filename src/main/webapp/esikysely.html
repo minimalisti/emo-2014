@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Taustatietokysely</title>
+        <title>Esikysely 1/4</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     <body>
 
         <div class="container">
-            <h1>Taustatietokysely</h1>
+            <h1>Taustatiedot, esikysely 1/4</h1>
 
             <form action="/app/submit-background" method="POST">
                 <!--
@@ -54,7 +54,7 @@
 
 
                 <h3>Kerro mitä mieltä olet seuraavista kurssiin liittyvistä asioista arvioimalla 
-                    kuinka hyvin alla olevat lauseet kuvaavat hyvin kokemustasi niistä.</h3>
+                    kuinka hyvin alla olevat lauseet kuvaavat kokemustasi niistä.</h3>
 
                 <div class="dropdown center_it_all">
                     <p class="dropdown-text">"Kurssilla käsitellyt aiheet ovat olleet mielestäni mielenkiintoisia."</p>
@@ -215,9 +215,9 @@
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
-                
+
                 <div class="button-center">
-                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry SAM-kyselyyn</button>
+                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry 2. esikyselyyn</button>
                 </div>
             </form>
 
@@ -239,8 +239,8 @@
             }
 
             $(function () {
-            
-                
+
+
                 $("#username").val(getUrlParameter("o"));
 
                 $("#visitStarted").val(new Date());
@@ -248,8 +248,8 @@
                 $("#forwardButton").click(function () {
                     $("#visitEnded").val(new Date());
                     $("form").submit();
-                });                
-              
+                });
+
             });
         </script>
     </body>

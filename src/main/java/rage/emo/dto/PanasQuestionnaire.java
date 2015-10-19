@@ -18,6 +18,7 @@ public class PanasQuestionnaire extends AbstractSiteVisit {
 //        active, determined, attentive, inspired, and alert. 
 //    The five negative affective states are: 
 //        afraid, nervous, upset, hostile, and ashamed.
+
     @Lob
     @Column(length = 100000)
     private String active;
@@ -25,16 +26,16 @@ public class PanasQuestionnaire extends AbstractSiteVisit {
     private String attentive;
     private String inspired;
     private String alert;
-    
+
     private String afraid;
     private String nervous;
     private String upset;
     private String hostile;
     private String ashamed;
-    
+
     private String PreOrPost;
-    
-         /**
+
+    /**
      * @return the active
      */
     public String getActive() {
@@ -173,18 +174,17 @@ public class PanasQuestionnaire extends AbstractSiteVisit {
     public void setAshamed(String ashamed) {
         this.ashamed = ashamed;
     }
-    
-    
+
     @Override
     public String toString() {
-        return super.toString() + ";" + getActive() + ";" + getAfraid() + ";" + getAlert() + ";" + getAshamed() + ";" + 
-                getAttentive() + ";" + getDetermined() + ";" + getHostile() + ";" + getInspired() + ";" + getNervous() + "," + getUpset() + ";" ;
+        return super.toString() + ";" + getActive() + ";" + getAfraid() + ";" + getAlert() + ";" + getAshamed() + ";"
+                + getAttentive() + ";" + getDetermined() + ";" + getHostile() + ";" + getInspired() + ";" + getNervous() + "," + getUpset() + ";";
     }
 
     public String dataString() {
-        
-         return getActive() + ";" + getAfraid() + ";" + getAlert() + ";" + getAshamed() + ";" + 
-                getAttentive() + ";" + getDetermined() + ";" + getHostile() + ";" + getInspired() + ";" + getNervous() + "," + getUpset() + ";" ;
+
+        return getActive() + ";" + getAfraid() + ";" + getAlert() + ";" + getAshamed() + ";"
+                + getAttentive() + ";" + getDetermined() + ";" + getHostile() + ";" + getInspired() + ";" + getNervous() + "," + getUpset() + ";";
     }
 
     /**

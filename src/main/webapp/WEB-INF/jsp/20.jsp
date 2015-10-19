@@ -29,11 +29,11 @@
             <p><strong>Metodiparametreilla</strong> voidaan v‰litt‰‰ oliolle lis‰tietoja siit‰, mit‰ olion tulisi tehd‰. T‰ss‰ tankattavan bensan m‰‰r‰ v‰litet‰‰n parametriksi (mik‰ on korostettu sinisell‰):</p>
 
             <img style="padding-bottom: 20px;" src="/img/${materialType}/auto-olio-tankkaa.png"/>
-            
+
             <p>Parametreiksi voi antaa erilaisia arvoja: lukuja, viittauksia toisiin olioihin ja niin edelleen.</p>
-            
+
             <p>Parametreja voi olla yksi tai useampia. Ja voi niit‰ olla nollakin, kun viesti itsess‰‰n kertoo kaiken oleellisen kuten t‰ss‰:</p>
-            
+
 
             <img src="/img/${materialType}/auto-olio-kerro-bensa.png"/>
 
@@ -43,20 +43,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

@@ -10,7 +10,6 @@ import rage.emo.dto.PostQuestionnaire;
 import rage.emo.dto.PrePanasQuestionnaire;
 import rage.emo.dto.PostPanasQuestionnaire;
 
-
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -373,12 +372,11 @@ public class EmoController {
 
     @Autowired
     PostQuestionnaireRepository postQuestionnaireRepository;
-    
+
     @Autowired
     PostPanasQuestionnaireRepository postPanasQuestionnaireRepository;
     @Autowired
     PostSamQuestionnaireRepository postSamQuestionnaireRepository;
-
 
     @Autowired
     MaterialVisitRepository materialVisitRepository;
@@ -417,12 +415,12 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
-        
+
         preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
         preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
 
         preSamQuestionnaire.setPreOrPost("pre");
-        
+
         preSamQuestionnaireRepository.save(preSamQuestionnaire);
 
         return "redirect:/pre-panas-kysely.html";
@@ -432,7 +430,7 @@ public class EmoController {
     public String submitPrePanasQuestionnaire(HttpSession session, @ModelAttribute PrePanasQuestionnaire prePanasQuestionnaire) {
         prePanasQuestionnaire.setUsername((String) session.getAttribute("username"));
         prePanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-        
+
         prePanasQuestionnaire.setPreOrPost("pre");
 
         prePanasQuestionnaireRepository.save(prePanasQuestionnaire);
@@ -522,12 +520,12 @@ public class EmoController {
 
         return "redirect:/app/material-" + (id - 1);
     }
-    
-        @RequestMapping(value = "/submit-post-sam", method = {RequestMethod.POST, RequestMethod.GET})
+
+    @RequestMapping(value = "/submit-post-sam", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostSamQuestionnaire(HttpSession session, @ModelAttribute PostSamQuestionnaire postSamQuestionnaire) {
         postSamQuestionnaire.setUsername((String) session.getAttribute("username"));
         postSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-        
+
         postSamQuestionnaire.setPreOrPost("post");
 
         postSamQuestionnaireRepository.save(postSamQuestionnaire);
@@ -540,11 +538,10 @@ public class EmoController {
     public String submitPostPanasQuestionnaire(HttpSession session, @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
         postPanasQuestionnaire.setUsername((String) session.getAttribute("username"));
         postPanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-        
+
         postPanasQuestionnaire.setPreOrPost("post");
-                
+
         postPanasQuestionnaireRepository.save(postPanasQuestionnaire);
-        
 
         return "redirect:/jalkikysely.html";
 

@@ -29,7 +29,7 @@
             <p><em>Alkutilanne:</em> K‰ynniss‰ on kurssi-ilmoittautumissovellus. Er‰s opiskelija on kirjautunut sis‰‰n. Tietokoneen muistissa olevat oliot kuvaavat ohjelman aihepiiriin liittyvi‰ asioita.</p>
 
             <img src="/img/${materialType}/sarjis_01.png"/>
-            
+
 
 
         </div>
@@ -38,20 +38,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

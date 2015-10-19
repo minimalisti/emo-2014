@@ -15,14 +15,14 @@ import rage.emo.dto.PreSamQuestionnaire;
 public class Data {
 
     private List<MaterialVisit> materialVisits;
-    
+
     private List<PreQuestionnaire> preQuestionnaireAnswers;
     private List<PostQuestionnaire> postQuestionnaireAnswers;
     private List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers;
-    
+
     private List<PreSamQuestionnaire> preSamQuestionnaireAnswers;
     private List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers;
-    
+
     private List<PostSamQuestionnaire> postSamQuestionnaireAnswers;
     private List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers;
 
@@ -76,7 +76,8 @@ public class Data {
     }
 
     /**
-     * @param goalOrientationQuestionnairesAnswers the goalOrientationQuestionnairesAnswers to set
+     * @param goalOrientationQuestionnairesAnswers the
+     * goalOrientationQuestionnairesAnswers to set
      */
     public void setGoalOrientationQuestionnairesAnswers(List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers) {
         this.goalOrientationQuestionnairesAnswers = goalOrientationQuestionnairesAnswers;
@@ -104,7 +105,8 @@ public class Data {
     }
 
     /**
-     * @param prePanasQuestionnaireAnswers the prePanasQuestionnaireAnswers to set
+     * @param prePanasQuestionnaireAnswers the prePanasQuestionnaireAnswers to
+     * set
      */
     public void setPrePanasQuestionnaireAnswers(List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers) {
         this.prePanasQuestionnaireAnswers = prePanasQuestionnaireAnswers;
@@ -132,7 +134,8 @@ public class Data {
     }
 
     /**
-     * @param postPanasQuestionnaireAnswers the postPanasQuestionnaireAnswers to set
+     * @param postPanasQuestionnaireAnswers the postPanasQuestionnaireAnswers to
+     * set
      */
     public void setPostPanasQuestionnaireAnswers(List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers) {
         this.postPanasQuestionnaireAnswers = postPanasQuestionnaireAnswers;

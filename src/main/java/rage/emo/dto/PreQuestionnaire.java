@@ -11,16 +11,14 @@ public class PreQuestionnaire extends AbstractSiteVisit {
     private Boolean readingProgrammingRelatedContentInFreetime = false;
     private Boolean canNameMoreThanOneProgrammingLanguages = false;
     private Boolean canNameMoreThanOneProgrammingStylesAndParadigms = false;
-    
+
     private String interesting;
     private String practice_difficulty;
     private String practice_starting;
     private String information_usefulness;
-    private String material_clarity;        
-    private String material_inspiring;     
+    private String material_clarity;
+    private String material_inspiring;
     private String material_helped;
-    
-    
 
     public Boolean isHasProgrammedInThePast() {
         return hasProgrammedInThePast;
@@ -69,7 +67,6 @@ public class PreQuestionnaire extends AbstractSiteVisit {
     public void setCanNameMoreThanOneProgrammingStylesAndParadigms(Boolean canNameMoreThanOneProgrammingStylesAndParadigms) {
         this.canNameMoreThanOneProgrammingStylesAndParadigms = canNameMoreThanOneProgrammingStylesAndParadigms;
     }
-
 
     /**
      * @return the interesting
@@ -171,18 +168,18 @@ public class PreQuestionnaire extends AbstractSiteVisit {
 
     @Override
     public String toString() {
-        return super.toString() + ";" + hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";" + 
-                programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";" + 
-                canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms + ";" +
-                getInformation_usefulness() + ";" + getInteresting() +";" + getMaterial_clarity() + ";" + getMaterial_helped() + ";" +
-                getMaterial_inspiring() + ";" + getPractice_difficulty() + ";" + getPractice_starting() + ";";
+        return super.toString() + ";" + hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";"
+                + programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";"
+                + canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms + ";"
+                + getInformation_usefulness() + ";" + getInteresting() + ";" + getMaterial_clarity() + ";" + getMaterial_helped() + ";"
+                + getMaterial_inspiring() + ";" + getPractice_difficulty() + ";" + getPractice_starting() + ";";
     }
-    
+
     public String dataString() {
-        return hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";" + 
-                programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";" + 
-                canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms + ";" +
-                getInformation_usefulness() + ";" + getInteresting() +";" + getMaterial_clarity() + ";" + getMaterial_helped() + ";" +
-                getMaterial_inspiring() + ";" + getPractice_difficulty() + ";" + getPractice_starting() + ";";
+        return hasProgrammedInThePast + ";" + hasOoProgrammedInThePast + ";"
+                + programDuringFreeTimeNowAndThen + ";" + readingProgrammingRelatedContentInFreetime + ";"
+                + canNameMoreThanOneProgrammingLanguages + ";" + canNameMoreThanOneProgrammingStylesAndParadigms + ";"
+                + getInformation_usefulness() + ";" + getInteresting() + ";" + getMaterial_clarity() + ";" + getMaterial_helped() + ";"
+                + getMaterial_inspiring() + ";" + getPractice_difficulty() + ";" + getPractice_starting() + ";";
     }
 }

@@ -23,16 +23,16 @@
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksepäin</button>
             </form>          
             <div class="spacer"></div>
-            
+
             <p></p>
-            
+
             <img class="" style="padding: 30px; float: left;" src="/img/${materialType}/auto-olio.png"/>
-            
+
             <p>Yksittäistä kurssia, opiskelijaa, pankkitiliä, käyttöliittymän ikkunaa tai nappulaa vastaa olio-ohjelmassa yksi <strong>olio</strong> (<em>object</em>). Yleensä kuhunkin olioon liittyy toimintoja eli <strong>metodeja</strong> (<em>method</em>), joilla oliota voidaan hyödyntää. Esimerkiksi autoa voitaisiin kuvata oliona, jolla on metodeja kuten "aja", "lisää matkustaja", "tankkaa", "kerro bensan määrä" jne.</p>
-            
+
             <p>Olioon liittyy usein myös ominaisuuksia, jotka kuvaavat sen pysyviä tai muuttuvia piirteitä. Esimerkiksi auto-olion tietoja voisivat olla sen merkki, bensatankin sisältämän bensan määrä, sijainti ja sisällä olevat matkustajat. Ohjelmoija valitsee, mitä ominaisuuksia ja metodeja olioihin liittyy. Valintaan vaikuttaa ratkaisevasti se, mitä asioita kyseisessä ohjelmassa halutaan mallintaa. Ohjelmaa ajettaessa tietokone pitää oliot tallessa muistissaan.</p>
 
-            
+
 
         </div>
 
@@ -40,20 +40,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

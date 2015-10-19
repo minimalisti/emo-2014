@@ -12,13 +12,12 @@ import rage.emo.dto.Login;
 import rage.emo.dto.PreQuestionnaire;
 import rage.emo.repository.PreQuestionnaireRepository;
 
-
 @Service
 public class MaterialTypeService {
 
     @Autowired
     PreQuestionnaireRepository preQuestionnaireRepository;
-  
+
     public String getMaterialType(Login login) {
         if (login == null) {
             return "trad";
@@ -27,12 +26,12 @@ public class MaterialTypeService {
         //TODO: no more fancy balancing of the buckets
         // TODO: seems to be done. :P
         if ((login.getUsername().trim().hashCode() % 2) == 0) {
-        	return "trad";
+            return "trad";
         } else {
-        	return "emo";
+            return "emo";
         }
     }
-    
+
     public String getMaterialType(PreQuestionnaire preQuestionnaire) {
         if (preQuestionnaire == null) {
             return "trad";
@@ -92,8 +91,7 @@ public class MaterialTypeService {
             }
 
             return "emo";
-            
-            
-        } 
+
+        }
     }
 }

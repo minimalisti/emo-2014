@@ -17,7 +17,7 @@
                 <input type="hidden" name="visitEnded" id="visitEndedF"/>                
                 <button type="button" class="btn btn-primary" id="forwardButton">Eteenpäin</button>
             </form>
-                
+
             <form action="/esikysely.html" id="backward">
                 <button type="button" class="btn btn-primary" id="backwardButton">Taustakyselyyn</button>
             </form>
@@ -40,20 +40,20 @@
         <script src="/js/libs/jquery/jquery.js"></script>
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

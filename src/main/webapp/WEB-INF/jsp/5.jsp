@@ -23,17 +23,17 @@
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksep‰in</button>
             </form>          
             <div class="spacer"></div>
-            
+
             <h3>Olioista koostuvat mallit</h3>
-            
+
             <p>Olioita yhdistelem‰ll‰ voimme luoda ohjelman aihepiiri‰ kuvaavan mallin. T‰ss‰ yksi pieni esimerkki piirroksen muodossa:</p>
 
             <img src="/img/${materialType}/opiskelijaoliot-kurssit.png"/>
-            
+
             <p><em>Olioita, jotka liittyv‰t kurssi-ilmoittautumisj‰rjestelm‰‰ et‰isesti muistuttavaan ohjelmaan. Huomaa, miten oliot viittaavat toisiinsa ja muodostavat kokonaisuuden.</em></p>
-            
+
             <p>Kullakin oliolla on oma vastuualueensa ohjelman toiminnassa. Esimerkiksi kurssiolion vastuulla voi olla kirjanpito siit‰, keit‰ kurssille on ilmoittautunut, sek‰ uusista ilmoittautumisista huolehtiminen enimm‰isosallistujam‰‰r‰n puitteissa. Eri olioiden toimintoja yhdistelem‰ll‰ saadaan aikaan koko ohjelman toiminta, mist‰ lis‰‰ hieman myˆhemmin.</p>
-            
+
 
         </div>
 
@@ -41,20 +41,20 @@
         <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
         <script>
-            $(function() {
+            $(function () {
                 var tmpTime = new Date();
                 $("#visitStartedF").val(tmpTime);
                 $("#visitStartedB").val(tmpTime);
 
-                $("#forwardButton").click(function() {
+                $("#forwardButton").click(function () {
                     $("#visitEndedF").val(new Date());
                     $("#forward").submit();
                 });
 
-                $("#backwardButton").click(function() {
+                $("#backwardButton").click(function () {
                     $("#visitEndedB").val(new Date());
                     $("#backward").submit();
-                });                
+                });
             });
         </script>
     </body>

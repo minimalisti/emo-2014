@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PANAS-kysely 2</title>
+        <title>Jälkikysely 2/3</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,16 @@
     <body>
 
         <div class="container">
-            <h1>PANAS-kysely 2</h1>
+            <h1>Tunnetila, jälkikysely 2/3</h1>
 
 
             <form action="/app/submit-post-panas" method="POST">
 
                 <p>Tällä kyselyllä kartoitetaan tämänhetkistä tunnetilaasi. 
                     Kysely muodostuu kymmenestä eri tunteesta, joiden kokemisen voimakkuutta sinun tulee arvioida asteikolla 1 (ei ollenkaan) - 6 (erittäin voimakkaasti).</p>
-                
+
                 <p>Kysymys: Kun ajattelet itseäsi ja sitä mitä tunnet tällä hetkellä, missä määrin tunnet että olet:</p>
-                
+
                 <div class="dropdown">
                     <p class="dropdown-text">1. Järkyttynyt</p>
                     <div class="select_group-first">
@@ -68,7 +68,7 @@
                         <label for="nervous_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="nervous_6" type="radio" name="nervous" value="6"/>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="dropdown-text">3. Valpas</p>
                     <div class="select_group-first">
@@ -112,7 +112,7 @@
                         <label for="ashamed_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="ashamed_6" type="radio" name="ashamed" value="6"/>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="dropdown-text">5. Inspiroitunut</p>
                     <div class="select_group-first">
@@ -200,7 +200,7 @@
                         <label for="determined_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="determined_6" type="radio" name="determined" value="6"/>
                     </div>
                 </div>
-        
+
                 <div class="dropdown">
                     <p class="dropdown-text">9. Pelokas</p>
                     <div class="select_group-first">
@@ -245,14 +245,14 @@
                         <label for="active_6" class="go-label">6 Erittäin voimakkaasti<br/></label><input  id="active_6" type="radio" name="active" value="6"/>
                     </div>
                 </div>
-                
+
 
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
-                
+
                 <div class="button-center">
-                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry jälkikyselyyn</button>
+                    <button type="button" class="btn btn-primary" id="forwardButton">Siirry viiimeiseen jälkikyselyyn</button>
                 </div>
             </form>
         </div>
