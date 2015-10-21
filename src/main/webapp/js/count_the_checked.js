@@ -10,6 +10,8 @@ $(function () {
 
 
     $('#forwardButton').attr("disabled", true);
+    $('#forwardButton').css('background-color', 'grey')
+    $('#forwardButton').text("Vastaa ensin kysymyksiin")
 
     var total = 0;
 
@@ -31,6 +33,8 @@ $(function () {
         if (n === total)
         {
             $('#forwardButton').attr("disabled", false);
+            $('#forwardButton').css('background-color', 'blue')
+            $('#forwardButton').text("Jatka")
         }
     };
     countChecked();

@@ -17,6 +17,12 @@
                 <input type="hidden" name="visitEnded" id="visitEndedB"/>
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksep‰in</button>
             </form>     
+                
+                <form id="goto_postquestionnaires" action="/app/submit-material-${materialId}-seen" method="POST">
+                <input type="hidden" name="visitStarted" id="visitStartedF"/>
+                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
+                <button type="button" class="btn btn-primary" id="forwardButton">Siirry j‰lkikyselyihin</button>
+            </form>
 
             <div class="spacer"></div>
 
@@ -30,14 +36,9 @@
 
             <img style="padding-bottom: 25px;" src="/img/${materialType}/auto-olio-kerro-bensa-vastaus.png"/>
 
-            <p style=" border-top: 1px solid #a7a7a7; padding-top: 10px;"><em>Oppimateriaali p‰‰ttyy t‰h‰n. Ole hyv‰ ja vastaa viel‰ loppukyselyyn.</em></p>
+            <p style=" border-top: 1px solid #a7a7a7; padding-top: 10px;"><em>Oppimateriaali p‰‰ttyy t‰h‰n. Ole hyv‰ ja vastaa viel‰ j‰lkikyselyihin. Niihin viev‰ nappula on <a href="#top">sivun yl‰osassa.</a></em></p>
 
             <p>
-            <form id="forward" action="/app/submit-material-${materialId}-seen" method="POST">
-                <input type="hidden" name="visitStarted" id="visitStartedF"/>
-                <input type="hidden" name="visitEnded" id="visitEndedF"/>                
-                <button type="button" class="btn btn-primary" id="forwardButton">Siirry j‰lkikyselyyn 1/3</button>
-            </form>
         </p>
 
     </div>
@@ -51,7 +52,7 @@
             $("#visitStartedF").val(tmpTime);
             $("#visitStartedB").val(tmpTime);
 
-            $("#forwardButton").click(function () {
+            $("#goto_postquestionnaires").click(function () {
                 $("#visitEndedF").val(new Date());
                 $("#forward").submit();
             });
