@@ -9,26 +9,52 @@
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-        <script src="js/count_the_checked.js"></script>
+        <!-- <script src="js/count_the_checked.js"></script> -->
     </head>
     <body>
 
         <div class="container">
             <h1>Taustatiedot, esikysely 1/4</h1>
 
-            <form action="/app/submit-background" method="POST">
-                <!--
-                <div class="form-group">
-                    <label for="username">Opiskelijanumero (Antamalla opiskelijanumerosi saat merkinnän suoritetuista viikkoharjoituksesta Moodleen.)</label>
-                    <input type="text" name="username" class="form-control" id="username" placeholder="Opiskelijanumero">
-                </div>
-                -->
+            <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
+                Sinun on vastattava sivun pakollisiin kysymyksiin ennen kuin voit jatkaa.</p>
 
-                <p>Teemme oppimateriaalin laadun parantamiseen liittyvää tutkimusta. Alla olevat kysymykset liittyvät tähän tutkimukseen. 
-                    Vastauksesi näihin kysymyksiin ei vaikuta kurssin suorittamiseen tai arvosteluun millään tavoin.</p>
+            <form action="/app/submit-background" method="POST">
                 
-                <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
-                    Sinun on vastattava sivun pakollisiin kysymyksiin ennen kuin voit jatkaa.</p>
+                <div>  <label for="select_gender" class="preq-label">Sukupuoli*</label>
+                    <select name="select_gender" id="select_gender"  class="preq-input" required>
+                        <option value="" disabled selected style="color:grey">Valitse</option>
+                        <option value="Nainen">Nainen</option>
+                        <option value="Mies">Mies</option>
+                        <option value="Muu">Muu</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="select_age" class="preq-label">Ikä*</label>
+                    <select id="select_age" name="select_age" class="preq-input" required>
+                        <option value="" disabled selected style="color:grey">Valitse</option>
+
+                    </select>
+                </div>
+
+                <div><label for="select_starting_year"  class="preq-label">Opiskeluiden aloitusvuosi*</label>
+                    <select name="select_starting_year" id="select_starting_year" class="preq-input" required>
+                        <option value="" disabled selected style="color:grey">Valitse</option>
+                    </select>
+                </div>
+                <div><label for="select_major" class="preq-label">Pääaine*</label>
+                    <input type="text" name="select_major" id="select_major" class="preq-input" required>
+                </div>
+                <div><label for="select_studypoints" class="preq-label">Opintopisteet*</label>
+                    <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
+                        <option value="" disabled selected style="color:grey">Valitse</option>
+                    </select>
+                </div>
+                <div><label for="select_average" class="preq-label">Keskiarvo*</label>
+                    <select name="select_average" id="select_average" class="preq-input" required>
+                        <option value="" disabled selected style="color:grey">Valitse</option>
+                    </select>
+                </div>
 
                 <h3>Kerro ensin ohjelmointiin liittyvästä kokemuksestasi.</h3>
                 <div class="checkbox">
@@ -56,6 +82,7 @@
                 </div>
 
 
+                <!--
                 <h3>Kerro mitä mieltä olet seuraavista kurssiin liittyvistä asioista arvioimalla 
                     kuinka hyvin alla olevat lauseet kuvaavat kokemustasi niistä.</h3>
 
@@ -215,6 +242,7 @@
                         <label for="material_helped_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="material_helped_6" type="radio" name="material_helped" value="6"/>
                     </div>
                 </div>
+                -->
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
@@ -253,7 +281,59 @@
                     $("form").submit();
                 });
 
+                var min = 17,
+                        max = 50,
+                        select = document.getElementById('select_age');
+
+                var new_age_opt = document.createElement('option');
+                new_age_opt.value = "alle 17";
+                new_age_opt.innerHTML = "Alle 17";
+                select.appendChild(new_age_opt);
+
+                for (var i = min; i <= max; i++) {
+                    var opt = document.createElement('option');
+                    opt.value = i;
+                    opt.innerHTML = i;
+                    select.appendChild(opt);
+                }
+                var classical_age_opt = document.createElement('option');
+                classical_age_opt.value = "yli 50";
+                classical_age_opt.innerHTML = "Yli 50";
+                select.appendChild(classical_age_opt);
+
+
+                var myDate = new Date();
+                var year = myDate.getFullYear();
+                var years_select = document.getElementById('select_starting_year');
+
+                for (var i = year; i >= 1990; i--) {
+                    var opt = document.createElement('option');
+                    opt.value = i;
+                    opt.innerHTML = i;
+                    years_select.appendChild(opt);
+                }
+
+                var average = document.getElementById('select_average');
+                for (var av = 0.0; av < 5.0; av += 0.1) {
+                    var opt = document.createElement('option');
+                    opt.value = av.toFixed(1);
+                    opt.innerHTML = av.toFixed(1);
+                    average.appendChild(opt);
+                }
+
+                var studypoints = document.getElementById('select_studypoints');
+                for (var sp = 0; sp < 40; sp++) {
+                    var opt = document.createElement('option');
+                    var lower = sp * 10;
+                    var upper = (sp + 1) * 10;
+                    var whole = lower + " - " + upper + " op";
+                    opt.value = whole;
+                    opt.innerHTML = whole;
+                    studypoints.appendChild(opt);
+                }
             });
+
+
         </script>
     </body>
 </html>

@@ -84,3 +84,12 @@ body { font-size: 1.8em; }
 .sam_helper_right {
     float: right;
 }
+
+.preq-label{
+    width: 25%;
+    
+}
+
+.preq-input{
+    width: 25%
+}
