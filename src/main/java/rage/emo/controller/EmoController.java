@@ -458,7 +458,8 @@ public class EmoController {
 
         prePanasQuestionnaireRepository.save(prePanasQuestionnaire);
 
-        return "redirect:/pre-attrakdiff2-short.html";
+        //return "redirect:/pre_attrakdiff2-short.html";
+        return "redirect:/app/material-1";
     }
 
     @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
@@ -468,7 +469,7 @@ public class EmoController {
 
         goalOrientationRepository.save(goalOrientationQuestionnaire);
 
-        return "redirect:/app/pre-panas-kysely.html";
+        return "redirect:/pre-panas-kysely.html";
     }
 
     @RequestMapping(value = "/submit-login", method = {RequestMethod.POST, RequestMethod.GET})
@@ -556,7 +557,6 @@ public class EmoController {
 //        return "redirect:/post-panas-kysely.html";
 //
 //    }
-
     @RequestMapping(value = "/submit-post-panas", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostPanasQuestionnaire(HttpSession session, @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
         postPanasQuestionnaire.setUsername((String) session.getAttribute("username"));
