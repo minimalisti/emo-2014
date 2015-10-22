@@ -26,16 +26,16 @@ public class DataExport {
     PostQuestionnaireRepository postQuestionnaireRepository;
     @Autowired
     GoalOrientationRepository goalOrientationRepository;
-
-    @Autowired
-    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
+//
+//    @Autowired
+//    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
     @Autowired
     PrePanasQuestionnaireRepository prePanasQuestionnaireRepository;
 
     @Autowired
     PostPanasQuestionnaireRepository postPanasQuestionnaireRepository;
-    @Autowired
-    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
+//    @Autowired
+//    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
 
     @RequestMapping("/app/export")
     public Data export() {
@@ -46,11 +46,11 @@ public class DataExport {
         d.setPostQuestionnaireAnswers(postQuestionnaireRepository.findAll());
         d.setGoalOrientationQuestionnairesAnswers(goalOrientationRepository.findAll());
 
-        d.setPreSamQuestionnaireAnswers(preSamQuestionnaireRepository.findAll());
+        //d.setPreSamQuestionnaireAnswers(preSamQuestionnaireRepository.findAll());
         d.setPrePanasQuestionnaireAnswers(prePanasQuestionnaireRepository.findAll());
 
         d.setPostPanasQuestionnaireAnswers(postPanasQuestionnaireRepository.findAll());
-        d.setPostSamQuestionnaireAnswers(postSamQuestionnaireRepository.findAll());
+        //d.setPostSamQuestionnaireAnswers(postSamQuestionnaireRepository.findAll());
 
         return d;
     }

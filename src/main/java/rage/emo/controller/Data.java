@@ -5,12 +5,9 @@ import rage.emo.dto.MaterialVisit;
 import rage.emo.dto.PostQuestionnaire;
 import rage.emo.dto.PreQuestionnaire;
 import rage.emo.dto.GoalOrientationQuestionnaire;
-import rage.emo.dto.SamQuestionnaire;
-import rage.emo.dto.PanasQuestionnaire;
+
 import rage.emo.dto.PrePanasQuestionnaire;
 import rage.emo.dto.PostPanasQuestionnaire;
-import rage.emo.dto.PostSamQuestionnaire;
-import rage.emo.dto.PreSamQuestionnaire;
 
 public class Data {
 
@@ -19,11 +16,9 @@ public class Data {
     private List<PreQuestionnaire> preQuestionnaireAnswers;
     private List<PostQuestionnaire> postQuestionnaireAnswers;
     private List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers;
-
-    private List<PreSamQuestionnaire> preSamQuestionnaireAnswers;
+    
     private List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers;
 
-    private List<PostSamQuestionnaire> postSamQuestionnaireAnswers;
     private List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers;
 
     /**
@@ -84,20 +79,6 @@ public class Data {
     }
 
     /**
-     * @return the preSamQuestionnaireAnswers
-     */
-    public List<PreSamQuestionnaire> getPreSamQuestionnaireAnswers() {
-        return preSamQuestionnaireAnswers;
-    }
-
-    /**
-     * @param preSamQuestionnaireAnswers the preSamQuestionnaireAnswers to set
-     */
-    public void setPreSamQuestionnaireAnswers(List<PreSamQuestionnaire> preSamQuestionnaireAnswers) {
-        this.preSamQuestionnaireAnswers = preSamQuestionnaireAnswers;
-    }
-
-    /**
      * @return the prePanasQuestionnaireAnswers
      */
     public List<PrePanasQuestionnaire> getPrePanasQuestionnaireAnswers() {
@@ -112,19 +93,6 @@ public class Data {
         this.prePanasQuestionnaireAnswers = prePanasQuestionnaireAnswers;
     }
 
-    /**
-     * @return the postSamQuestionnaireAnswers
-     */
-    public List<PostSamQuestionnaire> getPostSamQuestionnaireAnswers() {
-        return postSamQuestionnaireAnswers;
-    }
-
-    /**
-     * @param postSamQuestionnaireAnswers the postSamQuestionnaireAnswers to set
-     */
-    public void setPostSamQuestionnaireAnswers(List<PostSamQuestionnaire> postSamQuestionnaireAnswers) {
-        this.postSamQuestionnaireAnswers = postSamQuestionnaireAnswers;
-    }
 
     /**
      * @return the postPanasQuestionnaireAnswers
