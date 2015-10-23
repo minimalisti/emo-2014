@@ -18,9 +18,9 @@
                 <button type="button" class="btn btn-primary" id="forwardButton">Eteenpäin</button>
             </form>
 
-            <form action="/esikysely.html" id="backward">
-                <button type="button" class="btn btn-primary" id="backwardButton">Taustakyselyyn</button>
-            </form>
+<!--            <form action="/pre-attrakdiff.html" id="backward">
+                <button type="button" class="btn btn-primary" id="backwardButton">Esikysylyiden alkuun</button>
+            </form>-->
 
             <div class="spacer"></div>
 

@@ -9,17 +9,27 @@ import rage.emo.dto.GoalOrientationQuestionnaire;
 import rage.emo.dto.PrePanasQuestionnaire;
 import rage.emo.dto.PostPanasQuestionnaire;
 
+import rage.emo.dto.PreAttrakdiffQuestionnaire;
+import rage.emo.dto.PostAttrakdiffQuestionnaire;
+
+import rage.emo.dto.DemographicQuestionnaire;
+
 public class Data {
 
     private List<MaterialVisit> materialVisits;
 
     private List<PreQuestionnaire> preQuestionnaireAnswers;
     private List<PostQuestionnaire> postQuestionnaireAnswers;
-    private List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers;
-    
-    private List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers;
 
+    private List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers;
+
+    private List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers;
     private List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers;
+
+    private List<PreAttrakdiffQuestionnaire> preAttrakdiffQuestionnaireAnswers;
+    private List<PostAttrakdiffQuestionnaire> postAttrakdiffQuestionnaireAnswers;
+    
+    private List<DemographicQuestionnaire> demographicQuestionnaireAnswers;
 
     /**
      * @return the materialVisits
@@ -71,8 +81,7 @@ public class Data {
     }
 
     /**
-     * @param goalOrientationQuestionnairesAnswers the
-     * goalOrientationQuestionnairesAnswers to set
+     * @param goalOrientationQuestionnairesAnswers the goalOrientationQuestionnairesAnswers to set
      */
     public void setGoalOrientationQuestionnairesAnswers(List<GoalOrientationQuestionnaire> goalOrientationQuestionnairesAnswers) {
         this.goalOrientationQuestionnairesAnswers = goalOrientationQuestionnairesAnswers;
@@ -86,13 +95,11 @@ public class Data {
     }
 
     /**
-     * @param prePanasQuestionnaireAnswers the prePanasQuestionnaireAnswers to
-     * set
+     * @param prePanasQuestionnaireAnswers the prePanasQuestionnaireAnswers to set
      */
     public void setPrePanasQuestionnaireAnswers(List<PrePanasQuestionnaire> prePanasQuestionnaireAnswers) {
         this.prePanasQuestionnaireAnswers = prePanasQuestionnaireAnswers;
     }
-
 
     /**
      * @return the postPanasQuestionnaireAnswers
@@ -102,11 +109,53 @@ public class Data {
     }
 
     /**
-     * @param postPanasQuestionnaireAnswers the postPanasQuestionnaireAnswers to
-     * set
+     * @param postPanasQuestionnaireAnswers the postPanasQuestionnaireAnswers to set
      */
     public void setPostPanasQuestionnaireAnswers(List<PostPanasQuestionnaire> postPanasQuestionnaireAnswers) {
         this.postPanasQuestionnaireAnswers = postPanasQuestionnaireAnswers;
     }
 
+    /**
+     * @return the preAttrakdiffQuestionnaireAnswers
+     */
+    public List<PreAttrakdiffQuestionnaire> getPreAttrakdiffQuestionnaireAnswers() {
+        return preAttrakdiffQuestionnaireAnswers;
+    }
+
+    /**
+     * @param preAttrakdiffQuestionnaireAnswers the preAttrakdiffQuestionnaireAnswers to set
+     */
+    public void setPreAttrakdiffQuestionnaireAnswers(List<PreAttrakdiffQuestionnaire> preAttrakdiffQuestionnaireAnswers) {
+        this.preAttrakdiffQuestionnaireAnswers = preAttrakdiffQuestionnaireAnswers;
+    }
+
+    /**
+     * @return the postAttrakdiffQuestionnaireAnswers
+     */
+    public List<PostAttrakdiffQuestionnaire> getPostAttrakdiffQuestionnaireAnswers() {
+        return postAttrakdiffQuestionnaireAnswers;
+    }
+
+    /**
+     * @param postAttrakdiffQuestionnaireAnswers the postAttrakdiffQuestionnaireAnswers to set
+     */
+    public void setPostAttrakdiffQuestionnaireAnswers(List<PostAttrakdiffQuestionnaire> postAttrakdiffQuestionnaireAnswers) {
+        this.postAttrakdiffQuestionnaireAnswers = postAttrakdiffQuestionnaireAnswers;
+    }
+
+    /**
+     * @return the demographicQuestionnaireAnswers
+     */
+    public List<DemographicQuestionnaire> getDemographicQuestionnaireAnswers() {
+        return demographicQuestionnaireAnswers;
+    }
+
+    /**
+     * @param demographicQuestionnaireAnswers the demographicQuestionnaireAnswers to set
+     */
+    public void setDemographicQuestionnaireAnswers(List<DemographicQuestionnaire> demographicQuestionnaireAnswers) {
+        this.demographicQuestionnaireAnswers = demographicQuestionnaireAnswers;
+    }
+
+    
 }

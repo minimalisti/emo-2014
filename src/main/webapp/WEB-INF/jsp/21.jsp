@@ -52,9 +52,9 @@
             $("#visitStartedF").val(tmpTime);
             $("#visitStartedB").val(tmpTime);
 
-            $("#goto_postquestionnaires").click(function () {
+            $("#forwardButton").click(function () {
                 $("#visitEndedF").val(new Date());
-                $("#forward").submit();
+                $("#goto_postquestionnaires").submit();
             });
 
             $("#backwardButton").click(function () {

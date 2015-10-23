@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Esikysely 1/4</title>
+        <title>Esikysely 3/4</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,51 +14,17 @@
     <body>
 
         <div class="container">
-            <h1>Taustatiedot, esikysely 1/4</h1>
+            <h1>Ohjelmoinnin taustatiedot, esikysely 3/4</h1>
 
             <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
                 Sinun on vastattava sivun pakollisiin kysymyksiin ennen kuin voit jatkaa.</p>
 
             <form action="/app/submit-background" method="POST">
 
-                <div>  <label for="select_gender" class="preq-label">Sukupuoli*</label>
-                    <select name="select_gender" id="select_gender"  class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                        <option value="Nainen">Nainen</option>
-                        <option value="Mies">Mies</option>
-                        <option value="Muu">Muu</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="select_age" class="preq-label">Ikä*</label>
-                    <select id="select_age" name="select_age" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-
-                    </select>
-                </div>
-
-                <div><label for="select_starting_year"  class="preq-label">Opiskeluiden aloitusvuosi*</label>
-                    <select name="select_starting_year" id="select_starting_year" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
-                </div>
-                <div><label for="select_major" class="preq-label">Pääaine*</label>
-                    <input type="text" name="select_major" id="select_major" class="preq-input" required>
-                </div>
-                <div><label for="select_studypoints" class="preq-label">Opintopisteet*</label>
-                    <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
-                </div>
-                <div><label for="select_average" class="preq-label">Keskiarvo*</label>
-                    <select name="select_average" id="select_average" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
-                </div>
-
-                <h3>Kerro ensin ohjelmointiin liittyvästä kokemuksestasi.</h3>
+                <h3>Kerro ohjelmointiin liittyvästä kokemuksestasi.</h3>
                 <div class="checkbox">
                     <label><input type="checkbox" name="hasProgrammedInThePast"> Olen ohjelmoinut ennen tätä kurssia.</label>
+                    
                 </div>
 
                 <div class="checkbox">
@@ -81,168 +47,6 @@
                     <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Osaan nimetä useampia ohjelmointityylejä ja -paradigmoja.</label>
                 </div>
 
-
-                <!--
-                <h3>Kerro mitä mieltä olet seuraavista kurssiin liittyvistä asioista arvioimalla 
-                    kuinka hyvin alla olevat lauseet kuvaavat kokemustasi niistä.</h3>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssilla käsitellyt aiheet ovat olleet mielestäni mielenkiintoisia."*</p>
-                    <div class="select_group-first">
-                        <label for="interesting_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="interesting_1" name="interesting" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="interesting_2" class="go-label">2<br/></label><input id="interesting_2" type="radio" name="interesting" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="interesting_3" class="go-label">3<br/></label><input  id="interesting_3" type="radio" name="interesting" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="interesting_4" class="go-label">4<br/></label><input  id="interesting_4" type="radio" name="interesting" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="interesting_5" class="go-label">5<br/></label><input  id="interesting_5" type="radio" name="interesting" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="interesting_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="interesting_6" type="radio" name="interesting" value="6"/>
-                    </div>
-                </div>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssiin liittyvät tehtävät ovat olleet minulle vaikeita. "*</p>
-                    <div class="select_group-first">
-                        <label for="practice_difficulty_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="practice_difficulty_1" name="practice_difficulty" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_difficulty_2" class="go-label">2<br/></label><input id="practice_difficulty_2" type="radio" name="practice_difficulty" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_difficulty_3" class="go-label">3<br/></label><input  id="practice_difficulty_3" type="radio" name="practice_difficulty" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_difficulty_4" class="go-label">4<br/></label><input  id="practice_difficulty_4" type="radio" name="practice_difficulty" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_difficulty_5" class="go-label">5<br/></label><input  id="practice_difficulty_5" type="radio" name="practice_difficulty" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="practice_difficulty_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="practice_difficulty_6" type="radio" name="practice_difficulty" value="6"/>
-                    </div>
-                </div>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssin tehtävien tekemisen aloittaminen on ollut minulle vaikeaa."*</p>
-                    <div class="select_group-first">
-                        <label for="practice_starting_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="practice_starting_1" name="practice_starting" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_starting_2" class="go-label">2<br/></label><input id="practice_starting_2" type="radio" name="practice_starting" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_starting_3" class="go-label">3<br/></label><input  id="practice_starting_3" type="radio" name="practice_starting" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_starting_4" class="go-label">4<br/></label><input  id="practice_starting_4" type="radio" name="practice_starting" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="practice_starting_5" class="go-label">5<br/></label><input  id="practice_starting_5" type="radio" name="practice_starting" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="practice_starting_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="practice_starting_6" type="radio" name="practice_starting" value="6"/>
-                    </div>
-                </div>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Uskon että kurssilla oppimani tiedot ovat minulle tulevaisuudessa hyödyllisiä."*</p>
-                    <div class="select_group-first">
-                        <label for="information_usefulness_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="information_usefulness_1" name="information_usefulness" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="information_usefulness_2" class="go-label">2<br/></label><input id="information_usefulness_2" type="radio" name="information_usefulness" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="information_usefulness_3" class="go-label">3<br/></label><input  id="information_usefulness_3" type="radio" name="information_usefulness" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="information_usefulness_4" class="go-label">4<br/></label><input  id="information_usefulness_4" type="radio" name="information_usefulness" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="information_usefulness_5" class="go-label">5<br/></label><input  id="information_usefulness_5" type="radio" name="information_usefulness" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="information_usefulness_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="information_usefulness_6" type="radio" name="information_usefulness" value="6"/>
-                    </div>
-                </div>
-
-
-
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssilla käytetyt oppimateriaalit ovat mielestäni selkeitä."*</p>
-                    <div class="select_group-first">
-                        <label for="material_clarity_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="material_clarity_1" name="material_clarity" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_clarity_2" class="go-label">2<br/></label><input id="material_clarity_2" type="radio" name="material_clarity" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_clarity_3" class="go-label">3<br/></label><input  id="material_clarity_3" type="radio" name="material_clarity" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_clarity_4" class="go-label">4<br/></label><input  id="material_clarity_4" type="radio" name="material_clarity" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_clarity_5" class="go-label">5<br/></label><input  id="material_clarity_5" type="radio" name="material_clarity" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="material_clarity_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="material_clarity_6" type="radio" name="material_clarity" value="6"/>
-                    </div>
-                </div>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssilla käytetyt oppimateriaalit ovat innostavia."*</p>
-                    <div class="select_group-first">
-                        <label for="material_inspiring_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="material_inspiring_1" name="material_inspiring" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_inspiring_2" class="go-label">2<br/></label><input id="material_inspiring_2" type="radio" name="material_inspiring" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_inspiring_3" class="go-label">3<br/></label><input  id="material_inspiring_3" type="radio" name="material_inspiring" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_inspiring_4" class="go-label">4<br/></label><input  id="material_inspiring_4" type="radio" name="material_inspiring" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_inspiring_5" class="go-label">5<br/></label><input  id="material_inspiring_5" type="radio" name="material_inspiring" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="material_inspiring_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="material_inspiring_6" type="radio" name="material_inspiring" value="6"/>
-                    </div>
-                </div>
-
-                <div class="dropdown center_it_all">
-                    <p class="dropdown-text">"Kurssilla käytetyt oppimateriaalit ovat tukeneet oppimistani huonosti."*</p>
-                    <div class="select_group-first">
-                        <label for="material_helped_1" class="go-label ">Täysin eri mieltä 1<br/></label><input type="radio" id="material_helped_1" name="material_helped" value="1"/> 
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_helped_2" class="go-label">2<br/></label><input id="material_helped_2" type="radio" name="material_helped" value="2"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_helped_3" class="go-label">3<br/></label><input  id="material_helped_3" type="radio" name="material_helped" value="3"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_helped_4" class="go-label">4<br/></label><input  id="material_helped_4" type="radio" name="material_helped" value="4"/>
-                    </div>
-                    <div class="select_group">   
-                        <label for="material_helped_5" class="go-label">5<br/></label><input  id="material_helped_5" type="radio" name="material_helped" value="5"/>
-                    </div>
-                    <div class="select_group-last">   
-                        <label for="material_helped_6" class="go-label">6 Täysin samaa mieltä<br/></label><input  id="material_helped_6" type="radio" name="material_helped" value="6"/>
-                    </div>
-                </div>
-                -->
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>
@@ -281,56 +85,6 @@
                     $("form").submit();
                 });
 
-                var min = 17,
-                        max = 50,
-                        select = document.getElementById('select_age');
-
-                var new_age_opt = document.createElement('option');
-                new_age_opt.value = "alle 17";
-                new_age_opt.innerHTML = "Alle 17";
-                select.appendChild(new_age_opt);
-
-                for (var i = min; i <= max; i++) {
-                    var opt = document.createElement('option');
-                    opt.value = i;
-                    opt.innerHTML = i;
-                    select.appendChild(opt);
-                }
-                var classical_age_opt = document.createElement('option');
-                classical_age_opt.value = "yli 50";
-                classical_age_opt.innerHTML = "Yli 50";
-                select.appendChild(classical_age_opt);
-
-
-                var myDate = new Date();
-                var year = myDate.getFullYear();
-                var years_select = document.getElementById('select_starting_year');
-
-                for (var i = year; i >= 1990; i--) {
-                    var opt = document.createElement('option');
-                    opt.value = i;
-                    opt.innerHTML = i;
-                    years_select.appendChild(opt);
-                }
-
-                var average = document.getElementById('select_average');
-                for (var av = 0.0; av < 5.0; av += 0.1) {
-                    var opt = document.createElement('option');
-                    opt.value = av.toFixed(1);
-                    opt.innerHTML = av.toFixed(1);
-                    average.appendChild(opt);
-                }
-
-                var studypoints = document.getElementById('select_studypoints');
-                for (var sp = 0; sp < 40; sp++) {
-                    var opt = document.createElement('option');
-                    var lower = sp * 10;
-                    var upper = (sp + 1) * 10;
-                    var whole = lower + " - " + upper + " op";
-                    opt.value = whole;
-                    opt.innerHTML = whole;
-                    studypoints.appendChild(opt);
-                }
             });
 
 

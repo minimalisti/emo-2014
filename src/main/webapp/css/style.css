@@ -33,7 +33,7 @@ body { font-size: 1.8em; }
     text-align: right;
 }
 
-.select_group-last{
+.select_group-last, attrakdiff_left {
     display: inline-block;
     text-align: left;
 }
@@ -92,4 +92,16 @@ body { font-size: 1.8em; }
 
 .preq-input{
     width: 25%
+}
+
+.attrakdiff_word {
+    width: 20%
+}
+
+.attrakdiff_left{
+ text-align: right;
+}
+
+.attrakdiff_right {
+    text-align: left;
 }

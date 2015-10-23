@@ -9,6 +9,8 @@ import rage.emo.dto.GoalOrientationQuestionnaire;
 import rage.emo.dto.PostQuestionnaire;
 import rage.emo.dto.PrePanasQuestionnaire;
 import rage.emo.dto.PostPanasQuestionnaire;
+import rage.emo.dto.PreAttrakdiffQuestionnaire;
+import rage.emo.dto.PostAttrakdiffQuestionnaire;
 
 import javax.servlet.http.HttpSession;
 
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import rage.emo.dto.DemographicQuestionnaire;
 
 import rage.emo.dto.MaterialVisit;
 //import rage.emo.dto.PostSamQuestionnaire;
@@ -30,11 +33,16 @@ import rage.emo.repository.PostQuestionnaireRepository;
 import rage.emo.repository.GoalOrientationRepository;
 import rage.emo.repository.PreQuestionnaireRepository;
 
-import rage.emo.repository.PreSamQuestionnaireRepository;
+//import rage.emo.repository.PreSamQuestionnaireRepository;
 import rage.emo.repository.PrePanasQuestionnaireRepository;
 
 import rage.emo.repository.PostPanasQuestionnaireRepository;
-import rage.emo.repository.PostSamQuestionnaireRepository;
+//import rage.emo.repository.PostSamQuestionnaireRepository;
+
+import rage.emo.repository.PreAttrakdiffQuestionnaireRepository;
+import rage.emo.repository.PostAttrakdiffQuestionnaireRepository;
+
+import rage.emo.repository.DemographicQuestionnaireRepository;
 
 import rage.emo.service.MaterialTypeService;
 
@@ -392,21 +400,29 @@ public class EmoController {
 //    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
     @Autowired
     PrePanasQuestionnaireRepository prePanasQuestionnaireRepository;
+    @Autowired
+    PostPanasQuestionnaireRepository postPanasQuestionnaireRepository;
 
     @Autowired
     PostQuestionnaireRepository postQuestionnaireRepository;
 
     @Autowired
-    PostPanasQuestionnaireRepository postPanasQuestionnaireRepository;
+    PreAttrakdiffQuestionnaireRepository preAttrakdiffQuestionnaireRepository;
+    @Autowired
+    PostAttrakdiffQuestionnaireRepository postAttrakdiffQuestionnaireRepository;
+
+    @Autowired
+    DemographicQuestionnaireRepository demographicQuestionnaireRepository;
+
 //    @Autowired
 //    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
-
     @Autowired
     MaterialVisitRepository materialVisitRepository;
 
     @Autowired
     MaterialTypeService materialTypeService;
 
+    // A mystery function. Don't remove, just to be safe. :-)
     @RequestMapping(value = "/start/{opnro}", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
             @RequestHeader(value = "referer", required = false) final String referer,
@@ -418,60 +434,7 @@ public class EmoController {
         return "redirect:/esikysely.html?o=" + opnro;
     }
 
-    @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitBackground(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PreQuestionnaire preQuestionnaire) {
-
-        preQuestionnaire.setSiteUrl(referer);
-        preQuestionnaire.setUsername((String) session.getAttribute("username"));
-        preQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-
-        // TODO: Set material type only if not already set (in login)
-        //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
-        //preQuestionnaire.setAssignedMaterialType(materialType);
-        preQuestionnaireRepository.save(preQuestionnaire);
-
-        return "redirect:/tavoiteorientaatiokysely.html";
-    }
-//
-//    @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
-//    public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
-//
-//        preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
-//        preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-//
-//        preSamQuestionnaire.setPreOrPost("pre");
-//
-//        preSamQuestionnaireRepository.save(preSamQuestionnaire);
-//
-//        return "redirect:/pre-panas-kysely.html";
-//    }
-
-    @RequestMapping(value = "/submit-pre-panas", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitPrePanasQuestionnaire(HttpSession session, @ModelAttribute PrePanasQuestionnaire prePanasQuestionnaire) {
-        prePanasQuestionnaire.setUsername((String) session.getAttribute("username"));
-        prePanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-
-        prePanasQuestionnaire.setPreOrPost("pre");
-
-        prePanasQuestionnaireRepository.save(prePanasQuestionnaire);
-
-        //return "redirect:/pre_attrakdiff2-short.html";
-        return "redirect:/app/material-1";
-    }
-
-    @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitGoalOrientationQuestionnaire(HttpSession session, @ModelAttribute GoalOrientationQuestionnaire goalOrientationQuestionnaire) {
-        goalOrientationQuestionnaire.setUsername((String) session.getAttribute("username"));
-        goalOrientationQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-
-        goalOrientationRepository.save(goalOrientationQuestionnaire);
-
-        return "redirect:/pre-panas-kysely.html";
-    }
-
+    // Login and student number check.
     @RequestMapping(value = "/submit-login", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitLogin(
             @RequestHeader(value = "referer", required = false) final String referer,
@@ -488,8 +451,8 @@ public class EmoController {
             session.setAttribute(MATERIAL_TYPE, materialType);
             login = loginRepository.save(login);
 
-            if (preQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
-                return "redirect:/esikysely.html";
+            if (preAttrakdiffQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
+                return "redirect:/pre-attrakdiff.html";
             } else {
                 return "redirect:/app/material-1";
             }
@@ -499,6 +462,93 @@ public class EmoController {
         }
     }
 
+    // (Pre)Attrakdiff2 short questionnaire.
+    @RequestMapping(value = "/submit-pre-attrakdiff", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitBackground(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PreAttrakdiffQuestionnaire preAttrakdiffQuestionnaire) {
+
+        preAttrakdiffQuestionnaire.setSiteUrl(referer);
+        preAttrakdiffQuestionnaire.setUsername((String) session.getAttribute("username"));
+        preAttrakdiffQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        // TODO: Set material type only if not already set (in login)
+        //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
+        //preQuestionnaire.setAssignedMaterialType(materialType);
+        preAttrakdiffQuestionnaireRepository.save(preAttrakdiffQuestionnaire);
+
+        return "redirect:/tavoiteorientaatiokysely.html";
+    }
+
+    // Goal orientation questionnaire.
+    @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitGoalOrientationQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute GoalOrientationQuestionnaire goalOrientationQuestionnaire) {
+
+        goalOrientationQuestionnaire.setSiteUrl(referer);
+        goalOrientationQuestionnaire.setUsername((String) session.getAttribute("username"));
+        goalOrientationQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        goalOrientationRepository.save(goalOrientationQuestionnaire);
+
+        return "redirect:/esikysely.html";
+    }
+
+    // Programming background.
+    @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitBackground(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PreQuestionnaire preQuestionnaire) {
+
+        preQuestionnaire.setSiteUrl(referer);
+        preQuestionnaire.setUsername((String) session.getAttribute("username"));
+        preQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        // TODO: Set material type only if not already set (in login)
+        //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
+        //preQuestionnaire.setAssignedMaterialType(materialType);
+        preQuestionnaireRepository.save(preQuestionnaire);
+
+        return "redirect:/pre-panas-kysely.html";
+    }
+
+    // (Pre) I-PANAS-SF
+    @RequestMapping(value = "/submit-pre-panas", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPrePanasQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PrePanasQuestionnaire prePanasQuestionnaire) {
+        prePanasQuestionnaire.setSiteUrl(referer);
+        prePanasQuestionnaire.setUsername((String) session.getAttribute("username"));
+        prePanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        prePanasQuestionnaire.setPreOrPost("pre");
+
+        prePanasQuestionnaireRepository.save(prePanasQuestionnaire);
+
+        //return "redirect:/pre_attrakdiff2-short.html";
+        return "redirect:/app/material-1";
+    }
+//
+//    @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
+//    public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
+//
+//        preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
+//        preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+//
+//        preSamQuestionnaire.setPreOrPost("pre");
+//
+//        preSamQuestionnaireRepository.save(preSamQuestionnaire);
+//
+//        return "redirect:/pre-panas-kysely.html";
+//    }
+
+    // 
+    // Study materials.
     @RequestMapping("/material-{id}")
     public String getMaterial(HttpSession session, Model model, @PathVariable Integer id) {
         model.addAttribute(MATERIAL_TYPE, session.getAttribute("materialType"));
@@ -557,8 +607,14 @@ public class EmoController {
 //        return "redirect:/post-panas-kysely.html";
 //
 //    }
+    // (Post) I-PANAS-SF
     @RequestMapping(value = "/submit-post-panas", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitPostPanasQuestionnaire(HttpSession session, @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
+    public String submitPostPanasQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
+
+        postPanasQuestionnaire.setSiteUrl(referer);
         postPanasQuestionnaire.setUsername((String) session.getAttribute("username"));
         postPanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
 
@@ -566,15 +622,52 @@ public class EmoController {
 
         postPanasQuestionnaireRepository.save(postPanasQuestionnaire);
 
-        return "redirect:/jalkikysely.html";
+        return "redirect:/post-attrakdiff.html";
 
+    }
+
+    // Programming background.
+    @RequestMapping(value = "/submit-post-attrakdiff", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitPostAttrakdiff(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PostAttrakdiffQuestionnaire postAttrakdiffQuestionnaire) {
+
+        postAttrakdiffQuestionnaire.setSiteUrl(referer);
+        postAttrakdiffQuestionnaire.setUsername((String) session.getAttribute("username"));
+        postAttrakdiffQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+
+        // TODO: Set material type only if not already set (in login)
+        //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
+        //preQuestionnaire.setAssignedMaterialType(materialType);
+        postAttrakdiffQuestionnaireRepository.save(postAttrakdiffQuestionnaire);
+
+        return "redirect:/jalkikysely.html";
     }
 
     @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitPostQuestionnaire(HttpSession session, @ModelAttribute PostQuestionnaire postQuestionnaire) {
+    public String submitPostQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute PostQuestionnaire postQuestionnaire) {
+        postQuestionnaire.setSiteUrl(referer);
         postQuestionnaire.setUsername((String) session.getAttribute("username"));
         postQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
         postQuestionnaireRepository.save(postQuestionnaire);
+        return "redirect:/demografia-kysely.html";
+    }
+
+    @RequestMapping(value = "/submit-demography", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitDemographytQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute DemographicQuestionnaire demographicQuestionnaire) {
+
+        demographicQuestionnaire.setSiteUrl(referer);
+        demographicQuestionnaire.setUsername((String) session.getAttribute("username"));
+        demographicQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+        demographicQuestionnaireRepository.save(demographicQuestionnaire);
         return "redirect:/kiitos.html";
     }
+
 }
