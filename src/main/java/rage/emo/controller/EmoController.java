@@ -464,7 +464,7 @@ public class EmoController {
 
     // (Pre)Attrakdiff2 short questionnaire.
     @RequestMapping(value = "/submit-pre-attrakdiff", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitBackground(
+    public String submitPreAttrakdiff(
             @RequestHeader(value = "referer", required = false) final String referer,
             HttpSession session,
             @ModelAttribute PreAttrakdiffQuestionnaire preAttrakdiffQuestionnaire) {

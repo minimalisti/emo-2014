@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,10 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>N‰m‰ oliot kuvaavat eri opiskelijoita. Kukin opiskelijaolio "tiet‰‰" tuon opiskelijan perustiedot sek‰ sen, mille kursseille opiskelija on ilmoittautunut.</p>
+            <p>N‰m‰ <span class="object">oliot</span> kuvaavat eri opiskelijoita. 
+                Kukin <span class="object">opiskelijaolio</span> "tiet‰‰" tuon 
+                opiskelijan perus<span class="attribute">tiedot</span> sek‰ sen, mille kursseille opiskelija on 
+                ilmoittautunut.</p>
 
             <img src="/img/${materialType}/sarjis_03.png"/>
 

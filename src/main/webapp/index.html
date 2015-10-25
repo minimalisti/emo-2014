@@ -6,34 +6,51 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
 
-        <div class="container">
-            <h1>TIE-02100 Johdatus ohjelmointiin - viikkoharjoitus 10</h1>
+        <div class="container optimal-reading-width">
+            <h1>TIE-02100 Johdatus ohjelmointiin </h1>
+
+            <h2>Viikkoharjoitus 10</h2>
 
             <p>Tässä oppituokiossa tutustut hieman olio-ohjelmointiin ja 
                 samalla osallistut tutkimukseen vastaamalla kyselyihin. 
-                Kokonaisuus koostuu alun neljästä esikyselystä, oppimateriaalista 
-                sekä lopun kolmesta jälkikyselystä. Kerätyt tiedot käsitellään 
-                luottamuksellisesti.</p>                
-            
-            <p> Kokonaisuuden aloittavissa esikyselyissä sinulta kysytään taustatietoja. 
-                Esikyselyihin vastaamisen jälkeen pääset lukemaan oppimateriaalia. 
+                Oppituokion kokonaisuus koostuu alun neljästä kyselystä, 
+                oppimateriaalista sekä lopun neljästä kyselystä.</p>                
+
+            <h3>Oppituokion kokonaisuuden kuvaus</h3>
+            <p> Kokonaisuuden aloittavissa kyselyissä sinulta kysytään taustatietoja. 
+                Näihin kyselyihin vastaamisen jälkeen pääset lukemaan oppimateriaalia. 
                 Itse oppimateriaalissa on 21 lyhyttä sivua.
-                Oppimateriaalin lukemisen jälkeen tehtävänäsi on vastata kahteen 
-                kyselyyn sekä muutamiin oppimateriaaliin liittyviin kysymyksiin. 
+                Oppimateriaalin lukemisen jälkeen tehtävänäsi on vastata kolmeen 
+                kyselyyn sekä muutamiin oppimateriaaliin liittyviin kysymyksiin.
             </p>
-            
+
+            <h3>Ohjeet kokonaisuuden suorittamiseen</h3>
             <p>Suorita koko harjoitus kyselyineen kerralla. Tällöin tutkimusta varten 
                 kerättävä tieto on käyttökelpoista.
                 Kokonaisuuden läpikäyntiin kuluu noin 30-60 minuuttia.</p>
 
+            <p>Kun vastaat kyselyihin, ole hyvä ja noudata seuraavia ohjeita:</p>
+            <ul>
+                <li>vastaa kaikkiin kysymyksiin</li> 
+                <li>kyselyissä tarvitaan Javascriptiä, joten
+                    sen on oltava selaimessa käytössä.</li>
+                <li>älä käytä selaimen Takaisin-toimintoa.</li>
+            </ul>
+            
+            <h3>Tutkimuksen kuvaus</h3>
             <p>Olio-ohjelmointia selittävä oppimateriaali liittyy tutkimukseen, 
                 jossa selvitetään erilaisten oppimateriaalien opettavuutta. 
                 Kyselyt ovat osa tätä tutkimusta ja vastauksesi niiden kysymyksiin
                 eivät vaikuta kurssin suorittamiseen tai arvosteluun millään tavoin,
-                mutta ne ovat erittäin tärkeitä tutkimuksellemme. Jos kohtaat kyselyissä 
+                mutta ne ovat erittäin tärkeitä tutkimuksellemme. 
+                Kerätyt tiedot käsitellään luottamuksellisesti ja niitä käytetään
+                vain tutkimuskäyttöön.</p>
+                
+                <p>Jos kohtaat kyselyissä 
                 teknisiä tai ymmärrettävyyteen vaikuttavia ongelmia, 
                 ole hyvä ja <a href="mailto:mikko.nurminen@tut.fi?Subject=TIE-02100+Ongelmia+viikkoteht%C3%A4v%C3%A4ss%C3%A4+10">ilmoita niistä.</a></p>  
 
@@ -43,7 +60,10 @@
                     <label for="username">Opiskelijanumero (Antamalla opiskelijanumerosi ja vastaamalla lopussa oleviin kysymyksiin saat viikkoharjoitusmerkinnän.)</label>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Kurssille rekisteröity opiskelijanumero">
                 </div>
-                <button type="submit" class="btn btn-primary">Jatka 1. esikyselyyn</button>
+
+                <div  class="button-center">
+                    <button type="submit" class="btn btn-primary">Jatka</button>
+                </div>
 
                 <script>
                     if (location.search.indexOf('virhe=') >= 0) {

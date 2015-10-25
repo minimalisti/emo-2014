@@ -5,59 +5,59 @@ import javax.persistence.Entity;
 @Entity
 public class PreQuestionnaire extends AbstractSiteVisit {
 
-    private Boolean hasProgrammedInThePast = false;
-    private Boolean hasOoProgrammedInThePast = false;
-    private Boolean programDuringFreeTimeNowAndThen = false;
-    private Boolean readingProgrammingRelatedContentInFreetime = false;
-    private Boolean canNameMoreThanOneProgrammingLanguages = false;
-    private Boolean canNameMoreThanOneProgrammingStylesAndParadigms = false;
+    private String hasProgrammedInThePast;
+    private String hasOoProgrammedInThePast;
+    private String programDuringFreeTimeNowAndThen;
+    private String readingProgrammingRelatedContentInFreetime;
+    private String canNameMoreThanOneProgrammingLanguages;
+    private String canNameMoreThanOneProgrammingStylesAndParadigms;
 
 
-    public Boolean isHasProgrammedInThePast() {
+    public String isHasProgrammedInThePast() {
         return hasProgrammedInThePast;
     }
 
-    public void setHasProgrammedInThePast(Boolean hasProgrammedInThePast) {
+    public void setHasProgrammedInThePast(String hasProgrammedInThePast) {
         this.hasProgrammedInThePast = hasProgrammedInThePast;
     }
 
-    public Boolean isHasOoProgrammedInThePast() {
+    public String isHasOoProgrammedInThePast() {
         return hasOoProgrammedInThePast;
     }
 
-    public void setHasOoProgrammedInThePast(Boolean hasOoProgrammedInThePast) {
+    public void setHasOoProgrammedInThePast(String hasOoProgrammedInThePast) {
         this.hasOoProgrammedInThePast = hasOoProgrammedInThePast;
     }
 
-    public Boolean isProgramDuringFreeTimeNowAndThen() {
+    public String isProgramDuringFreeTimeNowAndThen() {
         return programDuringFreeTimeNowAndThen;
     }
 
-    public void setProgramDuringFreeTimeNowAndThen(Boolean programDuringFreeTimeNowAndThen) {
+    public void setProgramDuringFreeTimeNowAndThen(String programDuringFreeTimeNowAndThen) {
         this.programDuringFreeTimeNowAndThen = programDuringFreeTimeNowAndThen;
     }
 
-    public Boolean isReadingProgrammingRelatedContentInFreetime() {
+    public String isReadingProgrammingRelatedContentInFreetime() {
         return readingProgrammingRelatedContentInFreetime;
     }
 
-    public void setReadingProgrammingRelatedContentInFreetime(Boolean readingProgrammingRelatedContentInFreetime) {
+    public void setReadingProgrammingRelatedContentInFreetime(String readingProgrammingRelatedContentInFreetime) {
         this.readingProgrammingRelatedContentInFreetime = readingProgrammingRelatedContentInFreetime;
     }
 
-    public Boolean isCanNameMoreThanOneProgrammingLanguages() {
+    public String isCanNameMoreThanOneProgrammingLanguages() {
         return canNameMoreThanOneProgrammingLanguages;
     }
 
-    public void setCanNameMoreThanOneProgrammingLanguages(Boolean canNameMoreThanOneProgrammingLanguages) {
+    public void setCanNameMoreThanOneProgrammingLanguages(String canNameMoreThanOneProgrammingLanguages) {
         this.canNameMoreThanOneProgrammingLanguages = canNameMoreThanOneProgrammingLanguages;
     }
 
-    public Boolean isCanNameMoreThanOneProgrammingStylesAndParadigms() {
+    public String isCanNameMoreThanOneProgrammingStylesAndParadigms() {
         return canNameMoreThanOneProgrammingStylesAndParadigms;
     }
 
-    public void setCanNameMoreThanOneProgrammingStylesAndParadigms(Boolean canNameMoreThanOneProgrammingStylesAndParadigms) {
+    public void setCanNameMoreThanOneProgrammingStylesAndParadigms(String canNameMoreThanOneProgrammingStylesAndParadigms) {
         this.canNameMoreThanOneProgrammingStylesAndParadigms = canNameMoreThanOneProgrammingStylesAndParadigms;
     }
         

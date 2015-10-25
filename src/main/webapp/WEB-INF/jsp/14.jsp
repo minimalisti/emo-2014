@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Kurssiolio varmistaa ensin, että ilmoittautuminen on OK (kuten esimerkissämme) ja lisää opiskelijan ilmoittautuneiden luetteloon, josta kurssiolio itse pitää kirjaa.</p>
+            <p><span class="object">Kurssiolio</span> varmistaa ensin, että ilmoittautuminen on OK (kuten esimerkissämme) ja lisää opiskelijan ilmoittautuneiden luetteloon, josta <span class="object">kurssiolio</span> itse pitää kirjaa.</p>
 
             <img src="/img/${materialType}/sarjis_07.png"/>
 

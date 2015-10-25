@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,13 +27,23 @@
 
             <h3>Viestin lis‰tiedot eli parametrit</h3>
 
-            <p><strong>Metodiparametreilla</strong> voidaan v‰litt‰‰ oliolle lis‰tietoja siit‰, mit‰ olion tulisi tehd‰. T‰ss‰ tankattavan bensan m‰‰r‰ v‰litet‰‰n parametriksi (mik‰ on korostettu sinisell‰):</p>
+            <p><strong><span class="parameter">Metodiparametreilla</span></strong> 
+                voidaan v‰litt‰‰ <span class="object">oliolle</span> 
+                lis‰tietoja siit‰, mit‰ olion tulisi tehd‰. T‰ss‰ tankattavan 
+                bensan m‰‰r‰ v‰litet‰‰n <span class="parameter">parametriksi:</span> 
+            </p>
+                
+                <!-- (mik‰ on korostettu sinisell‰):</p> -->
 
             <img style="padding-bottom: 20px;" src="/img/${materialType}/auto-olio-tankkaa.png"/>
 
-            <p>Parametreiksi voi antaa erilaisia arvoja: lukuja, viittauksia toisiin olioihin ja niin edelleen.</p>
+            <p><span class="parameter">Parametreiksi</span> voi antaa erilaisia arvoja: 
+                lukuja, viittauksia toisiin <span class="object">olioihin</span> ja niin 
+                edelleen.</p>
 
-            <p>Parametreja voi olla yksi tai useampia. Ja voi niit‰ olla nollakin, kun viesti itsess‰‰n kertoo kaiken oleellisen kuten t‰ss‰:</p>
+            <p><span class="parameter">Parametreja</span> voi olla yksi tai useampia. 
+                Ja voi niit‰ olla nollakin, 
+                kun viesti itsess‰‰n kertoo kaiken oleellisen kuten t‰ss‰:</p>
 
 
             <img src="/img/${materialType}/auto-olio-kerro-bensa.png"/>

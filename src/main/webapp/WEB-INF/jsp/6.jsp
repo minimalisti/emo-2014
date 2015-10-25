@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,13 +27,11 @@
 
             <p></p>
 
-            <p style="padding-bottom: 10px;">Olioilla voi myös mallintaa ohjelman käyttöliittymää. Ajatellaan vaikkapa tämän näköistä käyttöliittymäikkunaa:</p>
-
-
-
+            <p style="padding-bottom: 10px;"><span class="object">Olioilla</span>
+                voi myös mallintaa ohjelman käyttöliittymää. Ajatellaan vaikkapa
+                tämän näköistä käyttöliittymäikkunaa:</p>
 
             <img src="/img/${materialType}/ikkunaolio.png"/>
-
 
         </div>
 

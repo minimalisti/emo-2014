@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -17,8 +18,8 @@
                 <input type="hidden" name="visitEnded" id="visitEndedB"/>
                 <button type="button" class="btn btn-primary" id="backwardButton">Taaksepäin</button>
             </form>     
-                
-                <form id="goto_postquestionnaires" action="/app/submit-material-${materialId}-seen" method="POST">
+
+            <form id="goto_postquestionnaires" action="/app/submit-material-${materialId}-seen" method="POST">
                 <input type="hidden" name="visitStarted" id="visitStartedF"/>
                 <input type="hidden" name="visitEnded" id="visitEndedF"/>                
                 <button type="button" class="btn btn-primary" id="forwardButton">Siirry jälkikyselyihin</button>
@@ -28,40 +29,52 @@
 
             <h3>Vastausviestit eli palautusarvot</h3>
 
-            <p>Monesti olio vastaa metodikutsuun jollain tapaa eli lähettää kutsujalle jotakin vastausviestinä. Sanotaan, että metodi <strong>palauttaa arvon</strong>. Metodin palautusarvo voi olla esimerkiksi tieto toiminnon onnistumisesta tai epäonnistumisesta:</p>
+            <p>Monesti <span class="object">olio</span> vastaa 
+                <span class="message">metodikutsuun</span> 
+                jollain tapaa eli lähettää kutsujalle jotakin 
+                <span class="parameter">vastausviestinä</span>. 
+                Sanotaan, että <span class="method">metodi</span> 
+                <strong>palauttaa arvon</strong>. 
+                <span class="method">Metodin</span> 
+                <span class="parameter">palautusarvo</span> voi olla 
+                esimerkiksi tieto toiminnon 
+                onnistumisesta tai epäonnistumisesta:</p>
 
             <img style="padding-bottom: 15px;" src="/img/${materialType}/auto-olio-tankkaa-vastaus.png"/>
 
-            <p>Palautusarvo voi myös olla tilannetieto olion tilasta:</p>
+            <p><span class="parameter">Palautusarvo</span> voi myös olla tilannetieto 
+                <span class="object">olion</span> tilasta:</p>
 
             <img style="padding-bottom: 25px;" src="/img/${materialType}/auto-olio-kerro-bensa-vastaus.png"/>
 
-            <p style=" border-top: 1px solid #a7a7a7; padding-top: 10px;"><em>Oppimateriaali päättyy tähän. Ole hyvä ja vastaa vielä jälkikyselyihin. Niihin vievä nappula on <a href="#top">sivun yläosassa.</a></em></p>
+            <p style=" border-top: 1px solid #a7a7a7; padding-top: 10px;">
+                <em>Oppimateriaali päättyy tähän. Ole hyvä ja vastaa vielä seuraaviin kyselyihin. 
+                    Niihin vievä nappula on <a href="#top">sivun yläosassa.</a></em></p>
 
             <p>
-        </p>
+            </p>
 
-    </div>
+        </div>
 
-    <script src="/js/libs/jquery/jquery.js"></script>
-    <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="/js/libs/jquery/jquery.js"></script>
+        <script src="/js/libs/twitter-bootstrap/js/bootstrap.js"></script>
 
-    <script>
-        $(function () {
-            var tmpTime = new Date();
-            $("#visitStartedF").val(tmpTime);
-            $("#visitStartedB").val(tmpTime);
+        <script>
+            $(function () {
+                var tmpTime = new Date();
+                $("#visitStartedF").val(tmpTime);
+                $("#visitStartedB").val(tmpTime);
 
-            $("#forwardButton").click(function () {
-                $("#visitEndedF").val(new Date());
-                $("#goto_postquestionnaires").submit();
+                $("#forwardButton").click(function () {
+                    $("#visitEndedF").val(new Date());
+                    $("#goto_postquestionnaires").submit();
+                });
+
+                $("#backwardButton").click(function () {
+                    $("#visitEndedB").val(new Date());
+                    $("#backward").submit();
+                });
             });
-
-            $("#backwardButton").click(function () {
-                $("#visitEndedB").val(new Date());
-                $("#backward").submit();
-            });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>

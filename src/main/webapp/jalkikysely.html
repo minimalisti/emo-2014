@@ -6,22 +6,47 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel='stylesheet' href='css/style.css' />
     </head>
     <body>
 
-        <div class="container">
-            <h2>Viikkoharjoitustehtävät, jälkikysely 3/4</h2>
+        <div class="container  optimal-reading-width">
+            <h2>Jälkikysely 3/4</h2>
+
+            <h2>Viikkoharjoitustehtävät</h2>
 
             <form action="/app/submit-postquestionnaire" method="POST">
 
-                <div class="textarea">
+                <div>
                     <label for="olioOhjelmointi">Viikkoharjoitustehtävä 10.1: Lukemasi perusteella, kerro mitä olio-ohjelmoinnilla tarkoitetaan.</label><br/>
-                    <textarea id="olioOhjelmointi" name="olioOhjelmointi" cols="80" rows="6"></textarea>
+                    <textarea id="olioOhjelmointi" name="olioOhjelmointi" class="textarea"></textarea>
                 </div>
 
-                <div class="textarea">
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">Olisitko osannut vastata viikkoharjoitustehtävään 10.1 
+                        ennen kuin kävit läpi tämän harjoituksen oppimateriaalin?*</p>
+                    <div class="select_group">
+                        <label for="could_have_answered_101_prior_yes" class="go-label ">Kyllä<br/></label><input type="radio" id="could_have_answered_101_prior_yes" name="could_have_answered_101_prior" value="Kyllä"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="could_have_answered_101_prior_no" class="go-label">Ei<br/></label><input id="could_have_answered_101_prior_no" type="radio" name="could_have_answered_101_prior" value="Ei"/>
+                    </div>
+                </div>
+
+                <div>
                     <label for="hotellisuunnittelu">Viikkoharjoitustehtävä 10.2: Minkälaisia olioita käyttäisit ohjelmassa, jonka tehtävänä olisi pitää kirjaa hotellin huonevarauksista? Anna yksi esimerkki siitä, miten nämä oliot keskustelevat keskenään?</label><br/>
-                    <textarea id="hotellisuunnittelu" name="hotellisuunnittelu" cols="80" rows="6"></textarea>
+                    <textarea id="hotellisuunnittelu" name="hotellisuunnittelu"  class="textarea"></textarea>
+                </div>
+                
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">Olisitko osannut vastata viikkoharjoitustehtävään 10.2 
+                        ennen kuin kävit läpi tämän harjoituksen oppimateriaalin?*</p>
+                    <div class="select_group">
+                        <label for="could_have_answered_102_prior_yes" class="go-label ">Kyllä<br/></label><input type="radio" id="could_have_answered_102_prior_yes" name="could_have_answered_102_prior" value="Kyllä"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="could_have_answered_102_prior_no" class="go-label">Ei<br/></label><input id="could_have_answered_102_prior_no" type="radio" name="could_have_answered_102_prior" value="Ei"/>
+                    </div>
                 </div>
 
                 <hr/>

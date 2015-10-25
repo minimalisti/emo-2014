@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,9 +27,26 @@
 
             <h3>N‰kˆkulmia olio-ohjelmiin</h3>
 
-            <p>Olioiden toimiessa saamiensa k‰skyjen mukaisesti niiden tilat voivat muuttua ja samalla koko ohjelman tila. Esimerkkej‰: lis‰t‰‰n opiskelija ilmoittautuneeksi jollekin kurssille lis‰t‰‰n uusi merkint‰ p‰iv‰kirjaan, vaihdetaan k‰ytt‰j‰n henkilˆtietoja, jne. jne.</p>
+            <p><span class="object">Olioiden</span> toimiessa saamiensa k‰skyjen mukaisesti niiden tilat 
+                voivat muuttua ja samalla koko ohjelman tila. Esimerkkej‰: 
+                lis‰t‰‰n opiskelija ilmoittautuneeksi jollekin kurssille lis‰t‰‰n 
+                uusi merkint‰ p‰iv‰kirjaan, vaihdetaan k‰ytt‰j‰n henkilˆtietoja, jne. jne.</p>
 
-            <p>Olio-ohjelman olioiden muodostama k‰sitteellinen malli j‰sent‰‰ ohjelman ihmisen kannalta j‰rkev‰ksi kokonaisuudeksi, jossa kullakin oliolla on oma vastuualueensa. Toisaalta ohjelma-ajo on pohjimmiltaan vain sarja per‰kk‰isi‰ komentoja, joita tietokone suorittaa. Ohjelmoija m‰‰rittelee k‰skyt olioiden yhteyteen, tarkemmin sanoen niiden metodeihin. Osa k‰skyist‰ saa oliot komentamaan toisiaan; n‰in m‰‰rittyy se, mihin olioon liittyv‰‰ ohjelmakoodia suoritetaan milloinkin. Toimintavuoro kiert‰‰ oliolta toiselle: vain yhden olion metodia suoritetaan kerrallaan. Metodit toteuttavat ohjelman osa-algoritmeja (osaratkaisuja), ja niit‰ yhdistelem‰ll‰ saadaan aikaan kokonainen algoritmi, joka suorittaa ohjelmalta vaaditut teht‰v‰t.</p>
+            <p>Olio-ohjelman <span class="object">olioiden</span> muodostama k‰sitteellinen malli j‰sent‰‰ 
+                ohjelman ihmisen kannalta j‰rkev‰ksi kokonaisuudeksi, jossa kullakin 
+                <span class="object">oliolla</span> on oma vastuualueensa. Toisaalta ohjelma-ajo on 
+                pohjimmiltaan vain sarja per‰kk‰isi‰ komentoja, joita tietokone suorittaa. 
+                Ohjelmoija m‰‰rittelee k‰skyt olioiden yhteyteen, tarkemmin 
+                sanoen niiden <span class="method">metodeihin</span>. Osa k‰skyist‰ saa <span class="object">oliot</span> 
+                komentamaan 
+                toisiaan; n‰in m‰‰rittyy se, mihin <span class="object">olioon</span> 
+                liittyv‰‰ ohjelmakoodia 
+                suoritetaan milloinkin. Toimintavuoro kiert‰‰ 
+                <span class="object">oliolta</span>
+                toiselle: vain yhden <span class="object">olion</span> <span class="method">metodia</span> suoritetaan kerrallaan. 
+                <span class="method">Metodit</span> toteuttavat ohjelman osa-algoritmeja (osaratkaisuja), 
+                ja niit‰ yhdistelem‰ll‰ saadaan aikaan kokonainen algoritmi, 
+                joka suorittaa ohjelmalta vaaditut teht‰v‰t.</p>
 
 
         </div>

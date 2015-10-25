@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,10 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Ikkunaolio kuvaa sovelluksen käyttöliittymäikkunaa. Ikkuna muun muassa tarjoaa nappulan, jonka kautta sovellukseen sisään kirjautunut opiskelija voi ilmoittautua kurssille.</p>
+            <p><span class="object">Ikkunaolio</span> kuvaa sovelluksen 
+                        käyttöliittymäikkunaa. Ikkuna muun muassa tarjoaa nappulan, 
+                        jonka kautta sovellukseen sisään kirjautunut opiskelija 
+                        voi ilmoittautua kurssille.</p>
 
             <img src="/img/${materialType}/sarjis_02.png"/>
 

@@ -9,12 +9,14 @@
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-        <!-- <script src="js/count_the_checked.js"></script> -->
+        <script src="js/count_the_checked.js"></script>
     </head>
     <body>
 
-        <div class="container">
-            <h1>Ohjelmoinnin taustatiedot, esikysely 3/4</h1>
+        <div class="container optimal-reading-width">
+            <h2>Esikysely 3 / 4</h2>
+            
+            <h1>Ohjelmoinnin taustatiedot</h1>
 
             <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
                 Sinun on vastattava sivun pakollisiin kysymyksiin ennen kuin voit jatkaa.</p>
@@ -22,31 +24,114 @@
             <form action="/app/submit-background" method="POST">
 
                 <h3>Kerro ohjelmointiin liittyvästä kokemuksestasi.</h3>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="hasProgrammedInThePast"> Olen ohjelmoinut ennen tätä kurssia.</label>
-                    
+
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">1. Olen ohjelmoinut ennen tätä kurssia:*</p>
+                    <div class="select_group">
+                        <label for="hasProgrammedInThePast_daily" class="go-label ">Päivittäin<br/></label><input type="radio" id="hasProgrammedInThePast_daily" name="hasProgrammedInThePast" value="Päivittäin"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasProgrammedInThePast_weekly" class="go-label">Viikottain<br/></label><input id="hasProgrammedInThePast_weekly" type="radio" name="hasProgrammedInThePast" value="Viikottain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasProgrammedInThePast_monthly" class="go-label">Kuukausittain<br/></label><input  id="hasProgrammedInThePast_monthly" type="radio" name="hasProgrammedInThePast" value="Kuukausittain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasProgrammedInThePast_rarely" class="go-label">Harvemmin<br/></label><input  id="hasProgrammedInThePast_rarely" type="radio" name="hasProgrammedInThePast" value="Harvemmin"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasProgrammedInThePast_not_at_all" class="go-label">En ollenkaan<br/></label><input  id="hasProgrammedInThePast_not_at_all" type="radio" name="hasProgrammedInThePast" value="En ollenkaan"/>
+                    </div>
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="hasOoProgrammedInThePast"> Olen olio-ohjelmoinut (object-oriented programming) ennen tätä kurssia.</label>
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">2. Olen olio-ohjelmoinut (object-oriented programming) ennen tätä kurssia:*</p>
+                    <div class="select_group">
+                        <label for="hasOoProgrammedInThePast_daily" class="go-label ">Päivitäin<br/></label><input type="radio" id="hasOoProgrammedInThePast_daily" name="hasOoProgrammedInThePast" value="Päivittäin"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasOoProgrammedInThePast_weekly" class="go-label">Viikottain<br/></label><input id="hasOoProgrammedInThePast_weekly" type="radio" name="hasOoProgrammedInThePast" value="Viikottain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasOoProgrammedInThePast_monthly" class="go-label">Kuukausittain<br/></label><input  id="hasOoProgrammedInThePast_monthly" type="radio" name="hasOoProgrammedInThePast" value="Kuukausittain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasOoProgrammedInThePast_rarely" class="go-label">Harvemmin<br/></label><input  id="hasOoProgrammedInThePast_rarely" type="radio" name="hasOoProgrammedInThePast" value="Harvemmin"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="hasOoProgrammedInThePast_not_at_all" class="go-label">En ollenkaan<br/></label><input  id="hasOoProgrammedInThePast_not_at_all" type="radio" name="hasOoProgrammedInThePast" value="En ollenkaan"/>
+                    </div>
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="programDuringFreeTimeNowAndThen"> Ohjelmoin silloin tällöin vapaa-ajallani.</label>
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">3. Ohjelmoin vapaa-ajallani:*</p>
+                    <div class="select_group">
+                        <label for="programDuringFreeTimeNowAndThen_daily" class="go-label ">Päivittäin<br/></label><input type="radio" id="programDuringFreeTimeNowAndThen_daily" name="programDuringFreeTimeNowAndThen" value="Päivittäin"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="programDuringFreeTimeNowAndThen_weekly" class="go-label">Viikottain<br/></label><input id="programDuringFreeTimeNowAndThen_weekly" type="radio" name="programDuringFreeTimeNowAndThen" value="Viikottain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="programDuringFreeTimeNowAndThen_monthly" class="go-label">Kuukausittain<br/></label><input  id="programDuringFreeTimeNowAndThen_monthly" type="radio" name="programDuringFreeTimeNowAndThen" value="Kuukausittain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="programDuringFreeTimeNowAndThen_rarely" class="go-label">Harvemmin<br/></label><input  id="programDuringFreeTimeNowAndThen_rarely" type="radio" name="programDuringFreeTimeNowAndThen" value="Harvemmin"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="programDuringFreeTimeNowAndThen_not_at_all" class="go-label">En ollenkaan<br/></label><input  id="programDuringFreeTimeNowAndThen_not_at_all" type="radio" name="programDuringFreeTimeNowAndThen" value="En ollenkaan"/>
+                    </div>                    
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="readingProgrammingRelatedContentInFreetime"> Luen vapaa-ajallani ohjelmointiin liittyviä materiaaleja tai nettisivuja.</label>
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">4. Luen vapaa-ajallani ohjelmointiin liittyviä materiaaleja tai nettisivuja:*</p>
+                    <div class="select_group">
+                        <label for="readingProgrammingRelatedContentInFreetime_daily" class="go-label ">Päivittäin<br/></label><input type="radio" id="readingProgrammingRelatedContentInFreetime_daily" name="readingProgrammingRelatedContentInFreetime" value="Päivittäin"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="readingProgrammingRelatedContentInFreetime_weekly" class="go-label">Viikottain<br/></label><input id="readingProgrammingRelatedContentInFreetime_weekly" type="radio" name="readingProgrammingRelatedContentInFreetime" value="Viikottain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="readingProgrammingRelatedContentInFreetime_monthly" class="go-label">Kuukausittain<br/></label><input  id="readingProgrammingRelatedContentInFreetime_monthly" type="radio" name="readingProgrammingRelatedContentInFreetime" value="Kuukausittain"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="readingProgrammingRelatedContentInFreetime_rarely" class="go-label">Harvemmin<br/></label><input  id="readingProgrammingRelatedContentInFreetime_rarely" type="radio" name="readingProgrammingRelatedContentInFreetime" value="Harvemmin"/>
+                    </div>
+                    <div class="select_group">   
+                        <label for="readingProgrammingRelatedContentInFreetime_not_at_all" class="go-label">En ollenkaan<br/></label><input  id="readingProgrammingRelatedContentInFreetime_not_at_all" type="radio" name="readingProgrammingRelatedContentInFreetime" value="En ollenkaan"/>
+                    </div>
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingLanguages"> Osaan nimetä useampia ohjelmointikieliä.</label>
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">5. Osaan nimetä ohjelmointikieliä:*</p>
+                    <div class="select_group">
+                        <label for="canNameMoreThanOneProgrammingLanguages_none" class="go-label ">0<br/></label><input type="radio" id="canNameMoreThanOneProgrammingLanguages_none" name="canNameMoreThanOneProgrammingLanguages" value="0"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="canNameMoreThanOneProgrammingLanguages_1" class="go-label">1<br/></label><input id="canNameMoreThanOneProgrammingLanguages_1" type="radio" name="canNameMoreThanOneProgrammingLanguages" value="1"/>
+                    </div>
+                    <div class="select_group center_it_all">   
+                        <label for="canNameMoreThanOneProgrammingLanguages_2_or_3" class="go-label">2 - 3<br/></label><input  id="canNameMoreThanOneProgrammingLanguages_2_or_3" type="radio" name="canNameMoreThanOneProgrammingLanguages" value="2 tai 3"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="canNameMoreThanOneProgrammingLanguages_4_or_more" class="go-label">4 tai useampia<br/></label><input  id="canNameMoreThanOneProgrammingLanguages_4_or_more" type="radio" name="canNameMoreThanOneProgrammingLanguages" value="4 tai enemmän"/>
+                    </div>
                 </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox" name="canNameMoreThanOneProgrammingStylesAndParadigms"> Osaan nimetä useampia ohjelmointityylejä ja -paradigmoja.</label>
+                <div class="dropdown dropdown-text-left">
+                    <p class="dropdown-text">6. Osaan nimetä ohjelmointityylejä ja -paradigmoja:*</p>
+                    <div class="select_group">
+                        <label for="canNameMoreThanOneProgrammingStylesAndParadigms_0" class="go-label ">0<br/></label><input type="radio" id="canNameMoreThanOneProgrammingStylesAndParadigms_0" name="canNameMoreThanOneProgrammingStylesAndParadigms" value="0"/> 
+                    </div>
+                    <div class="select_group">   
+                        <label for="canNameMoreThanOneProgrammingStylesAndParadigms_1" class="go-label">1<br/></label><input id="canNameMoreThanOneProgrammingStylesAndParadigms_1" type="radio" name="canNameMoreThanOneProgrammingStylesAndParadigms" value="1"/>
+                    </div>
+                    <div class="select_group center_it_all">   
+                        <label for="canNameMoreThanOneProgrammingStylesAndParadigms_2_or_3" class="go-label">2 tai 3<br/></label><input  id="canNameMoreThanOneProgrammingStylesAndParadigms_2_or_3" type="radio" name="canNameMoreThanOneProgrammingStylesAndParadigms" value="2 tai 3"/>
+                    </div>
+                    <div class="select_group-last">   
+                        <label for="canNameMoreThanOneProgrammingStylesAndParadigms_4_or_more" class="go-label">4 tai enemmän<br/></label><input  id="canNameMoreThanOneProgrammingStylesAndParadigms_3" type="radio" name="canNameMoreThanOneProgrammingStylesAndParadigms" value="4 tai enemmän"/>
+                    </div>
                 </div>
-
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
                 <input type="hidden" name="visitEnded" id="visitEnded"/>

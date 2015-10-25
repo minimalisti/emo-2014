@@ -10,6 +10,7 @@ public class PostQuestionnaire extends AbstractSiteVisit {
     @Lob
     @Column(length = 100000)
     private String olioOhjelmointi;
+    
     @Lob
     @Column(length = 100000)
     private String hotellisuunnittelu;
@@ -22,6 +23,9 @@ public class PostQuestionnaire extends AbstractSiteVisit {
     @Column(length = 100000)
     private String vapaaPalaute;
 
+    private String could_have_answered_101_prior;
+    private String could_have_answered_102_prior;
+    
     public String getOlioOhjelmointi() {
         return olioOhjelmointi;
     }
@@ -88,10 +92,48 @@ public class PostQuestionnaire extends AbstractSiteVisit {
 
     @Override
     public String toString() {
-        return super.toString() + ";" + keskittyneisyys + ";" + ymmarrettavyys + ";" + miellyttavyys + ";" + kuvitusAuttoi + ";" + kuvitusMiellytti + ";" + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim();
+        return super.toString() + ";" + keskittyneisyys + ";" + ymmarrettavyys + ";" 
+                + miellyttavyys + ";" + kuvitusAuttoi + ";" + kuvitusMiellytti 
+                + ";" + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() 
+                + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() 
+                + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() 
+                + ";" + getCould_have_answered_101_prior() + ";" + getCould_have_answered_102_prior() + ";";
     }
 
     public String dataString() {
-        return keskittyneisyys + ";" + ymmarrettavyys + ";" + miellyttavyys + ";" + kuvitusAuttoi + ";" + kuvitusMiellytti + ";" + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim();
+        return keskittyneisyys + ";" + ymmarrettavyys + ";" + miellyttavyys + ";" 
+                + kuvitusAuttoi + ";" + kuvitusMiellytti + ";" 
+                + olioOhjelmointi.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() 
+                + ";" + hotellisuunnittelu.replaceAll(";", " - ").replaceAll("\\s+", " ").trim() 
+                + ";" + vapaaPalaute.replaceAll(";", " - ").replaceAll("\\s+", " ").trim()
+                + ";" + getCould_have_answered_101_prior() + ";" + getCould_have_answered_102_prior() + ";";
+    }
+
+    /**
+     * @return the could_have_answered_101_prior
+     */
+    public String getCould_have_answered_101_prior() {
+        return could_have_answered_101_prior;
+    }
+
+    /**
+     * @param could_have_answered_101_prior the could_have_answered_101_prior to set
+     */
+    public void setCould_have_answered_101_prior(String could_have_answered_101_prior) {
+        this.could_have_answered_101_prior = could_have_answered_101_prior;
+    }
+
+    /**
+     * @return the could_have_answered_102_prior
+     */
+    public String getCould_have_answered_102_prior() {
+        return could_have_answered_102_prior;
+    }
+
+    /**
+     * @param could_have_answered_102_prior the could_have_answered_102_prior to set
+     */
+    public void setCould_have_answered_102_prior(String could_have_answered_102_prior) {
+        this.could_have_answered_102_prior = could_have_answered_102_prior;
     }
 }

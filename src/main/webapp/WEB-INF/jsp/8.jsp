@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,10 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p><em>Alkutilanne:</em> K‰ynniss‰ on kurssi-ilmoittautumissovellus. Er‰s opiskelija on kirjautunut sis‰‰n. Tietokoneen muistissa olevat oliot kuvaavat ohjelman aihepiiriin liittyvi‰ asioita.</p>
+            <p><em>Alkutilanne:</em> K‰ynniss‰ on kurssi-ilmoittautumissovellus. 
+                Er‰s opiskelija on kirjautunut sis‰‰n. Tietokoneen muistissa 
+                olevat <span class="object">oliot</span> kuvaavat ohjelman 
+                aihepiiriin liittyvi‰ asioita.</p>
 
             <img src="/img/${materialType}/sarjis_01.png"/>
 

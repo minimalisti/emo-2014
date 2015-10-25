@@ -171,9 +171,9 @@ public class CsvExport {
 
         Map<String, DescriptiveStatistics> usrStats = new TreeMap<>();
         for (UserData ud : userData.values()) {
-            if (ud.preQuesitionnaire.isHasProgrammedInThePast()) {
-                continue;
-            }
+//            if (ud.preQuesitionnaire.isHasProgrammedInThePast()) {
+//                continue;
+//            }
 
             String materialType = ud.preQuesitionnaire.getAssignedMaterialType();
             if (!usrStats.containsKey(materialType)) {

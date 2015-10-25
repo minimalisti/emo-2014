@@ -15,8 +15,41 @@
 
     <body>
 
-        <div class="container">
-            <h1>Tämän harjoituskerran oppimateriaali, esikysely 3/4</h1>
+        <div class="container optimal-reading-width">
+            <h2>Esikysely 3/4</h2>
+
+            <h1>Tämän harjoituskerran oppimateriaalin arviointi</h1>
+
+            <p>Lue seuraavat ohjeet huolellisesti.</p>
+
+            <p>Tällä kyselylomakkeella voit arvioida juuri läpikäymääsi, 
+                tämän harjoituskerran oppimateriaalia.</p>
+
+            <p>Kysely muodostuu sanapareista, joiden avulla voit arvostella 
+                juuri läpikäymääsi, tämän harjoituskerran oppimateriaalia.
+                Jokainen sanapari muodostuu sanoista jotka edustavat asteikon ääripäitä. 
+                Sanaparien välissä oleva asteikko 1 - 7 antaa sinulle mahdollisuuden 
+                kuvata kyseisen sanaparin edustaman ominaisuuden kokemuksesi voimakkuutta.
+                Jos esimerkiksi valitset sanaparin Sekainen - Selkeä asteikosta arvon
+                5, tämä kuvaa sitä, että koet juuri läpikäymääsi, 
+                tämän harjoituskerran oppimateriaalin olleen kokonaisuudessaan
+                suurimmalta osin selkeää, mutta että vähäistä parannusta on mahdollista
+                tehdä.
+            </p>
+
+            <p>Älä käytä aikaa sanaparien pohtimiseen. Anna spontaani vastauksesi.
+                Voit kokea, etteivät kaikki sanaparit riittävästi kuvaa juuri läpikäymääsi, 
+                tämän harjoituskerran oppimateriaalia.
+                Anna kuitenkin tällaisessakin tilanteessa vastauksesi. Pidä mielessä, 
+                ettei ole oikeata tai väärä vastausta. Oma mielipiteesi on se millä
+                on väliä!
+            </p>
+
+            <p>Käytä alla olevia sanapareja apunasi valitse asteikkojen arvot,
+                jotka mielestäsi parhaiten kuvaavat juuri läpikäymääsi, 
+                tämän harjoituskerran oppimateriaalia. Muista valita
+                arvo jokaiselle sanaparille!
+            </p>
 
             <form action="/app/submit-post-attrakdiff" method="POST">
 
@@ -27,7 +60,7 @@
                 <p class="dropdown-text center_it_all">Arvioin <em> tämän harjoituskerran oppimateriaalin</em> olleen</p>
 
                 <div class="dropdown">
-                    <div class="select_group attrakdiff_word attrakdiff_left">Sekainen </div>
+                    <div class="select_group attrakdiff_word attrakdiff_left">Sekava </div>
                     <div class="select_group-first">
                         <label for="structured_1" class="go-label ">1<br/></label><input type="radio" id="structured_1" name="structured" value="1"/> 
                     </div>
@@ -186,7 +219,7 @@
 
 
                 <div class="dropdown">
-                    <div class="select_group attrakdiff_word attrakdiff_left"> Halvanoloinen </div>
+                    <div class="select_group attrakdiff_word attrakdiff_left">Halpa </div>
                     <div class="select_group-first">
                         <label for="premium_1" class="go-label ">1<br/></label><input type="radio" id="premium_1" name="premium" value="1"/> 
                     </div>
@@ -238,8 +271,9 @@
                     <div class="select_group attrakdiff_word attrakdiff_right"> Luova</div>
                 </div>
 
+                <p class="dropdown-text center_it_all">Arvioin <em> tämän harjoituskerran oppimateriaalin</em> olleen yleisesti</p>
+
                 <div class="dropdown">
-                    <p class="dropdown-text">Arvioin <em> tämän harjoituskerran oppimateriaalin</em> olleen yleisesti</p>
                     <div class="select_group attrakdiff_word attrakdiff_left">Ruma </div>
                     <div class="select_group-first">
                         <label for="beautiful_1" class="go-label ">1<br/></label><input type="radio" id="beautiful_1" name="beautiful" value="1"/> 

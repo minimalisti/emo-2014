@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,10 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Ikkunaolio v‰litt‰‰ viestin sis‰‰n kirjautunutta k‰ytt‰j‰‰ vastaavalle opiskelijaoliolle.</p>
+            <p><span class="object">Ikkunaolio</span> v‰litt‰‰ 
+                <span class="message">viestin</span> sis‰‰n 
+                kirjautunutta k‰ytt‰j‰‰ vastaavalle 
+                <span class="object">opiskelijaoliolle</span>.</p>
 
             <img src="/img/${materialType}/sarjis_05.png"/>
 

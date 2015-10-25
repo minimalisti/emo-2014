@@ -37,44 +37,44 @@ public class MaterialTypeService {
             return "trad";
         }
 
-        if (preQuestionnaire.isHasProgrammedInThePast() != null && !preQuestionnaire.isHasProgrammedInThePast()) {
+        if (!preQuestionnaire.isHasProgrammedInThePast().equals("En ollenkaan") && preQuestionnaire.isHasProgrammedInThePast() != null) {
             // ei ole ohjelmoinut
             Map<String, Integer> counts = new TreeMap<>();
             counts.put("emo", 0);
             counts.put("trad", 0);
-
+            
             for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
-
+                
                 String type = pq.getAssignedMaterialType();
                 if (!counts.containsKey(type)) {
                     counts.put(type, 0);
                 }
-
+                
                 counts.put(type, counts.get(type) + 1);
             }
-
+            
             if (counts.get("emo") > counts.get("trad")) {
                 return "trad";
             }
-
+            
             return "emo";
-
+            
         } else {
             // on ohjelmoinut
 
-            Map<Boolean, Map<String, Integer>> objectOrientedProg = new HashMap<>();
-            objectOrientedProg.put(Boolean.FALSE, new HashMap<String, Integer>());
-            objectOrientedProg.put(Boolean.TRUE, new HashMap<String, Integer>());
+            Map<String, Map<String, Integer>> objectOrientedProg = new HashMap<>();
+            objectOrientedProg.put("En ollenkaan", new HashMap<String, Integer>());
+            objectOrientedProg.put("Ohjelmoinut", new HashMap<String, Integer>());
 
             for (String str : Arrays.asList("trad", "emo")) {
-                objectOrientedProg.get(Boolean.FALSE).put(str, 0);
-                objectOrientedProg.get(Boolean.TRUE).put(str, 0);
+                objectOrientedProg.get("En ollenkaan").put(str, 0);
+                objectOrientedProg.get("Ohjelmoinut").put(str, 0);
             }
 
             for (PreQuestionnaire pq : preQuestionnaireRepository.findAll()) {
-                Boolean doesOoProgram = pq.isHasOoProgrammedInThePast();
+                String doesOoProgram = pq.isHasOoProgrammedInThePast();
                 if (doesOoProgram == null) {
-                    doesOoProgram = false;
+                    doesOoProgram = "En ollenkaan";
                 }
 
                 String type = pq.getAssignedMaterialType();
@@ -82,16 +82,16 @@ public class MaterialTypeService {
             }
 
             if (preQuestionnaire.isHasOoProgrammedInThePast() == null) {
-                preQuestionnaire.setHasOoProgrammedInThePast(Boolean.FALSE);
+                preQuestionnaire.setHasOoProgrammedInThePast("En ollenkaan");
             }
 
             if (objectOrientedProg.get(preQuestionnaire.isHasOoProgrammedInThePast()).get("emo")
                     > objectOrientedProg.get(preQuestionnaire.isHasOoProgrammedInThePast()).get("trad")) {
                 return "trad";
             }
-
+            
             return "emo";
-
+            
         }
     }
 }

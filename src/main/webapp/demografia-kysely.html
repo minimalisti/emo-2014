@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-        <!-- <script src="js/count_the_checked.js"></script> -->
+<!--        <script src="js/count_the_checked.js"></script>-->
     </head>
     <body>
 
-        <div class="container">
+        <div class="container optimal-reading-width">
             <h1>Taustatiedot, viimeinen kysely</h1>
 
             <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
@@ -29,11 +29,11 @@
                         <option value="Muu">Muu</option>
                     </select>
                 </div>
+                
                 <div>
                     <label for="select_age" class="preq-label">Ikä*</label>
                     <select id="select_age" name="select_age" class="preq-input" required>
                         <option value="" disabled selected style="color:grey">Valitse</option>
-
                     </select>
                 </div>
 
@@ -42,14 +42,17 @@
                         <option value="" disabled selected style="color:grey">Valitse</option>
                     </select>
                 </div>
+                
                 <div><label for="select_major" class="preq-label">Pääaine*</label>
                     <input type="text" name="select_major" id="select_major" class="preq-input" required>
                 </div>
+                
                 <div><label for="select_studypoints" class="preq-label">Opintopisteet*</label>
                     <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
                         <option value="" disabled selected style="color:grey">Valitse</option>
                     </select>
                 </div>
+                
                 <div><label for="select_average" class="preq-label">Keskiarvo*</label>
                     <select name="select_average" id="select_average" class="preq-input" required>
                         <option value="" disabled selected style="color:grey">Valitse</option>

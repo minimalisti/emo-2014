@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25.10.2015, 3:05:23
+    Author     : minimalisti
+*/
+
+em, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: white;
+}
+
+.object {
+    //color: green;
+    //color: #2fba2f;
+    //color: #68e968;
+    color: #37c137;
+}
+
+.method {
+    //color: purple;
+    //color: #800080;
+    color: #c27cc2;
+}
+
+.parameter {
+    //color: blue;
+    color: #1010FF;
+}
+.attribute {
+    //color: red;
+    color: #FF1493;
+    //color: #dc2e2e;
+}
+
+.message {
+    //color: yellow;
+    color: #FF9009;
+}

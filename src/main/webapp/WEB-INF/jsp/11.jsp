@@ -6,7 +6,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>        
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Tällä ja seuraavilla sivuilla on esitetty "keskustelu" olioiden välillä kuvaa, joka kuvaa yhden ilmoittautumistapahtuman sovelluksen ollessa käynnissä.</p>
+            <p>Tällä ja seuraavilla sivuilla on esitetty "keskustelu" <span class="object">olioiden</span> välillä kuvaa, joka kuvaa yhden ilmoittautumistapahtuman sovelluksen ollessa käynnissä.</p>
 
             <img src="/img/${materialType}/sarjis_04.png"/>
 

@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,11 +27,19 @@
 
             <p></p>
 
-            <p>Ohessa on esimerkkejä erilaisista olioista graafisesti esitettynä.</p>
+            <p>Ohessa on esimerkkejä erilaisista <span class="object">olioista</span> graafisesti esitettynä.</p>
 
             <img src="/img/${materialType}/olioita.png"/>
 
-            <p>Huomaa tästä kuvastakin, että olioilla on sekä tietoja, jotka niihin liittyvät (esim. opiskelijaolion opiskelijanumero, nappulaolion teksti), että toimintoja, joita niihin voidaan kohdistaa (esim. opiskelijan lisääminen kurssille, tiedoston poistaminen). Huomaa myös, että oliot voivat muistuttaa toisiaan - olla keskenään saman tyyppisiä - kuten kaksi eläinoliota yllä. </p>
+            <p>Huomaa tästä kuvastakin, että <span class="object">olioilla</span> 
+                on sekä <span class="attribute">tietoja</span>, jotka niihin 
+                liittyvät (esim. opiskelijaolion 
+                opiskelijanumero, nappulaolion teksti), että 
+                <span class="method">toimintoja</span>, joita 
+                niihin voidaan kohdistaa (esim. opiskelijan lisääminen kurssille, 
+                tiedoston poistaminen). Huomaa myös, että <span class="object">oliot</span> 
+                voivat muistuttaa toisiaan - olla keskenään saman tyyppisiä - 
+                kuten kaksi <span class="object">eläinoliota</span> yllä. </p>
 
 
 

@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/${materialType}_style.css"/>
     </head>
     <body>
 
@@ -26,7 +27,7 @@
 
             <h3>Kurssi-ilmoittautumisesimerkki</h3>
 
-            <p>Tiedotetaan onnistuminen opiskelijaoliolle, joka kurssioliota käskytti.</p>
+            <p>Tiedotetaan onnistuminen <span class="object">opiskelijaoliolle</span>, joka <span class="object">kurssioliota</span> käskytti.</p>
 
             <img src="/img/${materialType}/sarjis_08.png"/>
 
