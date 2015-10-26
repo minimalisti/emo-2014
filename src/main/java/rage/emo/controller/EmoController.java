@@ -452,7 +452,8 @@ public class EmoController {
             login = loginRepository.save(login);
 
             if (preAttrakdiffQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
-                return "redirect:/pre-attrakdiff.html";
+                return "redirect:/demografia-kysely.html";
+                //return "redirect:/pre-attrakdiff.html";
             } else {
                 return "redirect:/app/material-1";
             }
@@ -460,6 +461,20 @@ public class EmoController {
             return "redirect:/index.html?virhe=1";
             //TODO: kuinka lomakkeeseen tehdään viesti virheellisestä syötteestä - GET-parametrit vai muuta?
         }
+    }
+
+    @RequestMapping(value = "/submit-demography", method = {RequestMethod.POST, RequestMethod.GET})
+    public String submitDemographytQuestionnaire(
+            @RequestHeader(value = "referer", required = false) final String referer,
+            HttpSession session,
+            @ModelAttribute DemographicQuestionnaire demographicQuestionnaire) {
+
+        demographicQuestionnaire.setSiteUrl(referer);
+        demographicQuestionnaire.setUsername((String) session.getAttribute("username"));
+        demographicQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+        demographicQuestionnaireRepository.save(demographicQuestionnaire);
+        //return "redirect:/kiitos.html";
+        return "redirect:/pre-attrakdiff.html";
     }
 
     // (Pre)Attrakdiff2 short questionnaire.
@@ -641,7 +656,6 @@ public class EmoController {
         //String materialType = materialTypeService.getMaterialType(preQuestionnaire);
         //preQuestionnaire.setAssignedMaterialType(materialType);
         postAttrakdiffQuestionnaireRepository.save(postAttrakdiffQuestionnaire);
-
         return "redirect:/jalkikysely.html";
     }
 
@@ -654,19 +668,8 @@ public class EmoController {
         postQuestionnaire.setUsername((String) session.getAttribute("username"));
         postQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
         postQuestionnaireRepository.save(postQuestionnaire);
-        return "redirect:/demografia-kysely.html";
-    }
+        //return "redirect:/demografia-kysely.html";
 
-    @RequestMapping(value = "/submit-demography", method = {RequestMethod.POST, RequestMethod.GET})
-    public String submitDemographytQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute DemographicQuestionnaire demographicQuestionnaire) {
-
-        demographicQuestionnaire.setSiteUrl(referer);
-        demographicQuestionnaire.setUsername((String) session.getAttribute("username"));
-        demographicQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-        demographicQuestionnaireRepository.save(demographicQuestionnaire);
         return "redirect:/kiitos.html";
     }
 

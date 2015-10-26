@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kysely 4/4</title>
+        <title>Esikysely 1/5</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,16 @@
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-<!--        <script src="js/count_the_checked.js"></script>-->
+        <!--        <script src="js/count_the_checked.js"></script>-->
     </head>
     <body>
 
         <div class="container optimal-reading-width">
-            <h1>Taustatiedot, viimeinen kysely</h1>
+
+            <h3>Esikysely 1 / 5</h3>
+
+            <h1>Taustatiedot</h1>
+
 
             <p>Tähtimerkki (*) kysymyksen perässä tarkoittaa pakollista kysymystä.
                 Sinun on vastattava sivun pakollisiin kysymyksiin ennen kuin voit jatkaa.</p>
@@ -29,7 +33,7 @@
                         <option value="Muu">Muu</option>
                     </select>
                 </div>
-                
+
                 <div>
                     <label for="select_age" class="preq-label">Ikä*</label>
                     <select id="select_age" name="select_age" class="preq-input" required>
@@ -42,21 +46,23 @@
                         <option value="" disabled selected style="color:grey">Valitse</option>
                     </select>
                 </div>
-                
+
                 <div><label for="select_major" class="preq-label">Pääaine*</label>
                     <input type="text" name="select_major" id="select_major" class="preq-input" required>
                 </div>
-                
+
                 <div><label for="select_studypoints" class="preq-label">Opintopisteet*</label>
                     <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
                         <option value="" disabled selected style="color:grey">Valitse</option>
                     </select>
                 </div>
-                
-                <div><label for="select_average" class="preq-label">Keskiarvo*</label>
-                    <select name="select_average" id="select_average" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
+
+                <div><label for="select_average" class="preq-label">Kaikkien kurssien keskiarvo*</label>
+                    <input type="text" name="select_average" id="select_average" class="preq-input" required>
+
+                    <!--                    <select name="select_average" id="select_average" class="preq-input" required>
+                                            <option value="" disabled selected style="color:grey">Valitse</option>
+                                        </select>-->
                 </div>
 
                 <input type="hidden" name="visitStarted" id="visitStarted"/>
@@ -67,6 +73,7 @@
                 </div>
             </form>
 
+            Jos tarvitsee, voit tarkistaa opintotietosi <a href="https://idp.tut.fi/idp/Authn/UserPassword">POP:sta.</a>
         </div>
 
         <script>
@@ -111,6 +118,12 @@
                     opt.innerHTML = i;
                     select.appendChild(opt);
                 }
+
+                var olderopt = document.createElement('option');
+                opt.value = i;
+                opt.innerHTML = i;
+                select.appendChild(opt);
+
                 var classical_age_opt = document.createElement('option');
                 classical_age_opt.value = "yli 50";
                 classical_age_opt.innerHTML = "Yli 50";
@@ -128,13 +141,20 @@
                     years_select.appendChild(opt);
                 }
 
-                var average = document.getElementById('select_average');
-                for (var av = 0.0; av < 5.0; av += 0.1) {
-                    var opt = document.createElement('option');
-                    opt.value = av.toFixed(1);
-                    opt.innerHTML = av.toFixed(1);
-                    average.appendChild(opt);
-                }
+                var earlyStartOpt = document.createElement('option');
+                earlyStartOpt.value = "Ennen 1990";
+
+                earlyStartOpt.innerHTML = i;
+                years_select.appendChild(earlyStartOpt);
+
+// Dropdown to textarea by Pteri's request.
+//                var average = document.getElementById('select_average');
+//                for (var av = 0.0; av < 5.0; av += 0.1) {
+//                    var opt = document.createElement('option');
+//                    opt.value = av.toFixed(1);
+//                    opt.innerHTML = av.toFixed(1);
+//                    average.appendChild(opt);
+//                }
 
                 var studypoints = document.getElementById('select_studypoints');
                 for (var sp = 0; sp < 40; sp++) {
