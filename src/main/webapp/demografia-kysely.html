@@ -36,15 +36,19 @@
 
                 <div>
                     <label for="select_age" class="preq-label">Ikä*</label>
-                    <select id="select_age" name="select_age" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
+                    <input type="text" name="select_age" id="select_age" class="preq-input" required>
+
+                    <!--                    <select id="select_age" name="select_age" class="preq-input" required>
+                                            <option value="" disabled selected style="color:grey">Valitse</option>
+                                        </select>-->
                 </div>
 
                 <div><label for="select_starting_year"  class="preq-label">Opiskeluiden aloitusvuosi*</label>
-                    <select name="select_starting_year" id="select_starting_year" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
+                    <!--                    <select name="select_starting_year" id="select_starting_year" class="preq-input" required>
+                                            <option value="" disabled selected style="color:grey">Valitse</option>
+                                        </select>-->
+                    <input type="text" name="select_starting_year" id="select_starting_year" class="preq-input" required>
+
                 </div>
 
                 <div><label for="select_major" class="preq-label">Pääaine*</label>
@@ -52,9 +56,11 @@
                 </div>
 
                 <div><label for="select_studypoints" class="preq-label">Opintopisteet*</label>
-                    <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
-                        <option value="" disabled selected style="color:grey">Valitse</option>
-                    </select>
+                    <!--                    <select name="select_studypoints" id="select_studypoints" class="preq-input" required>
+                                            <option value="" disabled selected style="color:grey">Valitse</option>
+                                        </select>-->
+                    <input type="text" name="select_studypoints" id="select_studypoints" class="preq-input" required>
+
                 </div>
 
                 <div><label for="select_average" class="preq-label">Kaikkien kurssien keskiarvo*</label>
@@ -73,7 +79,7 @@
                 </div>
             </form>
 
-            Jos tarvitsee, voit tarkistaa opintotietosi <a href="https://idp.tut.fi/idp/Authn/UserPassword">POP:sta.</a>
+            Tarvittaessa voit tarkistaa opintotietosi <a href="https://idp.tut.fi/idp/Authn/UserPassword">POP:sta.</a>
         </div>
 
         <script>
@@ -143,8 +149,7 @@
 
                 var earlyStartOpt = document.createElement('option');
                 earlyStartOpt.value = "Ennen 1990";
-
-                earlyStartOpt.innerHTML = i;
+                earlyStartOpt.innerHTML = "Ennen 1990";
                 years_select.appendChild(earlyStartOpt);
 
 // Dropdown to textarea by Pteri's request.
