@@ -51,24 +51,24 @@ import rage.emo.service.MaterialTypeService;
 public class EmoController {
 
     private static final Set<String> USER_WHITE_LIST
-            = new HashSet<String>() {
+        = new HashSet<String>() {
                 {
                     // USER_WHITE_LIST. Now with TUT 2015 student numbers!
                     String s = "Heli\n"
                     + "Petri\n"
                     + "Mikko\n"
-					+´"testi-jamppa1\n"
-					+´"testi-jamppa2\n"
-					+´"testi-jamppa3\n"
-					+´"testi-jamppa4\n"
-					+´"testi-jamppa5\n"
-					+´"testi-jamppa6\n"
-					+´"testi-jamppa7\n"
-					+´"testi-jamppa8\n"
-					+´"testi-jamppa9\n"
-					+´"testi-jamppa10\n"
-					+´"testi-jamppa11\n"
-					+´"testi-jamppa12\n"
+                    + "testi-jamppa1\n"
+                    + "testi-jamppa2\n"
+                    + "testi-jamppa3\n"
+                    + "testi-jamppa4\n"
+                    + "testi-jamppa5\n"
+                    + "testi-jamppa6\n"
+                    + "testi-jamppa7\n"
+                    + "testi-jamppa8\n"
+                    + "testi-jamppa9\n"
+                    + "testi-jamppa10\n"
+                    + "testi-jamppa11\n"
+                    + "testi-jamppa12\n"
                     + "159253\n"
                     + "167143\n"
                     + "167581\n"
@@ -407,9 +407,9 @@ public class EmoController {
     @Autowired
     GoalOrientationRepository goalOrientationRepository;
 
-//    // PreSamQuestionnaireRepository added for TTY survey.
-//    @Autowired
-//    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
+    //    // PreSamQuestionnaireRepository added for TTY survey.
+    //    @Autowired
+    //    PreSamQuestionnaireRepository preSamQuestionnaireRepository;
     @Autowired
     PrePanasQuestionnaireRepository prePanasQuestionnaireRepository;
     @Autowired
@@ -426,8 +426,8 @@ public class EmoController {
     @Autowired
     DemographicQuestionnaireRepository demographicQuestionnaireRepository;
 
-//    @Autowired
-//    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
+    //    @Autowired
+    //    PostSamQuestionnaireRepository postSamQuestionnaireRepository;
     @Autowired
     MaterialVisitRepository materialVisitRepository;
 
@@ -437,9 +437,9 @@ public class EmoController {
     // A mystery function. Don't remove, just to be safe. :-)
     @RequestMapping(value = "/start/{opnro}", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @PathVariable String opnro) {
+                                   @RequestHeader(value = "referer", required = false) final String referer,
+                                   HttpSession session,
+                                   @PathVariable String opnro) {
 
         session.setAttribute("username", opnro);
 
@@ -449,9 +449,9 @@ public class EmoController {
     // Login and student number check.
     @RequestMapping(value = "/submit-login", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitLogin(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute Login login) {
+                              @RequestHeader(value = "referer", required = false) final String referer,
+                              HttpSession session,
+                              @ModelAttribute Login login) {
 
         if (USER_WHITE_LIST.contains(login.getUsername().trim().toLowerCase())) {
             login.setSiteUrl(referer);
@@ -477,9 +477,9 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-demography", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitDemographytQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute DemographicQuestionnaire demographicQuestionnaire) {
+                                                 @RequestHeader(value = "referer", required = false) final String referer,
+                                                 HttpSession session,
+                                                 @ModelAttribute DemographicQuestionnaire demographicQuestionnaire) {
 
         demographicQuestionnaire.setSiteUrl(referer);
         demographicQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -492,9 +492,9 @@ public class EmoController {
     // (Pre)Attrakdiff2 short questionnaire.
     @RequestMapping(value = "/submit-pre-attrakdiff", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPreAttrakdiff(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PreAttrakdiffQuestionnaire preAttrakdiffQuestionnaire) {
+                                      @RequestHeader(value = "referer", required = false) final String referer,
+                                      HttpSession session,
+                                      @ModelAttribute PreAttrakdiffQuestionnaire preAttrakdiffQuestionnaire) {
 
         preAttrakdiffQuestionnaire.setSiteUrl(referer);
         preAttrakdiffQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -511,9 +511,9 @@ public class EmoController {
     // Goal orientation questionnaire.
     @RequestMapping(value = "/submit-goal_orientation", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitGoalOrientationQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute GoalOrientationQuestionnaire goalOrientationQuestionnaire) {
+                                                     @RequestHeader(value = "referer", required = false) final String referer,
+                                                     HttpSession session,
+                                                     @ModelAttribute GoalOrientationQuestionnaire goalOrientationQuestionnaire) {
 
         goalOrientationQuestionnaire.setSiteUrl(referer);
         goalOrientationQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -527,9 +527,9 @@ public class EmoController {
     // Programming background.
     @RequestMapping(value = "/submit-background", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitBackground(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PreQuestionnaire preQuestionnaire) {
+                                   @RequestHeader(value = "referer", required = false) final String referer,
+                                   HttpSession session,
+                                   @ModelAttribute PreQuestionnaire preQuestionnaire) {
 
         preQuestionnaire.setSiteUrl(referer);
         preQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -546,9 +546,9 @@ public class EmoController {
     // (Pre) I-PANAS-SF
     @RequestMapping(value = "/submit-pre-panas", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPrePanasQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PrePanasQuestionnaire prePanasQuestionnaire) {
+                                              @RequestHeader(value = "referer", required = false) final String referer,
+                                              HttpSession session,
+                                              @ModelAttribute PrePanasQuestionnaire prePanasQuestionnaire) {
         prePanasQuestionnaire.setSiteUrl(referer);
         prePanasQuestionnaire.setUsername((String) session.getAttribute("username"));
         prePanasQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
@@ -560,21 +560,21 @@ public class EmoController {
         //return "redirect:/pre_attrakdiff2-short.html";
         return "redirect:/app/material-1";
     }
-//
-//    @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
-//    public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
-//
-//        preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
-//        preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-//
-//        preSamQuestionnaire.setPreOrPost("pre");
-//
-//        preSamQuestionnaireRepository.save(preSamQuestionnaire);
-//
-//        return "redirect:/pre-panas-kysely.html";
-//    }
+    //
+    //    @RequestMapping(value = "/submit-pre-sam", method = {RequestMethod.POST, RequestMethod.GET})
+    //    public String submitPreSamQuestionnaire(HttpSession session, @ModelAttribute PreSamQuestionnaire preSamQuestionnaire) {
+    //
+    //        preSamQuestionnaire.setUsername((String) session.getAttribute("username"));
+    //        preSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+    //
+    //        preSamQuestionnaire.setPreOrPost("pre");
+    //
+    //        preSamQuestionnaireRepository.save(preSamQuestionnaire);
+    //
+    //        return "redirect:/pre-panas-kysely.html";
+    //    }
 
-    // 
+    //
     // Study materials.
     @RequestMapping("/material-{id}")
     public String getMaterial(HttpSession session, Model model, @PathVariable Integer id) {
@@ -585,10 +585,10 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-material-{id}-seen", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterialSeen(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute MaterialVisit materialVisit,
-            @PathVariable Integer id) {
+                                     @RequestHeader(value = "referer", required = false) final String referer,
+                                     HttpSession session,
+                                     @ModelAttribute MaterialVisit materialVisit,
+                                     @PathVariable Integer id) {
 
         materialVisit.setUsername((String) session.getAttribute("username"));
         materialVisit.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
@@ -605,10 +605,10 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-material-{id}-seen-back", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitMaterialSeenBack(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute MaterialVisit materialVisit,
-            @PathVariable Integer id) {
+                                         @RequestHeader(value = "referer", required = false) final String referer,
+                                         HttpSession session,
+                                         @ModelAttribute MaterialVisit materialVisit,
+                                         @PathVariable Integer id) {
 
         materialVisit.setUsername((String) session.getAttribute("username"));
         materialVisit.setSiteUrl(referer);
@@ -622,24 +622,24 @@ public class EmoController {
         return "redirect:/app/material-" + (id - 1);
     }
 
-//    @RequestMapping(value = "/submit-post-sam", method = {RequestMethod.POST, RequestMethod.GET})
-//    public String submitPostSamQuestionnaire(HttpSession session, @ModelAttribute PostSamQuestionnaire postSamQuestionnaire) {
-//        postSamQuestionnaire.setUsername((String) session.getAttribute("username"));
-//        postSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
-//
-//        postSamQuestionnaire.setPreOrPost("post");
-//
-//        postSamQuestionnaireRepository.save(postSamQuestionnaire);
-//
-//        return "redirect:/post-panas-kysely.html";
-//
-//    }
+    //    @RequestMapping(value = "/submit-post-sam", method = {RequestMethod.POST, RequestMethod.GET})
+    //    public String submitPostSamQuestionnaire(HttpSession session, @ModelAttribute PostSamQuestionnaire postSamQuestionnaire) {
+    //        postSamQuestionnaire.setUsername((String) session.getAttribute("username"));
+    //        postSamQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
+    //
+    //        postSamQuestionnaire.setPreOrPost("post");
+    //
+    //        postSamQuestionnaireRepository.save(postSamQuestionnaire);
+    //
+    //        return "redirect:/post-panas-kysely.html";
+    //
+    //    }
     // (Post) I-PANAS-SF
     @RequestMapping(value = "/submit-post-panas", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostPanasQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
+                                               @RequestHeader(value = "referer", required = false) final String referer,
+                                               HttpSession session,
+                                               @ModelAttribute PostPanasQuestionnaire postPanasQuestionnaire) {
 
         postPanasQuestionnaire.setSiteUrl(referer);
         postPanasQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -656,9 +656,9 @@ public class EmoController {
     // Programming background.
     @RequestMapping(value = "/submit-post-attrakdiff", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostAttrakdiff(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PostAttrakdiffQuestionnaire postAttrakdiffQuestionnaire) {
+                                       @RequestHeader(value = "referer", required = false) final String referer,
+                                       HttpSession session,
+                                       @ModelAttribute PostAttrakdiffQuestionnaire postAttrakdiffQuestionnaire) {
 
         postAttrakdiffQuestionnaire.setSiteUrl(referer);
         postAttrakdiffQuestionnaire.setUsername((String) session.getAttribute("username"));
@@ -673,9 +673,9 @@ public class EmoController {
 
     @RequestMapping(value = "/submit-postquestionnaire", method = {RequestMethod.POST, RequestMethod.GET})
     public String submitPostQuestionnaire(
-            @RequestHeader(value = "referer", required = false) final String referer,
-            HttpSession session,
-            @ModelAttribute PostQuestionnaire postQuestionnaire) {
+                                          @RequestHeader(value = "referer", required = false) final String referer,
+                                          HttpSession session,
+                                          @ModelAttribute PostQuestionnaire postQuestionnaire) {
         postQuestionnaire.setSiteUrl(referer);
         postQuestionnaire.setUsername((String) session.getAttribute("username"));
         postQuestionnaire.setAssignedMaterialType((String) session.getAttribute(MATERIAL_TYPE));
