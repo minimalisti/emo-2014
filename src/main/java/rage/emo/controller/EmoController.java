@@ -451,7 +451,7 @@ public class EmoController {
             session.setAttribute(MATERIAL_TYPE, materialType);
             login = loginRepository.save(login);
 
-            if (preAttrakdiffQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
+            if (preQuestionnaireRepository.findByUsername(login.getUsername()).isEmpty()) {
                 return "redirect:/demografia-kysely.html";
                 //return "redirect:/pre-attrakdiff.html";
             } else {
